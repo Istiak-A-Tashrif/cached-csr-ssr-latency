@@ -1,5 +1,7 @@
 # Cached CSR/SSR latency and staleness: testbed, models and data
 
+[![DOI](https://zenodo.org/badge/1427513690.svg)](https://doi.org/10.5281/zenodo.23512120)
+
 Artifact for the paper *Predicting Data-Visible Latency and Staleness of Cached Client- and Server-Rendered Web Applications: A Prospectively Validated Path Model* (Istiak Ahmed Tashrif, submitted to ACM Transactions on the Web).
 
 It contains everything needed to rerun the experiments, re-score every test from its logs, and regenerate the paper's figures and tables.
