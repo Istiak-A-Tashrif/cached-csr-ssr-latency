@@ -1,0 +1,6 @@
+# Concurrency study (item 6), on the Mac: capped server CPUs so queueing is measurable
+# at small N. The client is not capped (it should not be the bottleneck).
+services:
+  web: { cpus: 0.5 }
+  api: { cpus: 0.25 }
+  db: { cpus: 0.5 }

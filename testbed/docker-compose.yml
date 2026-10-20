@@ -1,0 +1,72 @@
+# Per-link networks so each link can be shaped independently with netem:
+#   n_cw: client<->web   n_ca: client<->api   n_wa: web<->api   n_data: api<->redis/db (unshaped)
+name: cachebed
+
+networks:
+  n_cw: {}
+  n_ca: {}
+  n_wa: {}
+  n_data: {}
+
+services:
+  db:
+    image: postgres:17.0
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: caching_research
+    volumes:
+      - ./db/01_dump.sql:/docker-entrypoint-initdb.d/01_dump.sql:ro
+      - dbdata:/var/lib/postgresql/data
+    networks: [n_data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d caching_research"]
+      interval: 2s
+      retries: 60
+
+  redis:
+    image: redis:7.4.1
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    networks: [n_data]
+
+  api:
+    build:
+      context: ./api
+      additional_contexts: { netem: ./netem }
+    environment:
+      REDIS_CACHE: ${BE_CACHE:-off}
+      REDIS_TTL: "3600"
+      QUERY_VARIANT: correct
+    cap_add: [NET_ADMIN]
+    volumes: [./results:/results]
+    networks: [n_ca, n_wa, n_data]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+
+  web:
+    build:
+      context: ./web
+      additional_contexts: { netem: ./netem }
+    environment:
+      FE_CACHE: ${FE_CACHE:-off}
+      NEXT_REVALIDATE: ${NEXT_REVALIDATE:-2}   # item 8 (FE_CACHE=ttl)
+      TANSTACK_S: ${TANSTACK_S:-2}             # item 8 (FE_CACHE=ttl|push)
+      INTERNAL_API_URL: http://api:5001
+      PUBLIC_API_URL: http://api:5001
+    cap_add: [NET_ADMIN]
+    volumes: [./results:/results]
+    networks: [n_cw, n_wa]
+    depends_on: [api]
+
+  client:
+    build:
+      context: ./client
+      additional_contexts: { netem: ./netem }
+    cap_add: [NET_ADMIN]
+    volumes: [./results:/results, ./client:/runner]
+    networks: [n_cw, n_ca]
+    ipc: host
+    command: ["sleep", "infinity"]
+
+volumes:
+  dbdata: {}

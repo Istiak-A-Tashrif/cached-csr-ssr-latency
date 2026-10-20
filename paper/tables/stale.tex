@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Test & W1 MAE & W2 max & W3 & L1 & L2 max \\
+\midrule
+Writes, fast query: test (RTT 150, $\lambda$ 3/s) & 0.0113 & 0.0365 & 24/24 & -- & -- \\
+\quad replication (RTT 60, $\lambda$ 1.5/s) & 0.0090 & 0.0217 & 22/22 & -- & -- \\
+Regime: test (RTT 100, $d$ 25 ms) & 0.0130 & 0.0383 & 24/24 & 1.87\% & 4.91\% \\
+\quad replication (RTT 200, $d$ 100 ms) & 0.0062 & 0.0180 & 27/27 & 0.95\% & 2.14\% \\
+\bottomrule
+\end{tabular}

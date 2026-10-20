@@ -1,0 +1,8 @@
+# Relay mode (real-network test): the browser resolves web and api to relay VPS, which
+# NAT-forwards to server:13000/15001, so every request crosses the real internet
+# server -> relay VPS -> server with end-to-end TCP.
+services:
+  client:
+    extra_hosts:
+      - "web:203.0.113.20"
+      - "api:203.0.113.20"

@@ -1,0 +1,22 @@
+rep8: runs=16 actions=2304 errors=0 unclassified=0
+  initial csr caches=off crtt= 50 irtt=  0: obs  4334.3 [ 4262.1, 4413.0] pred  4332.6 ( -0.0%)
+  nav     csr caches=off crtt= 50 irtt=  0: obs   569.2 [  565.1,  572.3] pred   569.7 ( +0.1%)
+  initial csr caches=on  crtt= 50 irtt=  0: obs  4267.1 [ 4241.6, 4298.3] pred  4327.0 ( +1.4%)
+  nav     csr caches=on  crtt= 50 irtt=  0: obs   297.5 [  295.6,  299.4] pred   295.7 ( -0.6%)
+  initial ssr caches=off crtt= 50 irtt=  0: obs  1136.8 [ 1123.7, 1149.9] pred  1145.4 ( +0.8%)
+  nav     ssr caches=off crtt= 50 irtt=  0: obs   557.4 [  556.3,  558.5] pred   571.4 ( +2.5%)
+  initial ssr caches=on  crtt= 50 irtt=  0: obs  1137.2 [ 1121.0, 1147.7] pred  1138.5 ( +0.1%)
+  nav     ssr caches=on  crtt= 50 irtt=  0: obs   558.1 [  552.6,  561.7] pred   566.8 ( +1.5%)
+  SSR - CSR differences:
+    initial crtt= 50 irtt=  0 caches=off: obs  -3197.5 pred  -3187.2
+    nav     crtt= 50 irtt=  0 caches=off: obs    -11.8 pred      1.7  <-- FAIL
+    initial crtt= 50 irtt=  0 caches=on : obs  -3129.9 pred  -3188.4
+    nav     crtt= 50 irtt=  0 caches=on : obs    260.7 pred    271.1
+
+  mean rel error 0.88%  max 2.51%  outcomes 2304/2304  late predictions 0
+  PASS  C1 mean rel error <= 3%
+  PASS  C2 every cell within max(5%, 10 ms)
+  FAIL  C3 every SSR-CSR difference correct sign, within max(10 ms, 10%)
+  PASS  C4 analytic outcomes 100%
+  PASS  C5 all predictions written before run start
+NOT ACCEPTED

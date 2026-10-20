@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper."
+title: "Cached CSR/SSR latency and staleness: testbed, models and data"
+authors:
+  - family-names: Tashrif
+    given-names: Istiak Ahmed
+    orcid: "https://orcid.org/0009-0001-6363-4129"
+    affiliation: "Department of Computer Science and Engineering, Sonargaon University"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Predicting Data-Visible Latency and Staleness of Cached Client- and Server-Rendered Web Applications: A Prospectively Validated Path Model"
+  authors:
+    - family-names: Tashrif
+      given-names: Istiak Ahmed
+      orcid: "https://orcid.org/0009-0001-6363-4129"
+  journal: "ACM Transactions on the Web"
+  status: submitted
+  year: 2026

@@ -1,0 +1,15 @@
+# HTTPS + HTTP/2 edge (item 4). Self-signed internal CA; the browser ignores cert errors.
+{
+	auto_https disable_redirects
+	local_certs
+	skip_install_trust
+	admin off
+}
+https://edge:3000 {
+	tls internal
+	reverse_proxy web:3000
+}
+https://edge:5001 {
+	tls internal
+	reverse_proxy api:5001
+}

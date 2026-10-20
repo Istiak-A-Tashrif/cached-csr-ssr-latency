@@ -1,0 +1,16 @@
+{
+  "name": "testbed-web-svelte",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "vite build", "start": "node build" },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "5.2.9",
+    "@sveltejs/kit": "2.7.3",
+    "@sveltejs/vite-plugin-svelte": "3.1.2",
+    "svelte": "4.2.19",
+    "vite": "5.4.10"
+  },
+  "dependencies": {
+    "@tanstack/svelte-query": "5.59.20"
+  }
+}

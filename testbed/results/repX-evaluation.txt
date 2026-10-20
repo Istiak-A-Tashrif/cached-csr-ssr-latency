@@ -1,0 +1,47 @@
+repX: 72 runs, 13824 views, 0 errors, 7558 writes
+cell                         views  observed predicted    diff
+csr-feoff-redisoff            1536     0.018     0.021  -0.003
+csr-feoff-redisttl            1536     0.352     0.351  +0.001
+csr-fettl-redispush           1536     0.085     0.075  +0.009
+csr-fettl-redisttl            1536     0.381     0.382  -0.002
+ssr-feoff-redisoff            1536     0.028     0.021  +0.007
+ssr-feoff-redisttl            1536     0.382     0.371  +0.011
+ssr-fepush-redispush          1536     0.023     0.021  +0.001
+ssr-fettl-redispush           1536     0.385     0.367  +0.018
+ssr-fettl-redisttl            1536     0.577     0.574  +0.004
+
+latency cell                           obs ms  pred ms     err
+csr-feoff-redisoff initial             1805.0   1790.0   -0.8%
+csr-feoff-redisoff nav                  325.9    319.2   -2.1%
+csr-feoff-redisttl initial             1750.2   1736.6   -0.8%
+csr-feoff-redisttl nav                  248.9    247.3   -0.6%
+csr-fettl-redispush initial            1749.3   1748.7   -0.0%
+csr-fettl-redispush nav                 144.7    143.3   -1.0%
+csr-fettl-redisttl initial             1713.5   1726.2   +0.7%
+csr-fettl-redisttl nav                  136.4    135.4   -0.7%
+ssr-feoff-redisoff initial              547.6    540.8   -1.2%
+ssr-feoff-redisoff nav                  327.8    320.8   -2.1%
+ssr-feoff-redisttl initial              471.3    469.2   -0.4%
+ssr-feoff-redisttl nav                  250.4    247.7   -1.1%
+ssr-fepush-redispush initial            484.8    478.2   -1.4%
+ssr-fepush-redispush nav                260.1    259.2   -0.4%
+ssr-fettl-redispush initial             448.2    444.4   -0.9%
+ssr-fettl-redispush nav                 225.1    223.0   -1.0%
+ssr-fettl-redisttl initial              449.5    445.1   -1.0%
+ssr-fettl-redisttl nav                  225.5    223.3   -1.0%
+  saving vs no-cache, csr-feoff-redisttl           observed    77.0 ms predicted    71.9 ms
+  saving vs no-cache, csr-fettl-redispush          observed   181.2 ms predicted   175.9 ms
+  saving vs no-cache, csr-fettl-redisttl           observed   189.6 ms predicted   183.8 ms
+  saving vs no-cache, ssr-fepush-redispush         observed    67.7 ms predicted    61.7 ms
+  saving vs no-cache, ssr-feoff-redisttl           observed    77.5 ms predicted    73.1 ms
+  saving vs no-cache, ssr-fettl-redisttl           observed   102.3 ms predicted    97.5 ms
+  saving vs no-cache, ssr-fettl-redispush          observed   102.7 ms predicted    97.9 ms
+PASS  W1 pooled MAE <= 0.03: 0.0062
+PASS  W2 every cell within 0.05: max 0.0180
+PASS  W3 orderings: 27/27 pairs
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 8 ms
+PASS  W5 predictions before runs: 72/72
+PASS  L1 mean latency error <= 3%: 0.95%
+PASS  L2 every latency cell within max(5%, 10 ms): max 2.14%
+PASS  L3 server-cache savings: 7/7
+ACCEPTED

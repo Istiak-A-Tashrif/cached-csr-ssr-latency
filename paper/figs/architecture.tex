@@ -1,0 +1,34 @@
+% Request paths per rendering mode and cache layer (Section 3). Included from main.tex.
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize, >=stealth,
+  box/.style={draw, rounded corners=2pt, minimum height=9mm, minimum width=18mm, align=center, fill=white},
+  cache/.style={draw, rounded corners=2pt, minimum height=5mm, align=center, fill=black!6},
+  lane/.style={font=\sffamily\footnotesize\bfseries, anchor=east},
+  hop/.style={->, thick},
+  note/.style={font=\sffamily\tiny, text=black!70, align=center}]
+
+% ---------------- CSR lane ----------------
+\node[lane] at (0,0) {CSR};
+\node[box] (cb) at (1.4,0) {Browser\\(React app)};
+\node[cache, below=1.5mm of cb] (tq) {TanStack Query};
+\node[note, below=0.5mm of tq] {hit: no network};
+\node[box] (ca) at (5.6,0) {API\\(Express)};
+\node[box] (cr) at (9.2,0) {Redis};
+\node[note, below=1mm of cr] {hit: no database};
+\node[box] (cd) at (12.8,0) {PostgreSQL};
+\draw[hop] (cb) -- node[above]{client RTT $c$} node[below,note]{API request} (ca);
+\draw[hop] (ca) -- node[above,note]{key lookup} (cr);
+\draw[hop] (cr) -- node[above,note]{miss: query} (cd);
+
+% ---------------- SSR lane ----------------
+\node[lane] at (0,-2.9) {SSR};
+\node[box] (sb) at (1.4,-2.9) {Browser};
+\node[box] (sn) at (5.6,-2.9) {Next.js\\server};
+\node[cache, below=1.5mm of sn] (nd) {Next.js data cache};
+\node[note, below=0.5mm of nd] {hit: no API call};
+\node[box] (sa) at (9.2,-2.9) {API\\(Express)};
+\node[box] (sr) at (12.8,-2.9) {Redis,\\PostgreSQL};
+\draw[hop] (sb) -- node[above]{client RTT $c$} node[below,note]{HTML / RSC request} (sn);
+\draw[hop] (sn) -- node[above]{internal RTT $i$} node[below,note]{on cache miss} (sa);
+\draw[hop] (sa) -- node[above,note]{as CSR} (sr);
+\end{tikzpicture}

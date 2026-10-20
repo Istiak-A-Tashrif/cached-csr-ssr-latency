@@ -1,0 +1,36 @@
+# Override for running the testbed on server (server), a shared host that also
+# serves the live co-hosted production apps. Caps keep our total at 3 of 4 cores and ~4 GB RAM.
+# Used as: COMPOSE_FILE=docker-compose.yml:docker-compose.server.yml
+services:
+  db:
+    cpus: 0.5
+    mem_limit: 512m
+  redis:
+    cpus: 0.25
+    mem_limit: 256m
+  api:
+    cpus: 0.5
+    mem_limit: 512m
+    ports: ["15001:5001"]   # reachable via the relay VPS relay only (DOCKER-USER rule)
+  web:
+    cpus: 0.75
+    mem_limit: 1g
+    ports: ["13000:3000"]
+  client:
+    cpus: 1.0
+    mem_limit: 1536m
+  # Runs the harness (node + python3 + docker CLI) without installing anything on the host.
+  # Mounted at the identical path so compose bind mounts resolve the same for the daemon.
+  controller:
+    build: { context: ./controller }
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PWD}:${PWD}
+    working_dir: ${PWD}
+    environment:
+      COMPOSE_FILE: docker-compose.yml:docker-compose.server.yml
+      RELAY_IP: ${RELAY_IP:-}
+    network_mode: host
+    command: ["sleep", "infinity"]
+    cpus: 0.25
+    mem_limit: 256m

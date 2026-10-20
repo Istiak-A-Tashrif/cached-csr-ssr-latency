@@ -1,0 +1,5 @@
+# HTTP/2 relay mode: the browser resolves the edge to relay VPS (NAT relay to server:13000/15001).
+services:
+  client:
+    extra_hosts:
+      - "edge:203.0.113.20"

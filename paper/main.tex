@@ -1,0 +1,296 @@
+\documentclass[acmsmall,review]{acmart}
+% Target: ACM Transactions on the Web (TWEB). `review` adds line numbers for submission.
+\usepackage{booktabs,tabularx,multirow}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\setlength{\emergencystretch}{2em}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+\acmJournal{TWEB}
+\setcopyright{none}
+\settopmatter{printacmref=false}
+
+\title{Predicting Data-Visible Latency and Staleness of Cached Client- and Server-Rendered Web Applications}
+\subtitle{A Prospectively Validated Path Model}
+
+\author{Istiak Ahmed Tashrif}
+\orcid{0009-0001-6363-4129}
+\email{istiaktashrif@gmail.com}
+\affiliation{%
+  \department{Department of Computer Science and Engineering}
+  \institution{Sonargaon University}
+  \streetaddress{147/I, Green Road, Panthapath, Tejgaon}
+  \city{Dhaka}
+  \postcode{1205}
+  \country{Bangladesh}}
+
+\begin{abstract}
+Whether a web page shows its data sooner with client-side rendering (CSR) or server-side rendering (SSR), and how stale that data is, depends on which cache layer answers each request, on the network, and on how much work the server does.
+Measurement studies report these effects at a few operating points, and practitioners cannot carry them to their own deployment.
+We present a path model that predicts, per user action, the time until data becomes visible in a modern stack (Next.js with TanStack Query, the Next.js data cache, Redis and PostgreSQL), and a companion model that predicts the share of page views that display stale data under time-to-live (TTL) and push invalidation.
+Both models are calibrated under network emulation, frozen, and evaluated prospectively: every prediction is written before its run starts, on conditions and seeds never used for fitting, and every accepted version is replicated.
+Across thirteen accepted fresh tests (43{,}776 actions) the latency model's mean error is 0.2--1.2\%, including three real internet paths (HTTP/1.1, measured bandwidth, and HTTPS with HTTP/2), a second framework (SvelteKit) and a heavier page, against 10--48\% for baselines that ignore cache placement.
+The staleness model predicts the stale-view share within 0.006--0.013 pooled absolute error, and jointly predicts latency (0.95--1.87\%) as server work grows, which shows when server-side caches pay for their staleness: with 3\,ms queries, TTL caches saved under 1\,ms while 40--69\% of views were stale; with 100\,ms of database work, push invalidation recovered most of the TTL caches' saving at 2.3\% stale views.
+We report where prediction fails: on a consumer broadband path the model's error is 5--8\% because latency tails cannot be forecast from pre-run probes; under concurrency it is 2--5\%; on throttled devices initial loads at low RTT miss by up to 7\%.
+We also report measurement pitfalls that distort such studies: network emulation shifts Chromium's connection-assignment race (11\% vs 75\% new-connection wins), a common test-harness setting adds two round trips to every HTTPS connection, and Apple Silicon hosts make service times load-dependent.
+\end{abstract}
+
+% CCS concepts: \todo{regenerate with the ACM CCS tool (https://dl.acm.org/ccs) to obtain the CCSXML block}
+\ccsdesc[500]{Information systems~Web applications}
+\ccsdesc[500]{Networks~Network performance modeling}
+\ccsdesc[300]{Networks~Network measurement}
+\ccsdesc[300]{Networks~Network performance analysis}
+
+\keywords{web performance, server-side rendering, client-side rendering, caching, cache invalidation, staleness, performance modeling, prospective validation}
+
+\begin{document}
+\maketitle
+
+% =====================================================================
+\section{Introduction}
+
+Modern web frameworks let developers choose, per page, whether data is fetched and rendered in the browser (client-side rendering, CSR) or on the server (server-side rendering, SSR), and offer several caching layers on each path: a per-user browser cache (e.g.\ TanStack Query), a shared framework data cache (e.g.\ the Next.js data cache), and an application cache in front of the database (e.g.\ Redis).
+Each layer removes a different part of the request path, and each can show stale data after a write.
+Which combination is fastest for a given page and network, and what it costs in freshness, is therefore not a property of the framework but of the request path.
+
+Measurement studies compare rendering strategies under a few network profiles~\cite{pati2025nextjs}, and studies of application caches report stale-read rates for a chosen TTL and workload~\cite{ji2023transparent}.
+Their numbers describe their operating points; a practitioner with a different round-trip time, bandwidth, cache configuration or database cost cannot tell whether the conclusion transfers.
+Page-load analyses based on dependency graphs~\cite{wang2013wprof,netravali2016polaris} explain where load time goes, but do not model application cache layers or data freshness.
+
+This paper takes a predictive approach. We model the critical path of each user action (initial load or in-app navigation, CSR or SSR) as a function of the cache layer that serves it, the client and internal round-trip times, the bytes on the path and the bottleneck bandwidth, and we model staleness from the age of the data each layer returns.
+The models are calibrated once under network emulation and then \emph{used to predict} conditions they have not seen.
+We hold ourselves to a prospective protocol: model code and parameters are frozen and hashed; the prediction for every run is written before the run starts; tests use conditions and seeds never used for fitting or diagnosis; acceptance criteria are fixed in advance; and a version that passes must pass an independent replication.
+Every version that failed is reported with its diagnosis.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item A cache-aware path model of data-visible latency for CSR and SSR actions (Section~\ref{sec:model}) that predicts fresh conditions within 0.2--1.2\% mean error on emulated paths and three real internet paths, including measured bandwidth and HTTPS with HTTP/2, and carries over to a second framework and a heavier page when recalibrated (Section~\ref{sec:results}). It is 14 to 200 times more accurate than baselines that ignore cache placement.
+\item A staleness model for stacked browser, framework and application caches under TTL and push invalidation, validated against an oracle that compares every displayed row with the database at display time, and its joint use with the latency model to locate the regime in which server-side caches pay for their staleness (Section~\ref{sec:stale}).
+\item An account of where prospective prediction breaks: consumer access links, concurrency on a shared client core, and throttled devices (Section~\ref{sec:limits}).
+\item Measurement findings that distort emulation-based web-performance studies, each traced to a mechanism: network emulation shifts Chromium's connection-assignment race; a common test-harness certificate setting adds two round trips per HTTPS connection; CPU quotas and Apple Silicon core scheduling make service times load-dependent (Section~\ref{sec:pitfalls}).
+\end{enumerate}
+
+% =====================================================================
+\section{Background and related work}
+\label{sec:related}
+
+\paragraph{CSR and SSR measurements.}
+\citet{pati2025nextjs} compare Next.js (SSR) with React (CSR) under three network profiles and report that SSR improves loading on slow networks. Further comparisons report page-load and Core Web Vitals metrics for CSR, SSR and framework rendering modes at single operating points~\cite{iskandar2020csr,hanafi2024nextjs,savenko2025nextjs}, and \citet{chen2025mrah} proposes modular rendering with adaptive hydration to reduce SSR's hydration cost. \citet{malavolta2020pwa} measure the effect of service-worker caching on the performance and energy of progressive web apps. None of these isolates the application cache layers or predicts conditions before measuring them; we model each action's path per cache outcome and predict prospectively.
+
+\paragraph{Predicting page performance.}
+\citet{ramakrishnan2020predictive} compare statistical and machine-learning models that predict page performance from page characteristics. WProf~\cite{wang2013wprof} extracts dependency graphs of browser page loads, and Polaris~\cite{netravali2016polaris} and Shandian~\cite{wang2016shandian} use such structure to speed loads up. These works explain or predict whole-page load metrics; ours predicts the time until application data is visible, per action and per cache outcome, from the request path, and validates the prediction prospectively on fresh conditions.
+
+\paragraph{HTTP versions and measurement fidelity.}
+\citet{wang2014spdy}, \citet{varvello2016h2} and \citet{wijnants2018h2prio} show that the benefit of multiplexed protocols (SPDY, HTTP/2~\cite{rfc9113}) and of stream prioritization depends on network conditions and page structure. \citet{rajiullah2019mobile} measure web experience at scale on operational mobile networks. Mahimahi~\cite{netravali2015mahimahi} provides record-and-replay with emulated links, and \citet{pediaditakis2014faithful} study how faithfully network experiments can be reproduced. We use emulation in the same spirit but show in Section~\ref{sec:pitfalls} that it shifts a browser connection-level race that matters for prediction.
+
+\paragraph{Cache hierarchies and TTL theory.}
+\citet{che2002hierarchical} model hierarchical web caches; \citet{fofack2014ttl} and \citet{berger2014exact} analyze networks of TTL caches; \citet{elsayed2024ttl} optimize TTL hierarchies under network delays. A known consequence of these models is that an upstream cache filters the request stream seen downstream. We observe this filtering in a default modern stack (Section~\ref{sec:pilot}) and apply, rather than extend, this theory.
+
+\paragraph{Freshness and invalidation.}
+TxCache~\cite{ports2010txcache} provides transactional consistency for an application data cache; Quaestor~\cite{gessert2017quaestor} provides bounded-staleness query caching for database-as-a-service with invalidation; \citet{ji2023transparent} evaluate TTL versus invalidation for an application cache in front of PostgreSQL; \citet{mao2024freshness} argue that TTLs are ill-suited to real-time freshness. These works study a single layer or design new consistency mechanisms. We quantify staleness across \emph{stacked} browser, framework and application caches as deployed by default, predict it, and relate it to latency.
+
+\paragraph{Search.}
+We searched OpenAlex, arXiv, Crossref and the ACM Digital Library (October 2026; queries and screening criteria in the artifact). To our knowledge, no prior work predicts per-action data-visible latency across stacked browser, framework and application caches with prospective validation, or predicts the share of stale views across such stacked caches.
+
+% =====================================================================
+\section{System, workload and measurement}
+\label{sec:system}
+
+\paragraph{Application.}
+A product catalogue backed by PostgreSQL~17 (5{,}000 products, 20{,}000 orders, 50{,}000 order items, 30{,}000 reviews, 10{,}000 users). An Express API serves pages of products with aggregated order counts and ratings (a pre-aggregated query; an earlier join-based query inflated order counts for 4{,}922 of 5{,}000 products through join fan-out and is not used). Redis~7.4 caches API responses per page. The front end is Next.js~16.1 (App Router, React~19).
+\begin{itemize}
+\item \textbf{CSR path} (\texttt{/csr}): a static shell; the browser fetches the API with TanStack Query (per-user cache); navigation changes the URL with \texttt{history.pushState} and needs no server round trip unless the browser cache misses.
+\item \textbf{SSR path} (\texttt{/ssr}): the server fetches the API through the Next.js data cache (shared across users) and returns HTML for an initial load or a React Server Components payload for a navigation.
+\end{itemize}
+A second front end in SvelteKit~2 (svelte-query, shallow routing, and an in-process server cache) implements the same paths for the framework-generality test, and a variant route with roughly 300\,kB of additional client JavaScript and 100 rows per page (4$\times$ the payload) implements the heavier-page test. Figure~\ref{fig:arch} shows the request paths.
+
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{\input{figs/architecture.tex}}
+\caption{Request paths of the two rendering modes through the cache layers. Each cache outcome ends the path at a different point; the model's network term counts the client round trip $c$ and internal round trip $i$ on the remaining path. \emph{Initial load}: CSR fetches the document, then the JavaScript bundle (up to six connections per origin; one under HTTP/2), then calls the API on a new connection; SSR fetches the document on a new connection, and the server fetches the data before responding. \emph{Navigation}: CSR changes the URL with \texttt{history.pushState} and makes one API request on a warm connection, or none on a TanStack hit; SSR makes one RSC request on a warm connection. Data-visible time ends at the first frame after the first data row enters the DOM.}
+\label{fig:arch}
+\Description{Two rows of boxes. The CSR row: browser with a TanStack Query cache, an arrow labelled client RTT to the Express API, then Redis, then PostgreSQL. The SSR row: browser, an arrow labelled client RTT to the Next.js server with its data cache, an arrow labelled internal RTT to the API, then Redis and PostgreSQL. Notes mark where each cache hit ends the path.}
+\end{figure}
+
+\paragraph{Testbed and networks.}
+All services run in Docker containers. Each link (client--web, client--API, web--API, API--data) is a separate network whose delay and rate are set with \texttt{tc netem} (half the round-trip time on each end; 10\,Mbit/s on client links unless stated). A Playwright~1.56 Chromium client drives sessions. Real-network tests route the client's traffic through a remote VPS acting as a layer-3 relay (DNAT and masquerade; end-to-end TCP preserved), giving a real internet round trip of roughly 250--530\,ms between client and server. One further real path runs from a home broadband connection to the server. Concurrency and CPU-throttling tests pin each service to a dedicated core of a Linux x86 host.
+
+\paragraph{Workloads.}
+Each run replays a declared set of sessions: users are fresh browser contexts, each performing an initial load followed by navigations among pages drawn from a Zipf distribution (e.g.\ 12 users $\times$ 12 steps over 8 pages, $\alpha=0.6$, for frequent revisits). Caches start cold in every run; a warm-up on a page no workload draws absorbs process and JIT start-up.
+
+\paragraph{Endpoint: data-visible time.}
+We measure, for each action, the time from its start (navigation start, or a performance mark immediately before an in-app navigation) until the end of the first frame after the first data row enters the DOM. A \texttt{MutationObserver} registered before any body content records the insertion; a \texttt{requestAnimationFrame} plus \texttt{MessageChannel} callback records the frame. Element Timing proved unsuitable: it reports nothing for inline text and is frame-quantized in headless Chromium.
+
+\paragraph{Cache outcomes and logging.}
+Every action is classified by the layer that served it (browser-cache hit, framework-cache hit, Redis hit, or database), using identifiers carried out of band: TanStack request ids, API logs with Redis hit/miss and database time, and framework-cache replay detection by response id. In the pilot all 10{,}368 actions were classified with no errors.
+
+\paragraph{Writes and the staleness oracle.}
+For the staleness experiments a seeded Poisson writer updates stock values of products on the workload's pages and logs each commit. Push invalidation deletes the Redis key and revalidates the page's framework-cache tag on each write; TTL invalidation relies on expiry (Redis TTL $T$, Next.js \texttt{revalidate} $R$ with stale-while-revalidate, TanStack \texttt{staleTime} $S$). At the instant the first data row is inserted, the page records every displayed row's product id and stock. A view is \emph{stale} if any displayed value differs from the database value at that instant, reconstructed from the initial snapshot and the write log.
+
+% =====================================================================
+\section{Pilot observations}
+\label{sec:pilot}
+
+A pilot (96 runs, 6{,}912 actions; 2 modes $\times$ 4 cache combinations $\times$ 2 RTTs $\times$ 2 workloads $\times$ 3 seeds) motivated the model.
+\begin{itemize}
+\item \textbf{A shared server cache leaves Redis nothing to do.} Behind the Next.js data cache, Redis's conditional hit ratio was 0.00: every repeated key is absorbed upstream. A per-user browser cache, in contrast, leaves Redis almost all of its value. This is the filtering effect predicted by cache-hierarchy theory~\cite{che2002hierarchical,fofack2014ttl}, here in a default configuration.
+\item \textbf{Initial load is decided by the rendering path, not by caches.} SSR showed data 153\,ms sooner at RTT~0 and 1{,}093\,ms sooner at RTT~170\,ms, and caches changed initial load by under 1\%. SSR data was visible about 756\,ms before the page was interactive.
+\item \textbf{Navigation has a crossover.} With browser caching, CSR navigation beats SSR roughly when the browser hit rate times the client round trip exceeds the server-side work the shared cache saves.
+\end{itemize}
+These effects depend on RTT, cache outcome and server cost, which is what the model captures.
+
+% =====================================================================
+\section{Latency model}
+\label{sec:model}
+
+\paragraph{Structure.}
+For action $a$ in mode $m$ with cache outcome $o$, client round trip $c$ and internal round trip $i$:
+\begin{equation}
+\hat T(m,a,o;c,i) = T_0(m,a,o) + N(m,a,o;c,i) - N(m,a,o;0,0) + \rho_{m,a,o}(c),
+\label{eq:model}
+\end{equation}
+where $T_0$ is the mean latency measured at RTT~0 for that path and outcome (CPU, rendering and server time), $N$ is the critical-path network time, and $\rho$ is an empirical residual interpolated over the client RTTs of an emulated calibration grid.
+
+\paragraph{Critical paths.}
+CSR initial: document (new connection) $\rightarrow$ JavaScript bundle $\rightarrow$ API request (new connection to the API origin). CSR navigation: one API request on a warm connection, or nothing on a browser-cache hit. SSR initial: document (new connection), plus an internal API request on a framework-cache miss. SSR navigation: one RSC request on a warm connection, plus an internal request on a miss.
+
+\paragraph{Transfers.}
+A request on a new connection pays a handshake (one RTT for TCP; two with TLS~1.3~\cite{rfc8446}). A response of $b$ bytes takes TCP slow-start rounds from an initial window of ten segments~\cite{rfc6928} (1{,}448-byte MSS), plus serialization $8b/\text{bw}$.
+
+\paragraph{The JavaScript bundle and the connection race.}
+Chromium loads the bundle's chunks over up to six connections per origin; the largest chunk runs either on the reused document connection (whose window has grown) or on a new connection (one more slow-start round). Both become free about one RTT after the request, so which one wins depends on path micro-timing. The bundle term is
+\begin{equation}
+E[\text{bundle}](c) = p\,B_{\text{new}}(c) + (1-p)\,B_{\text{reused}}(c),
+\end{equation}
+where $B_{\text{new}}$ and $B_{\text{reused}}$ are bundle times observed per race group in the calibration loads, and $p$ is measured on the target path before each run from eight probe loads of a page no workload uses. Under HTTP/2~\cite{rfc9113} all chunks share one connection, the race disappears, and the bundle term is a single calibrated curve.
+
+\paragraph{Cache outcomes.}
+Outcomes are computed analytically from the declared sessions (sequential users, cold caches, no expiry within a run), so each action's outcome is known before the run; in every test the analytic outcomes matched the logged ones (criterion C4).
+
+\paragraph{Inputs per run.}
+Frozen calibration; the declared workload; client RTT from TCP-connect probes before the run; the race probability $p$; and, where bandwidth is not fixed, the bottleneck bandwidth estimated from the difference of two download times (8 and 32\,MB). With bandwidth as an input, the model holds two calibrated bandwidth levels and is linear in $1/\text{bw}$ between them.
+
+\paragraph{Concurrency.}
+For $N$ concurrent users we extend the model with exact mean value analysis~\cite{reiser1980mva} over three single-core stations (client, web+API+Redis, database). Queue lengths come from each station's \emph{total} CPU demand per action, measured with cgroup accounting, while each action's latency grows only by its \emph{on-path} demand times the queue length it meets:
+$\hat T_a(N) = \hat T_a(1) + \sum_k P_k(a)\,s_k(N)\,Q_k(N-1)$, where $s_k(N)$ captures load-dependent demand.
+
+% =====================================================================
+\section{Validation protocol}
+\label{sec:protocol}
+
+\paragraph{Prospective design.} Each model version is calibrated on emulated data, frozen (code and parameters hashed), and tested on conditions and seeds never used for fitting or diagnosis. The harness writes the prediction for each run before the run starts. A version that passes must pass an independent replication (new conditions and seeds) before it is accepted. There is no cap on versions, so failures are expected; each is diagnosed from its data, and the diagnosed data may be used to calibrate the next version, which then faces fresh tests.
+
+\paragraph{Latency criteria (fixed before scoring).}
+C1: mean relative error over cells $\le 3\%$. C2: every cell within $\max(5\%, 10\,\text{ms})$. C3: every SSR$-$CSR difference has the correct sign and lies within $\max(10\,\text{ms}, 10\%)$. C4: analytic cache outcomes match 100\%. C5: every prediction written before its run started. A cell is a combination of mode, cache setting, action type and network condition; its observed value is the mean over runs (seeds).
+
+\paragraph{Staleness criteria.}
+W1: pooled mean absolute error over policy cells $\le 0.03$. W2: every cell within 0.05. W3: every pair of cells whose predicted stale shares differ by at least 0.05 is ordered correctly. W4: oracle integrity (no displayed value ahead of the database; writes logged in every run; push-purge lag p99 $\le 20$\,ms). W5: predictions written before runs. The joint latency--staleness experiment adds L1 (mean latency error $\le 3\%$), L2 (every cell within $\max(5\%,10\,\text{ms})$) and L3 (each server cache's latency saving has the observed sign and lies within $\max(10\,\text{ms}, 10\%)$).
+
+% =====================================================================
+\section{Latency results}
+\label{sec:results}
+
+Table~\ref{tab:tests} lists every fresh prospective latency test; Fig.~\ref{fig:scatter} shows all of their cells.
+
+\begin{table}[t]
+\centering\small
+\caption{Every fresh prospective latency test. Mean and max are relative errors over cells; ``fails'' lists failed criteria; the last column is the test's own verdict (a version is accepted only if its test and replication both pass).}
+\label{tab:tests}
+\input{tables/tests.tex}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.48\textwidth]{figs/scatter.pdf}\hfill
+\includegraphics[width=0.48\textwidth]{figs/baselines.pdf}
+\caption{Left: predicted (written before each run) vs observed mean data-visible latency for every cell of the fresh tests. Right: the model's mean error against two baselines fitted on the same calibration data: a latency--RTT line per mode and action ignoring cache layers, and the same line from cache-off runs.}
+\label{fig:scatter}
+\end{figure}
+
+\paragraph{Emulated paths.} The accepted emulated model predicts 9{,}216 actions per test at client RTTs of 90--320\,ms and internal RTTs of 20--100\,ms with 1.10\% (test) and 0.77\% (replication) mean error. Earlier versions failed in diagnosable ways: a state-dependent frame wait at low RTT, and round-trip costs growing slightly faster than the probed RTT, both absorbed by the residual term $\rho$.
+
+\paragraph{Real internet paths.} A model recalibrated on the server host under emulation predicted a real relayed path within 2.3\%, but under-predicted CSR initial loads by 6--8\%. Resource timings showed that only the bundle phase differed: on the real path the largest chunk ran on a new connection in 75\% of loads, under emulation in 11\% (Section~\ref{sec:pitfalls}). With the race probability measured before each run, the model predicts the real path within 0.61\% and 1.08\%. With the 10\,Mbit/s cap removed and bandwidth probed per run, it predicts 0.62\% and 0.70\% (after a fix to the SSR navigation transfer term found in the first bandwidth version's replication). With HTTPS and HTTP/2 through a TLS-terminating edge, 0.26\% and 0.23\%.
+
+\paragraph{Generality.} The same equations, recalibrated, predict a SvelteKit implementation of the application (0.69\%, 0.33\%) and a page with roughly 300\,kB more client JavaScript and four times the payload (1.23\%, 0.61\%).
+
+\paragraph{Baselines.} Baselines fitted on the same calibration data miss by 10--22\% on emulated paths and by 43--48\% on real paths, where initial-load latency is not linear in RTT (slow start and the connection race). The model's error is 14 to 200 times smaller (Fig.~\ref{fig:scatter}, right).
+
+% =====================================================================
+\section{Staleness and the server-work regime}
+\label{sec:stale}
+
+\paragraph{Model.}
+Each piece of displayed data carries the instant $\tau$ at which it was guaranteed equal to the database. With Poisson writes at rate $\lambda_p$ per page, a view displayed at $t$ is stale with probability $1-e^{-\lambda_p (t-\tau)}$. The layers determine $\tau$: a database read gives $\tau = t_{\text{req}}$; a Redis TTL hit gives the fill time; a push-invalidated layer gives $t_{\text{req}}$ minus the purge lag (its entry is dropped on every write); a framework TTL cache serves its entry and refreshes in the background after $R$; a TanStack revisit shows the cached entry and refetches in the background after $S$. The timeline replays the declared sessions with display gaps calibrated without writes. For the joint model, each view's expected probability of reaching the database (by TTL age, or by survival $e^{-\lambda_p \cdot \text{age}}$ for push layers) adds $d$ milliseconds of server work to its latency.
+
+\paragraph{Validation.}
+The first staleness test failed on an application bug: the write hook revalidated the framework cache in every Redis-push configuration, so one cell ran a different policy. After the fix, and with eight seeds per cell and an independent write stream per run, the model was accepted (Table~\ref{tab:stale}, Fig.~\ref{fig:stale}).
+
+\begin{table}[t]
+\centering\small
+\caption{Staleness (pooled MAE, worst cell, correct orderings) and, for the regime experiment, latency (mean and worst relative error). All criteria passed in all four tests.}
+\label{tab:stale}
+\input{tables/stale.tex}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.48\textwidth]{figs/stale.pdf}\hfill
+\includegraphics[width=0.48\textwidth]{figs/regime.pdf}
+\caption{Left: predicted vs observed share of stale views for every policy cell of four tests. Right: navigation latency vs stale share per caching policy with 100\,ms of database work per read (RTT 200\,ms); filled marks observed, hollow marks predicted before the run.}
+\label{fig:stale}
+\end{figure}
+
+\paragraph{When do server caches pay?}
+With a fast query (about 3\,ms) and a local API link, server-side TTL caches saved under 1\,ms of navigation latency but made 40--69\% of views stale; only the browser cache cut navigation latency (170 to 90\,ms at RTT 150\,ms), and push invalidation removed almost all staleness at no measurable cost. With 100\,ms of database work per read (Fig.~\ref{fig:stale}, right), SSR without caches took 328\,ms per navigation at 2.8\% stale views; framework and Redis push invalidation took 260\,ms at 2.3\%; TTL caches took about 225\,ms but showed 38--58\% stale views. The model predicted each of these points before the runs, so a practitioner can place a deployment between the regimes from its server cost, write rate and RTT.
+
+% =====================================================================
+\section{Where prediction fails}
+\label{sec:limits}
+
+\paragraph{Consumer broadband.}
+On a path from a home broadband connection to the server, three model versions missed by 5--8\% mean error. The diagnosis: bandwidth varied 3--12\,Mbit/s between runs; request RTT drifted by up to 22\,ms within a run; and occasional slow requests (loss, retransmission, Wi-Fi episodes) raised mean navigation latency above any pre-run estimate, while typical navigations matched (e.g.\ median 88\,ms vs 87\,ms predicted). Prospective prediction is bounded here by path non-stationarity, not by the model's structure.
+
+\paragraph{Concurrency.}
+With $N$ users sharing one client core and single-core server stations, the queueing extension predicts fresh population sizes ($N=3,4,7,8$) within 2--5\% mean error (Fig.~\ref{fig:conc}), and one version passed all criteria at $N=8$, but no version passed both its test and replication. Navigations are slightly under-predicted throughout; refitting on more data moved errors between population sizes instead of reducing them.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figs/concurrency.pdf}
+\caption{Concurrency: observed and predicted mean latency per action type for fresh population sizes; two model versions (P3 at $N=4,8$; P4 at $N=3,7$).}
+\label{fig:conc}
+\end{figure}
+
+\paragraph{Throttled devices.}
+With Chromium CPU throttling calibrated at $1\times$ and $6\times$, fresh tests at $4\times$ and $2\times$ gave 2.28\% and 2.08\% mean error, with all navigations within 2.3\%, but initial loads at 60--80\,ms RTT were over-predicted by 4--7\%. These RTTs fall between calibration grid points (40 and 120\,ms) where initial-load time is not linear in RTT; the HTTP/2 variant with a trusted certificate missed in the same region (Table~\ref{tab:tests}). Calibration grids need points below 120\,ms.
+
+% =====================================================================
+\section{Measurement pitfalls}
+\label{sec:pitfalls}
+
+\paragraph{Emulation shifts Chromium's connection race.}
+Under \texttt{netem}, a new connection won the race for the largest chunk in 11\% of loads; on the real path in 75\% (per-run probes 0.50--1.00). Because the new connection needs one more slow-start round, an emulation-calibrated model under-predicted real CSR initial loads by 6--8\% until the race probability was measured on the path. Emulation-based studies of bundle loading should measure, not assume, connection assignment.
+
+\paragraph{Certificate handling adds two round trips.}
+Accepting a self-signed certificate through Playwright's \texttt{ignoreHTTPSErrors} delays every new TLS connection by about two RTTs before it starts (417\,ms vs 0.8\,ms at RTT 207\,ms), which made CSR initial loads 29\% slower (2{,}849 vs 2{,}022\,ms). Trusting the certificate by key removes the delay. HTTP/2 comparisons run this way overstate HTTPS cost.
+
+\paragraph{CPU quotas and Apple Silicon distort service times.}
+CFS CPU quotas throttle bursts and produced a heavy database latency tail (p99 58\,ms vs 17\,ms); dedicated cores (cpusets) avoid it. On an Apple Silicon host, the same server code ran about 4.5\,ms slower per database read when the machine was lightly loaded, because the hypervisor's threads moved between efficiency and performance cores; this invalidated both a concurrency experiment and a CPU-throttling experiment on that host, which we repeated on Linux. Launching many browsers at the start of short concurrency runs also contaminates measurements; a start barrier removes the effect.
+
+% =====================================================================
+\section{Threats to validity}
+One application and data shape (with one heavier variant); headless Chromium only; real paths through one relay host and one home connection; analytic cache outcomes assume sequential users; models are recalibrated per framework and environment; the staleness experiments use synthetic Poisson writes to stock values. The heavier-page tests ran with 25\,ms of added database work per read in both calibration and test (a leftover setting from the regime experiment), so they describe a page with that server cost.
+
+% =====================================================================
+\section{Conclusion}
+Data-visible latency and staleness of cached CSR and SSR applications are predictable from the request path: which layer answers, the round-trip times, the bytes, the bandwidth and the server's work. A model calibrated under emulation and frozen predicts fresh conditions, including real internet paths and HTTP/2, within about 1\%, and the staleness model locates when server-side caches pay for their freshness cost. The limits are equally clear: consumer access links, shared-core concurrency and low-RTT gaps in calibration. Prospective prediction, rather than point measurement, lets each such conclusion be checked before it is generalized.
+
+\section*{Artifact availability}
+The testbed, harness, frozen models, per-run predictions and evaluation outputs are available at \todo{repository URL / archive DOI}.
+
+\begin{acks}
+The author used a generative AI tool (Claude, Anthropic) to assist with implementing the testbed and analysis code, running and analyzing the experiments, and producing the figures. The author directed the research and is responsible for all content.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+\end{document}

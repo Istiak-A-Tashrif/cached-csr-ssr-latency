@@ -1,0 +1,27 @@
+# HTTPS + HTTP/2 mode (item 4). The browser talks only to the Caddy edge (TLS 1.3, h2),
+# which proxies to web/api over plain HTTP on a separate unshaped network.
+# Shaping applies on n_ce only (client <-> edge). Use with docker-compose.yml and
+# docker-compose.server-h2.yml (no web/api port publishing; the edge takes 13000/15001).
+networks:
+  n_ce: {}
+  n_eb: {}
+services:
+  edge:
+    build: ./edge
+    image: cachebed-edge:2.8.4
+    volumes: ["./edge/Caddyfile:/etc/caddy/Caddyfile:ro", "./netem/netem.sh:/usr/local/bin/netem.sh:ro", "./netem/tcprtt.mjs:/usr/local/lib/tcprtt.mjs:ro"]
+    cap_add: [NET_ADMIN]
+    networks: [n_ce, n_eb]
+    depends_on: [web, api]
+  web:
+    networks: [n_eb, n_wa]
+    environment:
+      PUBLIC_API_URL: https://edge:5001
+  api:
+    networks: [n_eb, n_wa, n_data]
+  client:
+    networks: [n_ce]
+    environment:
+      BASE_WEB: https://edge:3000
+      BASE_API: https://edge:5001
+      NODE_TLS_REJECT_UNAUTHORIZED: "0"

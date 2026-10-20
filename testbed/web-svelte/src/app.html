@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			// Same data-visibility instrumentation as the Next.js app (web/src/app/layout.tsx).
+			window.__vis = [];
+			var seenVis = new WeakSet();
+			new MutationObserver(function (ms) {
+				var t = performance.now();
+				ms.forEach(function (m) {
+					m.addedNodes.forEach(function (n) {
+						if (n.nodeType !== 1) return;
+						var el = n.matches('[data-vis]') ? n : n.querySelector('[data-vis]');
+						if (!el || seenVis.has(el)) return;
+						seenVis.add(el);
+						var rec = { id: el.getAttribute('data-vis'), dom: t, frame: null };
+						window.__vis.push(rec);
+						requestAnimationFrame(function () {
+							var ch = new MessageChannel();
+							ch.port1.onmessage = function () { rec.frame = performance.now(); };
+							ch.port2.postMessage(0);
+						});
+					});
+				});
+			}).observe(document.documentElement, { childList: true, subtree: true });
+			window.__et = [];
+			try {
+				new PerformanceObserver(function (l) {
+					l.getEntries().forEach(function (e) { window.__et.push({ id: e.identifier, t: e.renderTime || e.loadTime }); });
+				}).observe({ type: 'element', buffered: true });
+			} catch (e) { window.__etError = String(e); }
+		</script>
+		%sveltekit.head%
+	</head>
+	<!-- No data-sveltekit-preload-* attributes: no prefetching (matches the Next.js setup). -->
+	<body>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

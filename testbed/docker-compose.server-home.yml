@@ -1,0 +1,6 @@
+# Home-path mode (item 5), on server: the browser (on the author's Mac) reaches the API on
+# the published port 15001, so the page must point CSR fetches there.
+services:
+  web:
+    environment:
+      PUBLIC_API_URL: http://api:15001

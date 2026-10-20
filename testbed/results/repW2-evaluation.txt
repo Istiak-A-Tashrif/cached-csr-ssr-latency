@@ -1,0 +1,16 @@
+repW2: 64 runs, 12288 views, 0 errors, 2107 writes
+cell                         views  observed predicted    diff
+csr-feoff-redisttl            1536     0.406     0.423  -0.017
+csr-fettl-redispush           1536     0.035     0.028  +0.006
+csr-fettl-redisttl            1536     0.432     0.436  -0.004
+ssr-feoff-redisoff            1536     0.008     0.008  +0.000
+ssr-feoff-redisttl            1536     0.433     0.411  +0.022
+ssr-fepush-redispush          1536     0.005     0.008  -0.003
+ssr-fettl-redispush           1536     0.254     0.239  +0.015
+ssr-fettl-redisttl            1536     0.494     0.499  -0.004
+PASS  W1 pooled MAE <= 0.03: 0.0090
+PASS  W2 every cell within 0.05: max 0.0217
+PASS  W3 orderings: 22/22 pairs
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 7 ms
+PASS  W5 predictions before runs: 64/64
+ACCEPTED

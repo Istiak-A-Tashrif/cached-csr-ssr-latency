@@ -1,0 +1,7 @@
+# Home-path mode (item 5), on this Mac: the browser container resolves web/api to server
+# and connects over the home internet to its published ports 13000/15001 (end-to-end TCP).
+services:
+  client:
+    extra_hosts:
+      - "web:203.0.113.10"
+      - "api:203.0.113.10"

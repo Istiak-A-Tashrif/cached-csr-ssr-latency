@@ -1,0 +1,34 @@
+repR2: runs=16 actions=2172 errors=11 unclassified=0
+  initial csr caches=off crtt= 60 irtt=  0: obs   731.5 [  726.9,  736.1] pred   750.9 ( +2.6%)
+  nav     csr caches=off crtt= 60 irtt=  0: obs   104.2 [  103.5,  104.9] pred   106.4 ( +2.1%)
+  initial csr caches=off crtt=180 irtt=  0: obs  1572.3 [ 1567.2, 1577.4] pred  1580.7 ( +0.5%)
+  nav     csr caches=off crtt=180 irtt=  0: obs   226.0 [  225.7,  226.2] pred   227.8 ( +0.8%)
+  initial csr caches=on  crtt= 60 irtt=  0: obs   721.2 [  720.1,  722.4] pred   750.5 ( +4.1%)
+  nav     csr caches=on  crtt= 60 irtt=  0: obs    62.0 [   61.9,   62.0] pred    62.9 ( +1.5%)
+  initial csr caches=on  crtt=180 irtt=  0: obs  1583.8 [ 1568.7, 1598.8] pred  1568.4 ( -1.0%)
+  nav     csr caches=on  crtt=180 irtt=  0: obs   116.7 [  113.7,  119.7] pred   119.1 ( +2.1%)
+  initial ssr caches=off crtt= 60 irtt=  0: obs   253.4 [  250.1,  256.8] pred   265.7 ( +4.8%)
+  nav     ssr caches=off crtt= 60 irtt=  0: obs   105.6 [  105.5,  105.6] pred   104.3 ( -1.2%)
+  initial ssr caches=off crtt=180 irtt=  0: obs   488.1 [  480.1,  496.2] pred   478.3 ( -2.0%)
+  nav     ssr caches=off crtt=180 irtt=  0: obs   223.4 [  223.2,  223.6] pred   224.3 ( +0.4%)
+  initial ssr caches=on  crtt= 60 irtt=  0: obs   231.5 [  230.2,  232.7] pred   248.2 ( +7.2%)  <-- FAIL
+  nav     ssr caches=on  crtt= 60 irtt=  0: obs   100.6 [  100.1,  101.1] pred   100.2 ( -0.3%)
+  initial ssr caches=on  crtt=180 irtt=  0: obs   482.8 [  479.6,  486.0] pred   474.1 ( -1.8%)
+  nav     ssr caches=on  crtt=180 irtt=  0: obs   224.1 [  224.1,  224.2] pred   222.2 ( -0.8%)
+  SSR - CSR differences:
+    initial crtt= 60 irtt=  0 caches=off: obs   -478.1 pred   -485.2
+    nav     crtt= 60 irtt=  0 caches=off: obs      1.4 pred     -2.1
+    initial crtt= 60 irtt=  0 caches=on : obs   -489.8 pred   -502.4
+    nav     crtt= 60 irtt=  0 caches=on : obs     38.6 pred     37.3
+    initial crtt=180 irtt=  0 caches=off: obs  -1084.2 pred  -1102.4
+    nav     crtt=180 irtt=  0 caches=off: obs     -2.5 pred     -3.5
+    initial crtt=180 irtt=  0 caches=on : obs  -1101.0 pred  -1094.4
+    nav     crtt=180 irtt=  0 caches=on : obs    107.4 pred    103.1
+
+  mean rel error 2.08%  max 7.22%  outcomes 2172/2172  late predictions 0
+  PASS  C1 mean rel error <= 3%
+  FAIL  C2 every cell within max(5%, 10 ms)
+  PASS  C3 every SSR-CSR difference correct sign, within max(10 ms, 10%)
+  PASS  C4 analytic outcomes 100%
+  PASS  C5 all predictions written before run start
+NOT ACCEPTED

@@ -1,0 +1,60 @@
+runs=64 actions=9216 errors=0 unclassified=0  (frozen 2026-10-18T23:32:05)
+measured web<->api RTT by nominal: {0: 0.1, 60: 79.0}
+analytic outcomes vs measured: 9216/9216
+
+== Mean data-visible latency (ms): observed [95% CI] vs predictions ==
+  initial csr caches=off crtt= 80 irtt= 0: obs   766.7 [  762.6,  770.7] | v2   719.3 ( -6.2%)  v1   793.5  B_nocache   793.5  B_mean   792.2
+  nav     csr caches=off crtt= 80 irtt= 0: obs    95.4 [   95.1,   95.8] | v2    93.5 ( -2.0%)  v1   100.6  B_nocache   100.6  B_mean    94.0
+  initial csr caches=off crtt= 80 irtt=60: obs   756.2 [  754.2,  758.2] | v2   719.3 ( -4.9%)  v1   793.5  B_nocache   793.5  B_mean   792.2
+  nav     csr caches=off crtt= 80 irtt=60: obs    95.7 [   95.6,   95.7] | v2    93.5 ( -2.3%)  v1   100.6  B_nocache   100.6  B_mean    94.0
+  initial csr caches=off crtt=230 irtt= 0: obs  1980.7 [ 1966.3, 1995.1] | v2  1959.3 ( -1.1%)  v1  1953.0  B_nocache  1953.0  B_mean  1951.0
+  nav     csr caches=off crtt=230 irtt= 0: obs   253.2 [  253.0,  253.3] | v2   248.5 ( -1.8%)  v1   260.1  B_nocache   260.1  B_mean   242.6
+  initial csr caches=off crtt=230 irtt=60: obs  1984.7 [ 1971.0, 1991.9] | v2  1959.3 ( -1.3%)  v1  1953.0  B_nocache  1953.0  B_mean  1951.0
+  nav     csr caches=off crtt=230 irtt=60: obs   253.0 [  252.7,  253.3] | v2   248.5 ( -1.8%)  v1   260.1  B_nocache   260.1  B_mean   242.6
+  initial csr caches=on  crtt= 80 irtt= 0: obs   755.1 [  750.7,  759.7] | v2   715.6 ( -5.2%)  v1   789.5  B_nocache   793.5  B_mean   792.2
+  nav     csr caches=on  crtt= 80 irtt= 0: obs    53.7 [   52.6,   54.5] | v2    53.5 ( -0.4%)  v1    51.8  B_nocache   100.6  B_mean    94.0
+  initial csr caches=on  crtt= 80 irtt=60: obs   762.8 [  758.7,  766.9] | v2   715.6 ( -6.2%)  v1   789.5  B_nocache   793.5  B_mean   792.2
+  nav     csr caches=on  crtt= 80 irtt=60: obs    53.7 [   52.5,   55.0] | v2    53.5 ( -0.4%)  v1    51.8  B_nocache   100.6  B_mean    94.0
+  initial csr caches=on  crtt=230 irtt= 0: obs  1976.5 [ 1954.3, 1998.7] | v2  1955.6 ( -1.1%)  v1  1946.7  B_nocache  1953.0  B_mean  1951.0
+  nav     csr caches=on  crtt=230 irtt= 0: obs   132.5 [  129.0,  135.8] | v2   131.9 ( -0.5%)  v1   124.1  B_nocache   260.1  B_mean   242.6
+  initial csr caches=on  crtt=230 irtt=60: obs  1959.3 [ 1946.2, 1972.5] | v2  1955.6 ( -0.2%)  v1  1946.7  B_nocache  1953.0  B_mean  1951.0
+  nav     csr caches=on  crtt=230 irtt=60: obs   132.5 [  128.6,  136.0] | v2   131.9 ( -0.5%)  v1   124.1  B_nocache   260.1  B_mean   242.6
+  initial ssr caches=off crtt= 80 irtt= 0: obs   198.6 [  197.0,  200.2] | v2   183.3 ( -7.7%)  v1   196.5  B_nocache   196.5  B_mean   193.5
+  nav     ssr caches=off crtt= 80 irtt= 0: obs    93.4 [   93.2,   93.6] | v2    94.0 ( +0.6%)  v1    98.3  B_nocache    98.3  B_mean    97.6
+  initial ssr caches=off crtt= 80 irtt=60: obs   277.1 [  275.1,  280.7] | v2   245.5 (-11.4%)  v1   196.5  B_nocache   196.5  B_mean   193.5
+  nav     ssr caches=off crtt= 80 irtt=60: obs   162.2 [  162.0,  162.5] | v2   156.2 ( -3.7%)  v1    98.3  B_nocache    98.3  B_mean    97.6
+  initial ssr caches=off crtt=230 irtt= 0: obs   508.0 [  505.5,  510.0] | v2   493.3 ( -2.9%)  v1   524.3  B_nocache   524.3  B_mean   518.4
+  nav     ssr caches=off crtt=230 irtt= 0: obs   252.8 [  252.7,  253.0] | v2   249.0 ( -1.5%)  v1   258.8  B_nocache   258.8  B_mean   256.9
+  initial ssr caches=off crtt=230 irtt=60: obs   581.7 [  580.8,  582.6] | v2   555.5 ( -4.5%)  v1   524.3  B_nocache   524.3  B_mean   518.4
+  nav     ssr caches=off crtt=230 irtt=60: obs   320.8 [  320.6,  321.0] | v2   311.2 ( -3.0%)  v1   258.8  B_nocache   258.8  B_mean   256.9
+  initial ssr caches=on  crtt= 80 irtt= 0: obs   201.1 [  198.0,  205.0] | v2   180.9 (-10.1%)  v1   189.6  B_nocache   196.5  B_mean   193.5
+  nav     ssr caches=on  crtt= 80 irtt= 0: obs    93.4 [   93.1,   93.8] | v2    93.9 ( +0.5%)  v1    96.7  B_nocache    98.3  B_mean    97.6
+  initial ssr caches=on  crtt= 80 irtt=60: obs   215.3 [  213.3,  216.7] | v2   189.9 (-11.8%)  v1   189.6  B_nocache   196.5  B_mean   193.5
+  nav     ssr caches=on  crtt= 80 irtt=60: obs    96.5 [   96.2,   96.9] | v2    96.9 ( +0.4%)  v1    96.7  B_nocache    98.3  B_mean    97.6
+  initial ssr caches=on  crtt=230 irtt= 0: obs   509.6 [  507.8,  510.9] | v2   490.9 ( -3.7%)  v1   510.3  B_nocache   524.3  B_mean   518.4
+  nav     ssr caches=on  crtt=230 irtt= 0: obs   252.0 [  251.9,  252.2] | v2   248.9 ( -1.2%)  v1   254.7  B_nocache   258.8  B_mean   256.9
+  initial ssr caches=on  crtt=230 irtt=60: obs   527.0 [  524.1,  529.5] | v2   499.9 ( -5.1%)  v1   510.3  B_nocache   524.3  B_mean   518.4
+  nav     ssr caches=on  crtt=230 irtt=60: obs   255.4 [  255.0,  255.8] | v2   251.9 ( -1.4%)  v1   254.7  B_nocache   258.8  B_mean   256.9
+
+  v2         MAE=   14.5 ms  mean rel=  3.3%  max rel= 11.8%  (n=32)
+  v1         MAE=   19.6 ms  mean rel=  6.0%  max rel= 39.4%  (n=32)
+  B_nocache  MAE=   29.6 ms  mean rel= 16.9%  max rel= 96.3%  (n=32)
+  B_mean     MAE=   28.4 ms  mean rel= 15.2%  max rel= 83.1%  (n=32)
+
+== SSR - CSR, paired by seed (ms) ==
+  initial crtt= 80 irtt= 0 caches=off: obs   -568.1 [ -572.5, -563.6] | v2  -535.9 (+32.1)  v1  -597.0 (-28.9)  B_nocache  -597.0 (-28.9)  B_mean  -598.8 (-30.7)
+  nav     crtt= 80 irtt= 0 caches=off: obs     -2.0 [   -2.3,   -1.8] | v2     0.5 (+2.5)  v1    -2.3 (-0.3)  B_nocache    -2.3 (-0.3)  B_mean     3.6 (+5.6)
+  initial crtt= 80 irtt= 0 caches=on : obs   -554.0 [ -559.4, -548.9] | v2  -534.8 (+19.2)  v1  -599.9 (-45.9)  B_nocache  -597.0 (-43.0)  B_mean  -598.8 (-44.8)
+  nav     crtt= 80 irtt= 0 caches=on : obs     39.7 [   39.1,   40.7] | v2    40.4 (in CI)  v1    44.9 (+5.1)  B_nocache    -2.3 (-42.1)  B_mean     3.6 (-36.2)
+  initial crtt= 80 irtt=60 caches=off: obs   -479.0 [ -482.9, -473.5] | v2  -473.8 (in CI)  v1  -597.0 (-118.0)  B_nocache  -597.0 (-118.0)  B_mean  -598.8 (-119.7)
+  nav     crtt= 80 irtt=60 caches=off: obs     66.5 [   66.3,   66.8] | v2    62.7 (-3.9)  v1    -2.3 (-68.9)  B_nocache    -2.3 (-68.9)  B_mean     3.6 (-63.0)
+  initial crtt= 80 irtt=60 caches=on : obs   -547.5 [ -553.0, -542.8] | v2  -525.7 (+21.8)  v1  -599.9 (-52.4)  B_nocache  -597.0 (-49.5)  B_mean  -598.8 (-51.3)
+  nav     crtt= 80 irtt=60 caches=on : obs     42.8 [   41.4,   44.2] | v2    43.4 (in CI)  v1    44.9 (+2.0)  B_nocache    -2.3 (-45.1)  B_mean     3.6 (-39.2)
+  initial crtt=230 irtt= 0 caches=off: obs  -1472.7 [-1485.4,-1460.1] | v2 -1465.9 (in CI)  v1 -1428.8 (+44.0)  B_nocache -1428.8 (+44.0)  B_mean -1432.6 (+40.1)
+  nav     crtt=230 irtt= 0 caches=off: obs     -0.3 [   -0.5,   -0.2] | v2     0.5 (+0.9)  v1    -1.3 (-1.0)  B_nocache    -1.3 (-1.0)  B_mean    14.3 (+14.6)
+  initial crtt=230 irtt= 0 caches=on : obs  -1466.9 [-1488.7,-1445.2] | v2 -1464.8 (in CI)  v1 -1436.4 (+30.5)  B_nocache -1428.8 (+38.2)  B_mean -1432.6 (+34.3)
+  nav     crtt=230 irtt= 0 caches=on : obs    119.4 [  116.2,  122.8] | v2   117.1 (in CI)  v1   130.6 (+11.1)  B_nocache    -1.3 (-120.8)  B_mean    14.3 (-105.2)
+  initial crtt=230 irtt=60 caches=off: obs  -1403.0 [-1411.1,-1388.9] | v2 -1403.8 (in CI)  v1 -1428.8 (-25.8)  B_nocache -1428.8 (-25.8)  B_mean -1432.6 (-29.6)
+  nav     crtt=230 irtt=60 caches=off: obs     67.8 [   67.4,   68.3] | v2    62.7 (-5.2)  v1    -1.3 (-69.2)  B_nocache    -1.3 (-69.2)  B_mean    14.3 (-53.6)
+  initial crtt=230 irtt=60 caches=on : obs  -1432.4 [-1443.9,-1418.7] | v2 -1455.7 (-23.3)  v1 -1436.4 (in CI)  B_nocache -1428.8 (in CI)  B_mean -1432.6 (in CI)
+  nav     crtt=230 irtt=60 caches=on : obs    122.9 [  119.7,  126.4] | v2   120.0 (in CI)  v1   130.6 (+7.6)  B_nocache    -1.3 (-124.2)  B_mean    14.3 (-108.7)

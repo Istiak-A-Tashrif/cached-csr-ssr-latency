@@ -1,0 +1,12 @@
+# modelH3 (home path) on server: the server stations on dedicated cores (cpuset), no CFS
+# quotas (the 0.5-core DB quota produced a heavy query-time tail in the home runs), plus the
+# published ports of server.yml. Used as:
+#   docker-compose.yml:docker-compose.server-conc.yml:docker-compose.server-pin.yml[:docker-compose.server-home.yml]
+services:
+  api:
+    ports: ["15001:5001"]
+  web:
+    ports: ["13000:3000"]
+  controller:
+    environment:
+      COMPOSE_FILE: docker-compose.yml:docker-compose.server-conc.yml:docker-compose.server-pin.yml

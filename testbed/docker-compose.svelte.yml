@@ -1,0 +1,10 @@
+# Item 7: second framework. The web service is the SvelteKit app; everything else is unchanged.
+services:
+  web:
+    build:
+      context: ./web-svelte
+      additional_contexts: { netem: ./netem }
+    image: cachebed-web-svelte
+    environment:
+      PUBLIC_FE_CACHE: ${FE_CACHE:-off}
+      PUBLIC_API_URL: http://api:5001

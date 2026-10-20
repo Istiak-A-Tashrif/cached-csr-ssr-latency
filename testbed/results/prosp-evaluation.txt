@@ -1,0 +1,42 @@
+runs=24 actions=3456 errors=0 unclassified=0  (predictions frozen 2026-10-18T22:30:58)
+
+== Outcome mix: calibration (RTT 0) vs measured here ==
+  csr fe=0 rtt= 40: calib {'db': 1.0}  measured {'db': 1.0}
+  csr fe=1 rtt= 40: calib {'db': 0.05, 'redis_hit': 0.42, 'tq_hit': 0.53}  measured {'db': 0.05, 'tq_hit': 0.53, 'redis_hit': 0.42}
+  ssr fe=0 rtt= 40: calib {'db': 1.0}  measured {'db': 1.0}
+  ssr fe=1 rtt= 40: calib {'db': 0.05, 'next_hit': 0.95}  measured {'db': 0.05, 'next_hit': 0.95}
+  csr fe=0 rtt=300: calib {'db': 1.0}  measured {'db': 1.0}
+  csr fe=1 rtt=300: calib {'db': 0.05, 'redis_hit': 0.42, 'tq_hit': 0.53}  measured {'db': 0.05, 'tq_hit': 0.53, 'redis_hit': 0.42}
+  ssr fe=0 rtt=300: calib {'db': 1.0}  measured {'db': 1.0}
+  ssr fe=1 rtt=300: calib {'db': 0.05, 'next_hit': 0.95}  measured {'db': 0.05, 'next_hit': 0.95}
+
+== Mean data-visible latency: predicted vs observed (ms) ==
+  initial csr fe=0 rtt= 40: obs    433.7 [  431.6,  434.8]  model    484.3  B_nocache    484.3  B_mean    483.2
+  nav     csr fe=0 rtt= 40: obs     59.6 [   59.4,   59.9]  model     58.1  B_nocache     58.1  B_mean     54.4
+  initial csr fe=1 rtt= 40: obs    435.6 [  434.0,  438.3]  model    480.9  B_nocache    484.3  B_mean    483.2
+  nav     csr fe=1 rtt= 40: obs     34.4 [   33.1,   36.5]  model     32.6  B_nocache     58.1  B_mean     54.4
+  initial ssr fe=0 rtt= 40: obs    109.3 [  107.9,  110.4]  model    109.1  B_nocache    109.1  B_mean    106.8
+  nav     ssr fe=0 rtt= 40: obs     49.7 [   49.5,   49.8]  model     55.5  B_nocache     55.5  B_mean     55.1
+  initial ssr fe=1 rtt= 40: obs    107.2 [  106.1,  107.9]  model    104.1  B_nocache    109.1  B_mean    106.8
+  nav     ssr fe=1 rtt= 40: obs     49.6 [   49.5,   49.7]  model     54.6  B_nocache     55.5  B_mean     55.1
+  initial csr fe=0 rtt=300: obs   2517.0 [ 2495.6, 2539.1]  model   2494.1  B_nocache   2494.1  B_mean   2491.8
+  nav     csr fe=0 rtt=300: obs    323.5 [  323.4,  323.6]  model    334.5  B_nocache    334.5  B_mean    311.9
+  initial csr fe=1 rtt=300: obs   2470.4 [ 2414.4, 2557.5]  model   2486.7  B_nocache   2494.1  B_mean   2491.8
+  nav     csr fe=1 rtt=300: obs    157.5 [  149.7,  168.3]  model    157.8  B_nocache    334.5  B_mean    311.9
+  initial ssr fe=0 rtt=300: obs    646.5 [  643.1,  649.0]  model    677.2  B_nocache    677.2  B_mean    670.0
+  nav     ssr fe=0 rtt=300: obs    323.3 [  322.9,  323.7]  model    333.6  B_nocache    333.6  B_mean    331.2
+  initial ssr fe=1 rtt=300: obs    647.9 [  647.2,  648.8]  model    659.9  B_nocache    677.2  B_mean    670.0
+  nav     ssr fe=1 rtt=300: obs    322.8 [  322.6,  323.0]  model    328.4  B_nocache    333.6  B_mean    331.2
+  model      MAE=   13.9 ms   mean rel=  4.5%   max rel= 11.8%
+  B_nocache  MAE=   28.4 ms   mean rel= 15.9%   max rel=112.4%
+  B_mean     MAE=   25.7 ms   mean rel= 14.3%   max rel= 98.1%
+
+== SSR - CSR (paired by seed): predicted vs observed (ms) ==
+  initial rtt= 40 fe=0 be=0: obs   -324.3 [ -326.7, -321.9]  model   -375.2  B_nocache  -375.2  B_mean  -376.4  sign OK
+  nav     rtt= 40 fe=0 be=0: obs    -10.0 [  -10.3,   -9.8]  model     -2.6  B_nocache    -2.6  B_mean     0.7  sign OK
+  initial rtt= 40 fe=1 be=1: obs   -328.4 [ -332.2, -326.2]  model   -376.8  B_nocache  -375.2  B_mean  -376.4  sign OK
+  nav     rtt= 40 fe=1 be=1: obs     15.2 [   13.3,   16.4]  model     22.0  B_nocache    -2.6  B_mean     0.7  sign OK
+  initial rtt=300 fe=0 be=0: obs  -1870.5 [-1896.0,-1846.7]  model  -1816.9  B_nocache -1816.9  B_mean -1821.7  sign OK
+  nav     rtt=300 fe=0 be=0: obs     -0.2 [   -0.5,    0.2]  model     -0.9  B_nocache    -0.9  B_mean    19.2  sign OK
+  initial rtt=300 fe=1 be=1: obs  -1822.6 [-1910.0,-1767.2]  model  -1826.8 (in CI)  B_nocache -1816.9  B_mean -1821.7  sign OK
+  nav     rtt=300 fe=1 be=1: obs    165.4 [  154.3,  173.3]  model    170.5 (in CI)  B_nocache    -0.9  B_mean    19.2  sign OK

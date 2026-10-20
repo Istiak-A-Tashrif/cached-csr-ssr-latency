@@ -1,0 +1,16 @@
+repP3: runs=8 actions=2048 errors=0 unclassified=0
+  initial csr caches=off crtt=100 irtt=  0: obs  1746.1 [ 1670.8, 1797.2] pred  1686.6 ( -3.4%)
+  nav     csr caches=off crtt=100 irtt=  0: obs   274.7 [  263.8,  285.0] pred   267.7 ( -2.6%)
+  initial ssr caches=off crtt=100 irtt=  0: obs   528.4 [  522.5,  534.9] pred   530.7 ( +0.4%)
+  nav     ssr caches=off crtt=100 irtt=  0: obs   290.3 [  287.3,  292.1] pred   285.6 ( -1.6%)
+  SSR - CSR differences:
+    initial crtt=100 irtt=  0 caches=off: obs  -1217.7 pred  -1155.9
+    nav     crtt=100 irtt=  0 caches=off: obs     15.6 pred     17.9
+
+  mean rel error 2.00%  max 3.41%  outcomes 2048/2048  late predictions 0
+  PASS  C1 mean rel error <= 3%
+  PASS  C2 every cell within max(5%, 10 ms)
+  PASS  C3 every SSR-CSR difference correct sign, within max(10 ms, 10%)
+  PASS  C4 analytic outcomes 100%
+  PASS  C5 all predictions written before run start
+ACCEPTED
