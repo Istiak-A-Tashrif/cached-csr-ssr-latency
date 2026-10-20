@@ -10,7 +10,7 @@
 - **Crossref** (api.crossref.org) and official proceedings pages (USENIX), to verify bibliographic details.
 - **Earlier October 2026 searches:** web search; OpenAlex citation tracing of Fofack et al. (2014); Crossref restricted to ACM venues (IMC, SIGMETRICS, WWW, NSDI, SIGCOMM, HotNets, CoNEXT, MobiSys, ICPE); ACM Digital Library full-text search in a browser.
 - **IEEE Xplore** (21 Oct 2026): searched in a headed browser, 8 queries, years 2015–2026 (results kept with the session's working files).
-- **Google Scholar** (21 Oct 2026): Google blocked the network outright ("automated queries"; no solvable challenge), so it was not searched. To be checked manually by the author from another network before submission.
+- **Google Scholar** (21 Oct 2026): direct and `scholarly` access were blocked by Google. With the author's authorization, searched through Scrapfly (8 queries, years 2015+, 10 results each) and cross-checked through SerpApi (4 targeted queries, 20 results each).
 - **Semantic Scholar API** (21 Oct 2026): the shared anonymous rate limit was exhausted (HTTP 429), so it was not searched. OpenAlex covers a comparable corpus.
 - **SCImago:** behind a bot check; journal quartiles were taken from aggregators and are to be confirmed by the author.
 
@@ -55,6 +55,13 @@
 ## IEEE Xplore queries and outcome
 The same 8 query strings as OpenAlex Q1–Q5, Q8 and Q10, plus "React Server Components performance". Most hits were off-topic: cloud gaming, CAD rendering, federated learning and React textbooks. One relevant study was added: Savenko & Babii, IEEE Access 13 (2025), on Next.js performance optimization. Nothing found predicts per-action latency or staleness across stacked caches.
 
+## Google Scholar queries and outcome
+- **Via Scrapfly:** the 8 query strings used for IEEE Xplore.
+- **Via SerpApi:** "server-side rendering" cache staleness latency; prospective validation latency prediction web application; stacked caches browser framework redis staleness; and a title search for the closest find.
+- **Closest prior work found in the whole search:** Gopal (SSRN 2026), an empirical evaluation of client and Redis caching configurations in a React Native / Next.js / Redis / PostgreSQL stack, reporting median and p95 latency at fixed conditions. It neither predicts, nor addresses staleness, nor compares CSR and SSR paths.
+- **Other finds:** two CSR/SSR measurement studies (2026), two page-performance prediction papers (MobileHCI '20; AI 2025), a TODS 2026 paper on cache consistency, and RFC 9111.
+- **Novelty result:** nothing predicts per-action latency or staleness across stacked caches, and nothing uses prospective validation.
+
 ## Added to the paper (verified)
 | Work | Why |
 |---|---|
@@ -67,6 +74,13 @@ The same 8 query strings as OpenAlex Q1–Q5, Q8 and Q10, plus "React Server Com
 | Pediaditakis et al., ANCS '14, doi:10.1145/2658260.2658274 | Fidelity of reproduced network experiments |
 | Chen, arXiv 2504.03884 (2025) | Modular rendering and adaptive hydration in React/Next.js |
 | Savenko & Babii, IEEE Access 13 (2025), doi:10.1109/ACCESS.2025.3647563 | Next.js performance optimization (found via IEEE Xplore) |
+| Gopal, SSRN (2026), doi:10.2139/ssrn.6602728 | Closest prior work: multi-layer caching measurement in a Next.js/Redis/PostgreSQL stack |
+| Ramadhan et al., ICISS 2026, doi:10.1109/ICISS71466.2026.11715518 | Next.js SSR vs React CSR under dynamic loading |
+| Putri Cahyono et al., SISTEMASI 15 (2026), doi:10.32520/stmsi.v15i7.6500 | CSR Core Web Vitals under diverse networks |
+| Kelton et al., MobileHCI '20, doi:10.1145/3379503.3403565 | Modeling user-centered page load time |
+| Ghattas et al., AI 6(2) (2025), doi:10.3390/ai6020019 | ML-based web page performance evaluation |
+| An et al., ACM TODS (2026), doi:10.1145/3845609 | Cache consistency (monotonicity) |
+| RFC 9111 (2022) | HTTP caching, stale-while-revalidate |
 
 ## Result for the novelty claims
 - **Not found:** a model that predicts per-action data-visible latency across stacked browser, framework and application caches, validated prospectively (predictions written before runs, fresh conditions, replication), on emulated and real paths.
@@ -74,4 +88,4 @@ The same 8 query strings as OpenAlex Q1–Q5, Q8 and Q10, plus "React Server Com
 - **Found and cited:**
   - CSR/SSR measurements, single-layer staleness studies, TTL-hierarchy theory, and ML predictors of page performance.
   - Earlier work on emulation fidelity exists in general. We found none reporting the specific Chromium connection-race shift, nor the Playwright certificate-handling cost.
-- **Wording kept in the paper:** "to our knowledge", not "first", because Google Scholar and Semantic Scholar could not be searched (blocked or rate-limited).
+- **Wording kept in the paper:** "to our knowledge", not "first", because no search can be exhaustive (Semantic Scholar was rate-limited; Google Scholar was searched through third-party services).
