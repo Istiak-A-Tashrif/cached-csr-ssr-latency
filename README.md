@@ -50,6 +50,10 @@ cd ../paper && python3 -m venv .venv && .venv/bin/pip install matplotlib==3.9.2 
 
 Each model version is calibrated under emulation and frozen (code and parameters hashed). The harness then writes every run's prediction before the run starts, on conditions and seeds never used for fitting. A version is accepted only if a fresh test and an independent replication both pass criteria fixed in advance. Failed versions and their diagnoses are kept in `docs/DECISION_LOG.md` and `testbed/results/`.
 
+## Security note
+
+Dependency versions are pinned to the exact versions the measurements were taken with (e.g. Next.js 16.1.1, PostgreSQL 17.0, Redis 7.4.1), because the models depend on their behaviour. Some of these versions have known vulnerabilities (GitHub flags several for Next.js 16.1.1). This is a measurement testbed: run it on a local machine or an isolated network and do not expose it to the internet. To reuse the application code in production, upgrade dependencies first (and recalibrate any model you use).
+
 ## License
 
 Code: MIT (`LICENSE`). Data, logs and documentation: CC BY 4.0 (`DATA_LICENSE.md`). Please cite the paper (`CITATION.cff`).
