@@ -309,7 +309,7 @@ One application and data shape (with one heavier variant); headless Chromium onl
 Data-visible latency and staleness of cached CSR and SSR applications are predictable from the request path: which layer answers, the round-trip times, the bytes, the bandwidth and the server's work. A model calibrated under emulation and frozen predicts fresh conditions, including real internet paths and HTTP/2, within about 1\%, and the staleness model locates when server-side caches pay for their freshness cost. The limits are equally clear: consumer access links, shared-core concurrency and low-RTT gaps in calibration. Prospective prediction, rather than point measurement, lets each such conclusion be checked before it is generalized.
 
 \section*{Artifact availability}
-The testbed, harness, frozen models, per-run predictions and evaluation outputs are available at \todo{repository URL / archive DOI}.
+The testbed, harness, frozen models, per-run predictions and evaluation outputs are available at \url{https://github.com/Istiak-A-Tashrif/cached-csr-ssr-latency}.
 
 \begin{acks}
 The author used a generative AI tool (Claude, Anthropic) to assist with implementing the testbed and analysis code, running and analyzing the experiments, and producing the figures. The author directed the research and is responsible for all content.
