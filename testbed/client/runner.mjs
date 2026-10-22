@@ -44,7 +44,7 @@ async function visibleAfter(page, id, after) {
       const et = (window.__et || []).find((e) => e.id === id && e.t >= v.dom - 20);
       const r = { dom: v.dom, frame: v.frame, et: et ? et.t : null };
       // Item 8: rows shown at insertion (product id, stock) and the epoch display time.
-      if (snap) Object.assign(r, { rows: v.rows, wall: performance.timeOrigin + v.dom });
+      if (snap) Object.assign(r, { rows: v.rows, wall: performance.timeOrigin + v.dom, resp: v.resp });
       return r;
     },
     [id, after, !!cfg.snap],
@@ -175,7 +175,7 @@ try {
       }, [`data-p${p0}-l${limit}`]);
       write({
         user: u, step: 0, aid: aid0, action: "initial", page: p0, revisit: false,
-        latencyMs: v.frame, domMs: v.dom, etMs: v.et, ...init, ...(cfg.snap ? { rows: v.rows, wall: v.wall } : {}),
+        latencyMs: v.frame, domMs: v.dom, etMs: v.et, ...init, ...(cfg.snap ? { rows: v.rows, wall: v.wall, resp: v.resp } : {}),
         tqRids: await tqSince(page, `p${p0}-l${limit}`, 0),
         res: cfg.resources ? await resources(page, 0) : undefined,
       });
@@ -193,7 +193,7 @@ try {
         write({
           user: u, step, aid, action: "nav", page: p, revisit: seen.has(p),
           latencyMs: nv.frame - markT, domMs: nv.dom - markT, etMs: nv.et === null ? null : nv.et - markT,
-          ...(cfg.snap ? { rows: nv.rows, wall: nv.wall } : {}),
+          ...(cfg.snap ? { rows: nv.rows, wall: nv.wall, resp: nv.resp } : {}),
           tqRids: await tqSince(page, `p${p}-l${limit}`, markT),
           res: cfg.resources ? await resources(page, markT) : undefined,
         });

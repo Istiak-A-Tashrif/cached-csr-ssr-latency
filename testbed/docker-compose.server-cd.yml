@@ -1,0 +1,10 @@
+# TWEB revision B5 on the second host (Linux x86, pinned cores as docker-compose.server-conc.yml):
+# the Conduit backend and APP=conduit front end; the controller runs the harness against this stack.
+# Used as: COMPOSE_FILE=docker-compose.yml:docker-compose.conduit.yml:docker-compose.server-conc.yml:docker-compose.server-cd.yml
+services:
+  api:
+    mem_limit: 768m
+  controller:
+    environment:
+      COMPOSE_FILE: docker-compose.yml:docker-compose.conduit.yml:docker-compose.server-conc.yml:docker-compose.server-cd.yml
+      APP: conduit

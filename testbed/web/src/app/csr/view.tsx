@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import ProductTable from "@/components/ProductTable";
+import { AppName, dataUrl, toView } from "@/lib/app";
 
 declare global {
   interface Window {
@@ -11,7 +12,7 @@ declare global {
   }
 }
 
-export default function CsrView({ apiUrl, feCache, staleMs = Infinity, basePath = "/csr", extra = null }: { apiUrl: string; feCache: boolean; staleMs?: number; basePath?: string; extra?: React.ReactNode }) {
+export default function CsrView({ apiUrl, feCache, staleMs = Infinity, basePath = "/csr", extra = null, app = "catalogue" }: { apiUrl: string; feCache: boolean; staleMs?: number; basePath?: string; extra?: React.ReactNode; app?: AppName }) {
   const sp = useSearchParams();
   const page = Number(sp.get("page") ?? 1);
   const limit = Number(sp.get("limit") ?? 25);
@@ -23,11 +24,9 @@ export default function CsrView({ apiUrl, feCache, staleMs = Infinity, basePath 
       const rid = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
       // Every queryFn call is a TanStack miss; rid links it to the API log.
       (window.__tq ??= []).push({ key: `p${page}-l${limit}`, t: performance.now(), rid });
-      const res = await fetch(
-        `${apiUrl}/api/products?page=${page}&limit=${limit}&caller=client&rid=${rid}`
-      );
+      const res = await fetch(dataUrl(app, apiUrl, page, limit, "client", rid));
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return res.json();
+      return toView(app, page, await res.json());
     },
     // off: never serve cached data (gcTime 0 drops it on unmount, so no
     // stale-while-refetching display either).

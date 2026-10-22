@@ -7,11 +7,13 @@ authors:
     orcid: "https://orcid.org/0009-0001-6363-4129"
     affiliation: "Department of Computer Science and Engineering, Sonargaon University"
 license: MIT
+version: 1.1.0
+date-released: "2026-10-22"
 doi: 10.5281/zenodo.23512120
 repository-code: "https://github.com/Istiak-A-Tashrif/cached-csr-ssr-latency"
 preferred-citation:
   type: article
-  title: "Predicting Data-Visible Latency and Staleness of Cached Client- and Server-Rendered Web Applications: A Prospectively Validated Path Model"
+  title: "Predicting Latency and Freshness of Cached Client- and Server-Rendered Web Applications: Which Cache Layer Answers, What It Costs, and Which Policy to Choose"
   authors:
     - family-names: Tashrif
       given-names: Istiak Ahmed

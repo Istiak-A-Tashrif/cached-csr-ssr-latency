@@ -1,28 +1,28 @@
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.6cm} X r r l l}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.3cm} X r r l l l}
 \toprule
-Experiment & Conditions & Mean \% & Max \% & Fails & Passed \\
+Experiment & Conditions & Mean \% & Max \% & Fails & Passed & Accepted \\
 \midrule
-Emulated (v5) & netem, client 90/210 ms × internal 20/75 ms & 1.10 & 3.78 & -- & yes \\
-Emulated (v5), replication & netem, client 150/320 × internal 35/100 ms & 0.77 & 3.64 & -- & yes \\
-Real path (v7) & relay + 40 ms & 0.61 & 1.15 & -- & yes \\
-Real path (v7), replication & relay + 20 ms & 1.08 & 2.27 & -- & yes \\
-Real path, bandwidth input (v8b) & relay + 10 ms, uncapped & 0.62 & 2.23 & -- & yes \\
-\quad replication & relay + 40 ms, 15 Mbit/s & 0.70 & 2.38 & -- & yes \\
-Real path, HTTPS + HTTP/2 (v9) & relay + 35 ms & 0.26 & 0.44 & -- & yes \\
-\quad replication & relay + 15 ms & 0.23 & 0.61 & -- & yes \\
-HTTP/2, certificate trusted (v9b) & netem 80/330 ms & 1.20 & 6.01 & C2 & no \\
-\quad replication & netem 200/450 ms & 0.18 & 0.53 & -- & yes \\
-SvelteKit & netem 90/300 ms & 0.69 & 2.78 & -- & yes \\
-\quad replication & netem 200/350 ms & 0.33 & 0.90 & -- & yes \\
-Heavier page & netem 90/300 ms & 1.23 & 2.91 & -- & yes \\
-\quad replication & netem 200/350 ms & 0.61 & 2.27 & -- & yes \\
-Slow device, 4× CPU & netem 80/200 ms & 2.28 & 7.05 & C2, C4 & no \\
-\quad replication, 2× CPU & netem 60/180 ms & 2.08 & 7.22 & C2 & no \\
-Concurrency (P3), N = 4 & netem 100 ms & 3.16 & 3.71 & C1 & no \\
-\quad replication, N = 8 & netem 100 ms & 2.00 & 3.41 & -- & yes \\
-Concurrency (P4), N = 3 & netem 100 ms & 2.26 & 6.35 & C2 & no \\
-\quad replication, N = 7 & netem 100 ms & 4.74 & 9.37 & C1, C2 & no \\
-Home broadband (H3) & real home path + 5 ms & 8.26 & 26.21 & C1, C2, C3 & no \\
-\quad replication & real + 25 ms & 5.28 & 11.39 & C1, C2 & no \\
+Emulated (v5) & netem, client 90/210 ms × internal 20/75 ms & 1.10 & 3.78 & -- & yes & yes \\
+Emulated (v5), replication & netem, client 150/320 × internal 35/100 ms & 0.77 & 3.64 & -- & yes &  \\
+Real path (v7) & relay + 40 ms & 0.61 & 1.15 & -- & yes & yes \\
+Real path (v7), replication & relay + 20 ms & 1.08 & 2.27 & -- & yes &  \\
+Real path, bandwidth input (v8b) & relay + 10 ms, uncapped & 0.62 & 2.23 & -- & yes & yes \\
+\quad replication & relay + 40 ms, 15 Mbit/s & 0.70 & 2.38 & -- & yes &  \\
+Real path, HTTPS + HTTP/2 (v9) & relay + 35 ms & 0.26 & 0.44 & -- & yes & yes \\
+\quad replication & relay + 15 ms & 0.23 & 0.61 & -- & yes &  \\
+HTTP/2, certificate trusted (v9b) & netem 80/330 ms & 1.20 & 6.01 & C2 & no & no \\
+\quad replication & netem 200/450 ms & 0.18 & 0.53 & -- & yes &  \\
+SvelteKit & netem 90/300 ms & 0.69 & 2.78 & -- & yes & yes \\
+\quad replication & netem 200/350 ms & 0.33 & 0.90 & -- & yes &  \\
+Heavier page & netem 90/300 ms & 1.23 & 2.91 & -- & yes & yes \\
+\quad replication & netem 200/350 ms & 0.61 & 2.27 & -- & yes &  \\
+Slow device, 4× CPU & netem 80/200 ms & 2.28 & 7.05 & C2, C4 & no & no \\
+\quad replication, 2× CPU & netem 60/180 ms & 2.08 & 7.22 & C2 & no &  \\
+Concurrency (P3), N = 4 & netem 100 ms & 3.16 & 3.71 & C1 & no & no \\
+\quad replication, N = 8 & netem 100 ms & 2.00 & 3.41 & -- & yes &  \\
+Concurrency (P4), N = 3 & netem 100 ms & 2.26 & 6.35 & C2 & no & no \\
+\quad replication, N = 7 & netem 100 ms & 4.74 & 9.37 & C1, C2 & no &  \\
+Home broadband (H3) & real home path + 5 ms & 8.26 & 26.21 & C1, C2, C3 & no & no \\
+\quad replication & real + 25 ms & 5.28 & 11.39 & C1, C2 & no &  \\
 \bottomrule
 \end{tabularx}

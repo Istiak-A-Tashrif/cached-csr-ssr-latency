@@ -1,5 +1,6 @@
 import fs from "fs";
 import SsrView from "./view";
+import { AppName, dataUrl, toView } from "@/lib/app";
 
 // Replay detection for the Next data cache: a response id that was already
 // returned once by the API can only come back from the data cache.
@@ -24,14 +25,15 @@ export async function renderSsr({
   const feCache = mode !== "off";
   const tag = `p${page}-l${limit}`;
 
-  const url = `${process.env.INTERNAL_API_URL}/api/products?page=${page}&limit=${limit}&caller=web`;
+  const app = (process.env.APP as AppName) || "catalogue";
+  const url = dataUrl(app, process.env.INTERNAL_API_URL!, page, limit, "web");
   const t0 = performance.now();
   const opts: RequestInit =
     mode === "ttl" ? { next: { revalidate: Number(process.env.NEXT_REVALIDATE || 2), tags: [tag] } }
     : mode === "push" ? { cache: "force-cache", next: { tags: [tag] } }
     : feCache ? { cache: "force-cache" } : { cache: "no-store" };
   const res = await fetch(url, opts);
-  const body = await res.json();
+  const body = toView(app, page, await res.json());
   const fetchMs = performance.now() - t0;
 
   const replay = seen.has(body.respId);

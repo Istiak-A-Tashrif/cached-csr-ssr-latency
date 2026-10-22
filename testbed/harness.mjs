@@ -120,6 +120,10 @@ function waitForWeb() {
 // so JIT/cold-start cost is paid without touching any cache entry under test.
 const WARMUP_PAGE = 199;
 function warmup() {
+  if (process.env.APP === "conduit") {
+    exec("client", `sh -c "${NODE_TLS}node -e \\"Promise.all([fetch('${BASE_WEB}/ssr?page=${WARMUP_PAGE}&limit=1&a=warmup'),fetch('${BASE_WEB}/csr?page=${WARMUP_PAGE}&limit=1'),fetch('${BASE_API}/api/articles/a${WARMUP_PAGE}?caller=warmup')]).then(rs=>Promise.all(rs.map(r=>r.text())))\\""`);
+    return;
+  }
   exec("client", `sh -c "${NODE_TLS}node -e \\"Promise.all([fetch('${BASE_WEB}/ssr?page=${WARMUP_PAGE}&limit=25&a=warmup'),fetch('${BASE_WEB}/csr?page=${WARMUP_PAGE}&limit=25'),fetch('${BASE_API}/api/products?page=${WARMUP_PAGE}&limit=25&caller=warmup'),fetch('${BASE_WEB}/ssrh?page=49&limit=100&a=warmup'),fetch('${BASE_WEB}/csrh?page=49&limit=100')]).then(rs=>Promise.all(rs.map(r=>r.text())))\\""`);
 }
 // fe: boolean (off/on) or an item-8 mode string ("ttl" | "push"); webEnv/apiExtra: item-8 knobs.
@@ -189,11 +193,17 @@ function zipfSampler(n, alpha, rand) {
   for (const x of w) cdf.push((acc += x));
   return () => { const r = rand() * acc; return cdf.findIndex((c) => c >= r) + 1; };
 }
+// TWEB revision B5 (Conduit): pages drawn with given weights (article popularity).
+function weightedSampler(w, rand) {
+  const cdf = []; let acc = 0;
+  for (const x of w) cdf.push((acc += x));
+  return () => { const r = rand() * acc; return cdf.findIndex((c) => c >= r) + 1; };
+}
 // Pages are drawn per step; consecutive duplicates are redrawn (a navigation
 // to the page already shown is not an action).
-export function makeWorkload({ users, sessionLen, pages, alpha, seed }) {
+export function makeWorkload({ users, sessionLen, pages, alpha, seed, weights }) {
   const rand = rng(seed);
-  const draw = zipfSampler(pages, alpha, rand);
+  const draw = weights ? weightedSampler(weights, rand) : zipfSampler(pages, alpha, rand);
   return Array.from({ length: users }, () => {
     const seq = [];
     while (seq.length < sessionLen) { const p = draw(); if (p !== seq.at(-1)) seq.push(p); }
@@ -534,6 +544,46 @@ if (cmd === "real8b" || cmd === "rep8b") {
     fs.appendFileSync(`${import.meta.dirname}/results/${cmd}-runs.jsonl`,
       JSON.stringify({ ...run, stock0: stock0.stock, stock0At: stock0.at, t0, wallMs: Date.now() - t0, tcpPost: tcpRtt(), order: i }) + "\n");
     console.log(`[${i + 1}/${list.length}] ${runId} ${((Date.now() - t0) / 1000).toFixed(0)}s`);
+  });
+} else if (cmd.startsWith("rev") || cmd.startsWith("cd")) {
+  // TWEB revision (B1/B2/B4, catalogue): runs declared in a frozen manifest (protocol/<cmd>.json,
+  // written by protocol/make_manifests.py before any run). Each run: rendering mode, browser/framework
+  // layer (ttl | push | off) and Redis layer with one TTL tau for every TTL layer, Zipf alpha of the
+  // declared sessions, added DB work d, and the write process. Predictions (modelR) BEFORE each run.
+  const man = JSON.parse(fs.readFileSync(`${import.meta.dirname}/protocol/${cmd}.json`, "utf8"));
+  if (!man.pilot && !man.calibration && !fs.existsSync(`${import.meta.dirname}/results/${man.app === "conduit" ? "modelRC" : man.predictor === "predict_runR2.py" ? "modelR2" : "modelR"}.frozen.json`)) throw new Error("freeze the model first");
+  const pages = man.pages ?? 8, limit = man.limit ?? 25;
+  const conduit = man.app === "conduit";
+  if (conduit !== (process.env.APP === "conduit")) throw new Error("set APP=conduit exactly for Conduit manifests");
+  const done = new Set(fs.existsSync(`${import.meta.dirname}/results/${cmd}-runs.jsonl`)
+    ? fs.readFileSync(`${import.meta.dirname}/results/${cmd}-runs.jsonl`, "utf8").trim().split("\n").filter(Boolean).map((l) => JSON.parse(l).runId) : []);
+  man.runs.forEach((c, i) => {
+    if (done.has(c.runId)) return;   // RESUME: completed runs are kept; an interrupted run restarts from configuration
+    const runId = c.runId;
+    const apiExtra = { ttl: c.rp === "ttl" ? c.tau : 3600, inv: c.rp === "push" ? "push" : "ttl", invNext: c.mode === "ssr" && c.fe === "push", dbDelayMs: c.d };
+    const webEnv = { NEXT_REVALIDATE: String(c.tau), TANSTACK_S: String(c.tau) };
+    configure({ fe: c.fe, be: !!c.rp, net: { clientRtt: c.rtt, internalRtt: 0, rate: "10mbit" }, runId, warm: true, webEnv, apiExtra });
+    const tcpPre = tcpRtt();
+    const users = makeWorkload({ users: 16, sessionLen: 12, pages, alpha: c.alpha, seed: c.seed * 1000 + 7, weights: man.weights });
+    const run = { runId, cmd, ...c, S: c.tau, T: c.tau, lam: c.proc.lam || null, pages, users, tcpPre, invNext: apiExtra.invNext, dbDelayMs: c.d };
+    if (!man.pilot && !(conduit && man.calibration)) {
+      const f = `${import.meta.dirname}/client/run-${runId}.json`;
+      fs.writeFileSync(f, JSON.stringify(run));
+      try {
+        if (conduit) { if (!man.calibration) { sh(`python3 predict_runRC.py ${f}`); sh(`python3 predict_runRC.py ${f} --zero`); } }
+        else sh(`python3 ${man.predictor ?? "predict_runR.py"} ${f}`);
+      } finally { fs.rmSync(f, { force: true }); }
+    }
+    if (conduit) apiCall("/__admin/reset", {});
+    const stock0 = apiCall(`/__admin/stock?pages=${pages}`);
+    if (c.proc.kind) apiCall("/__admin/writes", { ...c.proc, pages, seed: c.wseed });
+    const t0 = Date.now();
+    try { runBrowser({ mode: c.mode, runId, out: `/results/${cmd}.jsonl`, users, limit, warm: true, snap: true }); }
+    finally { apiCall("/__admin/writes", {}); }
+    const { times, ...procLog } = c.proc;
+    fs.appendFileSync(`${import.meta.dirname}/results/${cmd}-runs.jsonl`,
+      JSON.stringify({ ...run, proc: procLog, stock0: stock0.stock, stock0At: stock0.at, t0, wallMs: Date.now() - t0, tcpPost: tcpRtt(), order: i }) + "\n");
+    console.log(`[${i + 1}/${man.runs.length}] ${runId} ${((Date.now() - t0) / 1000).toFixed(0)}s`);
   });
 } else if (cmd === "calibH2" || cmd === "gridH2") {
   // modelH2 (home path): extra bandwidth levels for the client-side calibration on this Mac's

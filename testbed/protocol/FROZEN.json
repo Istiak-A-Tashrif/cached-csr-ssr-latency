@@ -1,0 +1,25 @@
+{
+ "frozenAt": "2026-10-21T21:48:36+0600",
+ "sha256": {
+  "protocol/revB2R.json": "c509e064fa65cd90fdba2b722998ca1cf27824d6c22fdc1bcf3d107debb4cada",
+  "protocol/revB2T.json": "1683cee3fe463601a2ba271415b5d3a71fc48477025868ed1ce2571eb7961314",
+  "protocol/revDev.json": "bfb79b4d5389888288185387ba31d38c80f5e6d8dcffdede5b370936877f2735",
+  "protocol/revPilotR.json": "f7708469d6a69df8ea095998c4cf252a9dcbed46f59f134c1b68fa851e2157af",
+  "protocol/revPilotT.json": "f8f2b6a7fe65fd4cfd533b227e744fd6b591a033275e898183f897727224c205",
+  "protocol/revR.json": "e1774adf6b3ddb3e6e68fcf9ff1b488ffce0ce8fe85924a0a09a2c7cac2f245a",
+  "protocol/revT.json": "b68185434c045076684a0b925c8a86d815e0c5b961e2e1812cd78bd45eb1837a",
+  "protocol/PROTOCOL.md": "9c0456d11f8dc37a4bd80ae6df22353a304a8ac57545a82cbb480e90870daa66",
+  "protocol/make_manifests.py": "b5d69f0f9742111a4dacb98b0120a36ec712f0352656704cb0469d2479fe1d2e",
+  "modelR.py": "0dc3e630c6a8f6cbf9f7d3936c83692de9c25b87139fd0647337dd053cf602db",
+  "writeproc.py": "abf9ab50ed24e95d93893823860b9fcc426fbbf62b778240993a1d9b39fafe1e",
+  "staleness.py": "4fc5442edb21365792cc70d67ded3bb45277fde75b4b5d5c27cb59ff6f0f7689",
+  "predict_runR.py": "cba981168ab69e4202667acb1ccd1e4f1fcbbf87b1ab323ed47db3af8dcc7f5f",
+  "evaluateR.py": "e3da09e3a07a0321c4bd25b0d5001f423cfb1395de81072b04453d0b256b95b3",
+  "freezeR.py": "08d3fb0a2d577f29d6cc3e5b8b68252191f01490ce2bd26db4fddf406b4aac85",
+  "harness.mjs": "ab942ba190ff5d1604426aa44b5470ad494110612991975af51c433670ec0610",
+  "client/runner.mjs": "2c3cbe82c5caf8507398ee7fd023d6b2baf71a604eed125303290ea468028658",
+  "api/server.js": "613e6a2d322c15beb4a436c7c7853005b3b1b367c344d5844f604e6e3162fd7b",
+  "traces/dewiki-rc-20261014.json": "c874bf427463645a590b86b65a5b49cc5720e6cf9da7d9fe8389f2c907d5236a",
+  "results/modelR.frozen.json": "1a2fb6d85431bce4bdc8377d80fb8089652501ace4f33c9f1378cac26e3dc6bd"
+ }
+}

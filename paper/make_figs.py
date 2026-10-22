@@ -57,9 +57,9 @@ def latx(tag):
 
 # ---------- Fig. 2: predicted vs observed, every cell of every fresh latency test ----------
 GROUPS = [
-    ("Emulated, accepted (v5, SvelteKit, heavy page, v9b)", C1, "o", ["prosp5", "rep5", "testS", "repS", "testQ", "repQ", "reptest9b"]),
-    ("Real network, accepted (v7, v8b, v9)", C2, "s", ["real7", "rep7", "real8b", "rep8b", "real9", "rep9"]),
-    ("Near-misses (concurrency P3/P4, slow devices R2)", C3, "^", ["concP3", "repP3", "concP4", "repP4", "testR2", "repR2"]),
+    ("Emulated, accepted (v5, SvelteKit, heavy page)", C1, "o", ["prosp5", "rep5", "testS", "repS", "testQ", "repQ"]),
+    ("Real relayed path, accepted (v7, v8b, v9)", C2, "s", ["real7", "rep7", "real8b", "rep8b", "real9", "rep9"]),
+    ("Not accepted (v9b, concurrency P3/P4, slow devices R2, home H3)", C3, "^", ["test9b", "reptest9b", "concP3", "repP3", "concP4", "repP4", "testR2", "repR2", "realH3", "repH3"]),
 ]
 fig, ax = plt.subplots(figsize=(3.4, 3.1))
 lo, hi = 25, 8000
@@ -79,23 +79,57 @@ fig.savefig(os.path.join(FIG, "scatter.pdf")); plt.close(fig)
 print("scatter cells:", n_cells)
 
 
-# ---------- Fig. 3: model vs naive baselines (testbed/baselines.py output, PILOT_REPORT §10.2) ----------
-BASE = [  # test, model, B_mean, B_nocache  (mean relative error, %)
-    ("v5 test", 1.10, 15.33, 21.57), ("v5 rep.", 0.77, 14.78, 19.28), ("SvelteKit test", 0.69, 10.18, 13.18),
-    ("SvelteKit rep.", 0.33, 10.97, 14.55), ("v7 real", 0.61, 47.22, 43.45), ("v7 real rep.", 1.08, 47.54, 43.03),
-    ("v8b real", 0.62, 47.88, 43.54), ("v8b real rep.", 0.70, 47.04, 43.42), ("v9 HTTP/2 real", 0.26, 47.45, 42.78),
-    ("v9 HTTP/2 rep.", 0.23, 46.94, 43.52),
-]
-fig, ax = plt.subplots(figsize=(3.4, 2.9))
-yy = range(len(BASE)); h = 0.26
-for k, (lab, col) in enumerate([("Path model (prospective)", C1), ("Baseline: cache-agnostic RTT line", C2), ("Baseline: no-cache RTT line", C3)]):
-    ax.barh([y + (k - 1) * (h + 0.02) for y in yy], [b[k + 1] for b in BASE], height=h, color=col, label=lab)
-ax.set_yticks(list(yy)); ax.set_yticklabels([b[0] for b in BASE]); ax.invert_yaxis()
+# ---------- Fig. 3: model vs equal-information baselines (testbed/baselines_eq.py, A2) ----------
+import json
+REV = os.path.join(RES, "revision")
+LABEL = {"prosp5": "v5 test", "rep5": "v5 rep.", "real7": "v7 real", "rep7": "v7 real rep.", "real8b": "v8b real",
+         "rep8b": "v8b real rep.", "real9": "v9 HTTP/2 real", "rep9": "v9 HTTP/2 rep.", "test9b": "v9b test", "reptest9b": "v9b rep.",
+         "testS": "SvelteKit test", "repS": "SvelteKit rep.", "testQ": "Heavy page test", "repQ": "Heavy page rep.",
+         "testR2": "4x CPU test", "repR2": "2x CPU rep."}
+A2 = json.load(open(os.path.join(REV, "A2-baselines.json")))
+fig, ax = plt.subplots(figsize=(3.4, 3.6))
+yy = range(len(A2)); h = 0.2
+for k, (key, lab, col) in enumerate([("all:model", "Path model (prospective)", C1), ("all:ridge", "Ridge, same inputs", C2),
+                                      ("all:rf", "Random forest, same inputs", C3), ("all:gbt", "Boosted trees, same inputs", "#eda100")]):
+    ax.barh([y + (k - 1.5) * (h + 0.01) for y in yy], [r[key][0] for r in A2], height=h, color=col, label=lab)
+ax.set_yticks(list(yy)); ax.set_yticklabels([LABEL[r["tag"]] for r in A2]); ax.invert_yaxis()
 ax.set_xscale("log"); ax.set_xlabel("Mean relative error over cells (%, log scale)")
 from matplotlib.ticker import FixedLocator, FixedFormatter
 ax.xaxis.set_major_locator(FixedLocator([0.3, 1, 3, 10, 30])); ax.xaxis.set_major_formatter(FixedFormatter(["0.3", "1", "3", "10", "30"]))
-ax.grid(axis="y", visible=False); ax.legend(loc="lower right", bbox_to_anchor=(1.0, -0.42), ncol=1)
+ax.grid(axis="y", visible=False); ax.legend(loc="lower right", bbox_to_anchor=(1.0, -0.36), ncol=2)
 fig.savefig(os.path.join(FIG, "baselines.pdf")); plt.close(fig)
+
+# ---------- Ablation (A1) and calibration cost (A3) ----------
+A1 = {r["tag"]: r for r in json.load(open(os.path.join(REV, "A1-ablation.json")))}
+order = [t for t in LABEL if t in A1] + ["realH3", "repH3"]
+LABEL.update({"realH3": "Home test", "repH3": "Home rep."})
+fig, ax = plt.subplots(figsize=(3.4, 3.6))
+yy = range(len(order)); h = 0.2
+for k, (key, lab, col) in enumerate([("full", "Full model", C1), ("no_rho", "Without residual $\\rho$", C2),
+                                      ("no_rho_abun", "Without $\\rho$, simulated bundle", "#eda100"), ("pooled_T0", "Without $\\rho$, $T_0$ pooled over layers", C3)]):
+    vals = [A1[t][key]["mean"] if key in A1[t] else float("nan") for t in order]
+    ax.barh([y + (k - 1.5) * (h + 0.01) for y in yy], vals, height=h, color=col, label=lab)
+ax.set_yticks(list(yy)); ax.set_yticklabels([LABEL[t] for t in order]); ax.invert_yaxis()
+ax.set_xscale("log"); ax.set_xlabel("Mean relative error over cells (%, log scale)")
+ax.xaxis.set_major_locator(FixedLocator([0.3, 1, 3, 10, 30])); ax.xaxis.set_major_formatter(FixedFormatter(["0.3", "1", "3", "10", "30"]))
+ax.grid(axis="y", visible=False); ax.legend(loc="lower right", bbox_to_anchor=(1.0, -0.36), ncol=2)
+fig.savefig(os.path.join(FIG, "ablation.pdf")); plt.close(fig)
+
+A3 = json.load(open(os.path.join(REV, "A3-calib-efficiency.json")))
+fig, ax = plt.subplots(figsize=(3.4, 2.6))
+FAMC = {"v7 (real path)": C1, "LQ (heavy page)": C2, "S (SvelteKit)": C3}
+for fam, col in FAMC.items():
+    for meth, ls, mk in (("model", "-", "o"), ("ridge", "--", "s")):
+        pts = {}
+        for r in A3:
+            if r["family"] != fam or len(r["seeds"]) != 1: continue
+            tests = sorted({k.split(":")[0] for k in r if ":" in k})
+            pts.setdefault(len(r["rtts"]), []).append(sum(r[f"{t}:{meth}"] for t in tests) / len(tests))
+        xs = sorted(pts); ys = [sum(pts[x]) / len(pts[x]) for x in xs]
+        ax.plot(xs, ys, ls=ls, marker=mk, ms=4, color=col, lw=1.2, label=f"{fam.split(' (')[1][:-1]}, {'model' if meth == 'model' else 'ridge'}")
+ax.set_xticks([1, 2, 3, 4]); ax.set_xlabel("Calibration RTT points (one seed each)"); ax.set_ylabel("Mean error on fresh tests (%)")
+ax.set_ylim(0, None); ax.legend(ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.22))
+fig.savefig(os.path.join(FIG, "calibcost.pdf")); plt.close(fig)
 
 
 # ---------- Fig. 4: staleness, predicted vs observed stale share per policy cell ----------
@@ -172,13 +206,15 @@ ROWS = [  # tag, experiment, conditions
     ("realH3", "Home broadband (H3)", "real home path + 5 ms"), ("repH3", "\\quad replication", "real + 25 ms"),
 ]
 lines = []
-for tag, exp, cond in ROWS:
+for i, (tag, exp, cond) in enumerate(ROWS):
     mean, mx, crit, ok = summary(tag)
     fails = ", ".join(c for c in ("C1", "C2", "C3", "C4", "C5") if crit.get(c) == "FAIL") or "--"
-    lines.append(f"{exp} & {cond} & {mean:.2f} & {mx:.2f} & {fails} & {'yes' if ok else 'no'} \\\\")
+    j = i - i % 2   # rows come in (test, replication) pairs; a version is accepted only if both pass
+    acc = summary(ROWS[j][0])[3] and summary(ROWS[j + 1][0])[3]
+    lines.append(f"{exp} & {cond} & {mean:.2f} & {mx:.2f} & {fails} & {'yes' if ok else 'no'} & {('yes' if acc else 'no') if i % 2 == 0 else ''} \\\\")
 open(os.path.join(TAB, "tests.tex"), "w").write(
-    "\\begin{tabularx}{\\textwidth}{>{\\raggedright\\arraybackslash}p{4.6cm} X r r l l}\n\\toprule\n"
-    "Experiment & Conditions & Mean \\% & Max \\% & Fails & Passed \\\\\n\\midrule\n"
+    "\\begin{tabularx}{\\textwidth}{>{\\raggedright\\arraybackslash}p{4.3cm} X r r l l l}\n\\toprule\n"
+    "Experiment & Conditions & Mean \\% & Max \\% & Fails & Passed & Accepted \\\\\n\\midrule\n"
     + "\n".join(lines) + "\n\\bottomrule\n\\end{tabularx}\n")
 
 # ---------- Table: staleness and regime tests ----------

@@ -1,0 +1,16 @@
+# TWEB revision B5: the Conduit (RealWorld) backend replaces the catalogue API under the same service
+# name, port and networks, so the harness, network shaping and RTT probes are unchanged.
+# Usage: COMPOSE_FILE=docker-compose.yml:docker-compose.conduit.yml
+services:
+  api:
+    build:
+      context: ./conduit
+      additional_contexts: { netem: ./netem }
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/conduit
+      REDIS_URL: redis://redis:6379
+      NODE_ENV: production
+      JWT_SECRET: bench-secret
+  web:
+    environment:
+      APP: conduit

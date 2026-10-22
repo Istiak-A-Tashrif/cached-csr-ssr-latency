@@ -1,0 +1,17 @@
+{
+ "frozenAt": "2026-10-22T12:33:28+0600",
+ "sha256": {
+  "protocol/revHT.json": "b4b68e0e08f78d3e96c025264848c765cb234bd4dfe125a3e0847850ac5f97d4",
+  "protocol/revHR.json": "9a72069adab11bb66b7ab2dbd35aabd2fde0d7e4f182e588d19c80c8158b7498",
+  "protocol/PROTOCOL_HARD.md": "61ba59c5965eadee0c4312d98e396e0e281a1c699d187f05ebda102cb14cb20f",
+  "protocol/make_manifests_hard.py": "94afcd12d7c51d123da05fa7ebf63f463368660c9189a3a2b5c23f7eb77929e3",
+  "modelR2.py": "af66897cbcabb05bbc6f50a90844281c3819a820b0cfb6b56fd2ded741daaa27",
+  "writeproc.py": "abf9ab50ed24e95d93893823860b9fcc426fbbf62b778240993a1d9b39fafe1e",
+  "staleness.py": "4fc5442edb21365792cc70d67ded3bb45277fde75b4b5d5c27cb59ff6f0f7689",
+  "predict_runR2.py": "f92cb1fdcdd99faae273ad3981b3544be462de3f78f6465e6b5f33624c106ff7",
+  "evaluateR2.py": "3f69fb87053d1cd57b6c84e49933b155357c09ef9696107c16354bf438922afe",
+  "freezeR2.py": "70771ea0366caa7b0ea3d97b4086f7b2f8ce6ee303e83edc02f4958d4cc72dde",
+  "harness.mjs": "8aa1ad75c1ce4a376ad182b916457def33bde0fbc3c464ffaf78b5f15c4a9178",
+  "results/modelR2.frozen.json": "e283fe1f47a14c7d3eaa2442c3936331f8e7aa77d9950347f9896a4e04e9258e"
+ }
+}

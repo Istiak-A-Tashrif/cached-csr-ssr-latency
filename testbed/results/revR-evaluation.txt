@@ -1,0 +1,116 @@
+revR: 216 runs, 41472 views, 0 errors, 0 views with unclassified outcome
+  csr-feoff-rdoff-a0.6                     stale obs 0.012 pred 0.010
+  csr-feoff-rdoff-a1                       stale obs 0.005 pred 0.010
+  csr-feoff-rdttl-tau1-a0.6                stale obs 0.052 pred 0.049
+  csr-feoff-rdttl-tau1-a1                  stale obs 0.035 pred 0.056
+  csr-feoff-rdttl-tau20-a0.6               stale obs 0.646 pred 0.628
+  csr-feoff-rdttl-tau20-a1                 stale obs 0.650 pred 0.628
+  csr-feoff-rdttl-tau5-a0.6                stale obs 0.258 pred 0.275
+  csr-feoff-rdttl-tau5-a1                  stale obs 0.329 pred 0.285
+  csr-feoff-rdttl-tau60-a0.6               stale obs 0.786 pred 0.790
+  csr-feoff-rdttl-tau60-a1                 stale obs 0.848 pred 0.791
+  csr-fettl-rdpush-tau1-a0.6               stale obs 0.030 pred 0.033
+  csr-fettl-rdpush-tau1-a1                 stale obs 0.044 pred 0.036
+  csr-fettl-rdpush-tau20-a0.6              stale obs 0.039 pred 0.034
+  csr-fettl-rdpush-tau20-a1                stale obs 0.040 pred 0.036
+  csr-fettl-rdpush-tau5-a0.6               stale obs 0.056 pred 0.034
+  csr-fettl-rdpush-tau5-a1                 stale obs 0.040 pred 0.036
+  csr-fettl-rdpush-tau60-a0.6              stale obs 0.038 pred 0.034
+  csr-fettl-rdpush-tau60-a1                stale obs 0.061 pred 0.036
+  csr-fettl-rdttl-tau1-a0.6                stale obs 0.044 pred 0.047
+  csr-fettl-rdttl-tau1-a1                  stale obs 0.051 pred 0.047
+  csr-fettl-rdttl-tau20-a0.6               stale obs 0.740 pred 0.658
+  csr-fettl-rdttl-tau20-a1                 stale obs 0.680 pred 0.678
+  csr-fettl-rdttl-tau5-a0.6                stale obs 0.299 pred 0.294
+  csr-fettl-rdttl-tau5-a1                  stale obs 0.250 pred 0.296
+  csr-fettl-rdttl-tau60-a0.6               stale obs 0.734 pred 0.732
+  csr-fettl-rdttl-tau60-a1                 stale obs 0.772 pred 0.724
+  ssr-feoff-rdoff-a0.6                     stale obs 0.005 pred 0.010
+  ssr-feoff-rdoff-a1                       stale obs 0.009 pred 0.010
+  ssr-feoff-rdttl-tau1-a0.6                stale obs 0.046 pred 0.052
+  ssr-feoff-rdttl-tau1-a1                  stale obs 0.068 pred 0.056
+  ssr-feoff-rdttl-tau20-a0.6               stale obs 0.608 pred 0.621
+  ssr-feoff-rdttl-tau20-a1                 stale obs 0.633 pred 0.624
+  ssr-feoff-rdttl-tau5-a0.6                stale obs 0.280 pred 0.276
+  ssr-feoff-rdttl-tau5-a1                  stale obs 0.288 pred 0.285
+  ssr-feoff-rdttl-tau60-a0.6               stale obs 0.832 pred 0.776
+  ssr-feoff-rdttl-tau60-a1                 stale obs 0.801 pred 0.774
+  ssr-fepush-rdpush-a0.6                   stale obs 0.020 pred 0.010
+  ssr-fepush-rdpush-a1                     stale obs 0.014 pred 0.010
+  ssr-fettl-rdpush-tau1-a0.6               stale obs 0.197 pred 0.205
+  ssr-fettl-rdpush-tau1-a1                 stale obs 0.203 pred 0.203
+  ssr-fettl-rdpush-tau20-a0.6              stale obs 0.720 pred 0.657
+  ssr-fettl-rdpush-tau20-a1                stale obs 0.600 pred 0.662
+  ssr-fettl-rdpush-tau5-a0.6               stale obs 0.406 pred 0.383
+  ssr-fettl-rdpush-tau5-a1                 stale obs 0.354 pred 0.387
+  ssr-fettl-rdpush-tau60-a0.6              stale obs 0.784 pred 0.777
+  ssr-fettl-rdpush-tau60-a1                stale obs 0.773 pred 0.776
+  ssr-fettl-rdttl-tau1-a0.6                stale obs 0.198 pred 0.206
+  ssr-fettl-rdttl-tau1-a1                  stale obs 0.181 pred 0.204
+  ssr-fettl-rdttl-tau20-a0.6               stale obs 0.585 pred 0.658
+  ssr-fettl-rdttl-tau20-a1                 stale obs 0.617 pred 0.663
+  ssr-fettl-rdttl-tau5-a0.6                stale obs 0.404 pred 0.389
+  ssr-fettl-rdttl-tau5-a1                  stale obs 0.337 pred 0.395
+  ssr-fettl-rdttl-tau60-a0.6               stale obs 0.758 pred 0.777
+  ssr-fettl-rdttl-tau60-a1                 stale obs 0.794 pred 0.776
+  a0.6|0.05: oracle ssr-fepush-rdpush-a0.6
+     selector  ssr-fepush-rdpush-a0.6             regret +0.0%
+     tuning    ssr-fepush-rdpush-a0.6             regret +0.0%
+     fixed     ssr-fepush-rdpush-a0.6             regret +0.0%
+     default   ssr-fettl-rdttl-tau60-a0.6         VIOLATES +0.708 (confirmed)
+     nocache   ssr-feoff-rdoff-a0.6               regret +15.8%
+  a0.6|0.1: oracle ssr-fepush-rdpush-a0.6
+     selector  ssr-fepush-rdpush-a0.6             regret +0.0%
+     tuning    ssr-fepush-rdpush-a0.6             regret +0.0%
+     fixed     ssr-fepush-rdpush-a0.6             regret +0.0%
+     default   ssr-fettl-rdttl-tau60-a0.6         VIOLATES +0.658 (confirmed)
+     nocache   ssr-feoff-rdoff-a0.6               regret +15.8%
+  a0.6|0.25: oracle ssr-fettl-rdttl-tau1-a0.6
+     selector  ssr-fettl-rdpush-tau1-a0.6         regret +1.1%
+     tuning    ssr-fettl-rdttl-tau1-a0.6          regret +0.0%
+     fixed     ssr-fepush-rdpush-a0.6             regret +3.9%
+     default   ssr-fettl-rdttl-tau60-a0.6         VIOLATES +0.508 (confirmed)
+     nocache   ssr-feoff-rdoff-a0.6               regret +20.3%
+  a0.6|0.5: oracle ssr-fettl-rdttl-tau1-a0.6
+     selector  ssr-fettl-rdpush-tau1-a0.6         regret +1.1%
+     tuning    ssr-fettl-rdttl-tau1-a0.6          regret +0.0%
+     fixed     ssr-fepush-rdpush-a0.6             regret +3.9%
+     default   ssr-fettl-rdttl-tau60-a0.6         VIOLATES +0.258 (confirmed)
+     nocache   ssr-feoff-rdoff-a0.6               regret +20.3%
+  a1|0.05: oracle ssr-fepush-rdpush-a1
+     selector  ssr-fepush-rdpush-a1               regret +0.0%
+     tuning    ssr-fepush-rdpush-a1               regret +0.0%
+     fixed     ssr-fepush-rdpush-a1               regret +0.0%
+     default   ssr-fettl-rdttl-tau60-a1           VIOLATES +0.744 (confirmed)
+     nocache   ssr-feoff-rdoff-a1                 regret +15.4%
+  a1|0.1: oracle ssr-fepush-rdpush-a1
+     selector  ssr-fepush-rdpush-a1               regret +0.0%
+     tuning    ssr-fepush-rdpush-a1               regret +0.0%
+     fixed     ssr-fepush-rdpush-a1               regret +0.0%
+     default   ssr-fettl-rdttl-tau60-a1           VIOLATES +0.694 (confirmed)
+     nocache   ssr-feoff-rdoff-a1                 regret +15.4%
+  a1|0.25: oracle ssr-fettl-rdttl-tau1-a1
+     selector  ssr-fettl-rdpush-tau1-a1           regret +0.9%
+     tuning    ssr-fepush-rdpush-a1               regret +4.2%
+     fixed     ssr-fepush-rdpush-a1               regret +4.2%
+     default   ssr-fettl-rdttl-tau60-a1           VIOLATES +0.544 (confirmed)
+     nocache   ssr-feoff-rdoff-a1                 regret +20.2%
+  a1|0.5: oracle ssr-fettl-rdttl-tau1-a1
+     selector  ssr-fettl-rdttl-tau5-a1            regret +0.6%
+     tuning    ssr-fettl-rdttl-tau1-a1            regret +0.0%
+     fixed     ssr-fepush-rdpush-a1               regret +4.2%
+     default   ssr-fettl-rdttl-tau60-a1           VIOLATES +0.294 (confirmed)
+     nocache   ssr-feoff-rdoff-a1                 regret +20.2%
+PASS  W1 pooled MAE <= 0.03: 0.0198
+FAIL  W2 every cell within 0.05: max 0.0817
+FAIL  W3 orderings: 1132/1134 wrong: [('csr-fettl-rdttl-tau20-a0.6', 'csr-fettl-rdttl-tau60-a0.6'), ('csr-fettl-rdttl-tau60-a1', 'ssr-fettl-rdttl-tau60-a0.6')]
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 5 ms
+PASS  W5 predictions before runs: 216/216
+PASS  L1 mean latency error <= 3%: 1.50% over 108 (cell, action)
+PASS  L2 every (cell, action) within max(5%, 10 ms): max 4.36%
+FAIL  O1 outcome calibration (deciles, n >= 100) within 0.05: 0: n=555 pred 0.062 obs 0.025; 1: n=864 pred 0.161 obs 0.174; 2: n=1991 pred 0.244 obs 0.248; 3: n=427 pred 0.342 obs 0.358; 4: n=340 pred 0.440 obs 0.379; 5: n=91 pred 0.545 obs 0.484; 6: n=58 pred 0.647 obs 0.586; 7: n=27 pred 0.740 obs 0.741; 8: n=3 pred 0.807 obs 0.000
+PASS  O2 Brier skill > 0: Brier 0.0458 ref 0.2009 skill +0.772; top-1 0.970 over 41472 views
+PASS  O3 Brier - expected Brier <= 0.03: +0.0103
+PASS  B4a mean selector regret <= 5%: mean 0.46% over 8 feasible decisions, worst 1.09%
+PASS  B4b no confirmed constraint violation: 0 confirmed
+NOT ACCEPTED

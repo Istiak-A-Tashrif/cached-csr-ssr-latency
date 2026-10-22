@@ -1,0 +1,24 @@
+revB2R: 48 runs, 9216 views, 0 errors, 0 views with unclassified outcome
+  csr-fettl-rdpush-tau5-a0.6-onoff         stale obs 0.013 pred 0.032
+  csr-fettl-rdpush-tau5-a0.6-periodic      stale obs 0.040 pred 0.037
+  csr-fettl-rdpush-tau5-a0.6-trace         stale obs 0.029 pred 0.035
+  ssr-feoff-rdttl-tau5-a0.6-onoff          stale obs 0.254 pred 0.207
+  ssr-feoff-rdttl-tau5-a0.6-periodic       stale obs 0.297 pred 0.299
+  ssr-feoff-rdttl-tau5-a0.6-trace          stale obs 0.314 pred 0.282
+  ssr-fepush-rdpush-a0.6-onoff             stale obs 0.008 pred 0.010
+  ssr-fepush-rdpush-a0.6-periodic          stale obs 0.008 pred 0.010
+  ssr-fepush-rdpush-a0.6-trace             stale obs 0.010 pred 0.009
+  ssr-fettl-rdttl-tau5-a0.6-onoff          stale obs 0.238 pred 0.290
+  ssr-fettl-rdttl-tau5-a0.6-periodic       stale obs 0.415 pred 0.413
+  ssr-fettl-rdttl-tau5-a0.6-trace          stale obs 0.344 pred 0.390
+PASS  W1 pooled MAE <= 0.03: 0.0180
+FAIL  W2 every cell within 0.05: max 0.0514
+FAIL  W3 orderings: 46/47 wrong: [('ssr-feoff-rdttl-tau5-a0.6-onoff', 'ssr-fettl-rdttl-tau5-a0.6-onoff')]
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 7 ms
+PASS  W5 predictions before runs: 48/48
+PASS  L1 mean latency error <= 3%: 1.48% over 24 (cell, action)
+PASS  L2 every (cell, action) within max(5%, 10 ms): max 4.06%
+FAIL  O1 outcome calibration (deciles, n >= 100) within 0.05: 0: n=723 pred 0.064 obs 0.050; 1: n=1083 pred 0.157 obs 0.109; 2: n=1011 pred 0.245 obs 0.212; 3: n=316 pred 0.336 obs 0.297; 4: n=145 pred 0.441 obs 0.379; 5: n=51 pred 0.544 obs 0.588; 6: n=30 pred 0.636 obs 0.633; 7: n=6 pred 0.724 obs 0.667; 8: n=4 pred 0.842 obs 1.000
+PASS  O2 Brier skill > 0: Brier 0.1082 ref 0.2467 skill +0.561; top-1 0.933 over 9216 views
+PASS  O3 Brier - expected Brier <= 0.03: -0.0001
+NOT ACCEPTED

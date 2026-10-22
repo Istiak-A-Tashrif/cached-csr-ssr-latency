@@ -1,0 +1,57 @@
+revHR: 96 runs, 18432 views, 0 errors, 0 views with unclassified outcome
+  csr-feoff-rdoff-a0.8                     stale obs 0.026 pred 0.017
+  csr-feoff-rdttl-tau2-a0.8                stale obs 0.079 pred 0.076
+  csr-feoff-rdttl-tau4-a0.8                stale obs 0.156 pred 0.150
+  csr-feoff-rdttl-tau8-a0.8                stale obs 0.337 pred 0.308
+  csr-fettl-rdpush-tau2-a0.8               stale obs 0.056 pred 0.059
+  csr-fettl-rdpush-tau4-a0.8               stale obs 0.051 pred 0.059
+  csr-fettl-rdpush-tau8-a0.8               stale obs 0.046 pred 0.059
+  ssr-feoff-rdoff-a0.8                     stale obs 0.018 pred 0.017
+  ssr-feoff-rdttl-tau2-a0.8                stale obs 0.080 pred 0.078
+  ssr-feoff-rdttl-tau4-a0.8                stale obs 0.199 pred 0.168
+  ssr-feoff-rdttl-tau8-a0.8                stale obs 0.351 pred 0.322
+  ssr-fepush-rdpush-a0.8                   stale obs 0.009 pred 0.017
+  ssr-fettl-rdpush-tau2-a0.8               stale obs 0.320 pred 0.314
+  ssr-fettl-rdpush-tau4-a0.8               stale obs 0.353 pred 0.382
+  ssr-fettl-rdpush-tau8-a0.8               stale obs 0.501 pred 0.493
+  ssr-fettl-rdttl-tau2-a0.8                stale obs 0.296 pred 0.320
+  all eps 0.299: oracle ssr-fettl-rdttl-tau2-a0.8
+     naive  ssr-fepush-rdpush-a0.8             regret +8.0%
+     aware  ssr-fepush-rdpush-a0.8             regret +8.0%
+  all eps 0.319: oracle ssr-fettl-rdttl-tau2-a0.8
+     naive  ssr-fettl-rdpush-tau2-a0.8         VIOLATES +0.001
+     aware  ssr-fepush-rdpush-a0.8             regret +8.0%
+  ttl_only eps 0.069: oracle ssr-feoff-rdoff-a0.8
+     naive  ssr-feoff-rdoff-a0.8               regret +0.0%
+     aware  ssr-feoff-rdoff-a0.8               regret +0.0%
+  ttl_only eps 0.089: oracle ssr-feoff-rdttl-tau2-a0.8
+     naive  ssr-feoff-rdttl-tau2-a0.8          regret +0.0%
+     aware  ssr-feoff-rdoff-a0.8               regret +9.3%
+  ttl_only eps 0.158: oracle ssr-feoff-rdttl-tau2-a0.8
+     naive  ssr-feoff-rdttl-tau2-a0.8          regret +0.0%
+     aware  ssr-feoff-rdttl-tau2-a0.8          regret +0.0%
+  ttl_only eps 0.178: oracle ssr-feoff-rdttl-tau2-a0.8
+     naive  ssr-feoff-rdttl-tau4-a0.8          VIOLATES +0.021
+     aware  ssr-feoff-rdttl-tau2-a0.8          regret +0.0%
+  ttl_only eps 0.299: oracle ssr-fettl-rdttl-tau2-a0.8
+     naive  ssr-feoff-rdttl-tau4-a0.8          regret +10.5%
+     aware  ssr-feoff-rdttl-tau4-a0.8          regret +10.5%
+  ttl_only eps 0.319: oracle ssr-fettl-rdttl-tau2-a0.8
+     naive  ssr-feoff-rdttl-tau4-a0.8          regret +10.5%
+     aware  ssr-feoff-rdttl-tau4-a0.8          regret +10.5%
+  naive: 8 decisions, 2 violations (0 confirmed), 3 oracle choices, mean regret 4.85%, worst 10.54%
+  aware: 8 decisions, 0 violations (0 confirmed), 3 oracle choices, mean regret 5.81%, worst 10.54%
+PASS  W1 pooled MAE <= 0.03: 0.0132
+PASS  W2 every cell within 0.05: max 0.0312
+PASS  W3 orderings: 91/91
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 7 ms
+PASS  W5 predictions before runs: 96/96
+PASS  L1 mean latency error <= 3%: 0.96% over 32 (cell, action)
+PASS  L2 every (cell, action) within max(5%, 10 ms): max 2.88%
+PASS  O1 outcome calibration (deciles, n >= 100) within 0.05: 0: n=187 pred 0.071 obs 0.070; 1: n=294 pred 0.139 obs 0.129; 2: n=414 pred 0.259 obs 0.242; 3: n=860 pred 0.359 obs 0.360; 4: n=515 pred 0.440 obs 0.423; 5: n=143 pred 0.556 obs 0.510; 6: n=224 pred 0.639 obs 0.683; 7: n=67 pred 0.749 obs 0.701; 8: n=37 pred 0.850 obs 0.838; 9: n=10 pred 0.917 obs 1.000
+PASS  O2 Brier skill > 0: Brier 0.0749 ref 0.3022 skill +0.752; top-1 0.946 over 18432 views
+PASS  O3 Brier - expected Brier <= 0.03: +0.0147
+PASS  O1' noise-aware calibration: 0: -0.001 (tol 0.050); 1: -0.010 (tol 0.050); 2: -0.017 (tol 0.050); 3: +0.001 (tol 0.050); 4: -0.016 (tol 0.050); 5: -0.046 (tol 0.093); 6: +0.044 (tol 0.066)
+FAIL  B4h-a uncertainty-aware selector mean regret <= 5%: mean 5.81% over 8 feasible decisions, worst 10.54%
+PASS  B4h-b uncertainty-aware selector: no confirmed violation: 0 violations, 0 confirmed, 0 abstentions
+NOT ACCEPTED

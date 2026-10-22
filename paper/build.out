@@ -1,0 +1,910 @@
+note: Running TeX ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: main.tex:64: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:64: 
+Requested font "MinLibReg-ot1" at 8.0pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 6.2pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 5.5pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "nxlmi7" at 8.0pt
+warning: main.tex:64:  -> nxlmi7
+warning: main.tex:64: Requested font "nxlmi5" at 6.2pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "nxlmi5" at 5.5pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "ntxsy7" at 8.0pt
+warning: main.tex:64:  -> ntxsy7
+warning: main.tex:64: Requested font "ntxsy5" at 6.2pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxsy5" at 5.5pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxexx" at 8.0pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 6.2pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 5.5pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: 
+Requested font "msam10" at 8.0pt
+warning: main.tex:64:  -> msam10
+warning: main.tex:64: Requested font "msam7" at 6.2pt
+warning: main.tex:64:  -> msam7
+warning: main.tex:64: Requested font "msam5" at 5.5pt
+warning: main.tex:64:  -> msam5
+warning: main.tex:64: 
+Requested font "msbm10" at 8.0pt
+warning: main.tex:64:  -> msbm10
+warning: main.tex:64: Requested font "msbm7" at 6.2pt
+warning: main.tex:64:  -> msbm7
+warning: main.tex:64: Requested font "msbm5" at 5.5pt
+warning: main.tex:64:  -> msbm5
+warning: main.tex:64: 
+Requested font "nxlmia" at 8.0pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 6.2pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 5.5pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: 
+Requested font "ntxsym" at 8.0pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 6.2pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 5.5pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: 
+Requested font "ntxsyc" at 8.0pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 6.2pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 5.5pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxexa" at 8.0pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 6.2pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 5.5pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 9.0pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 7.3pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "nxlmi" at 9.0pt
+warning: main.tex:65:  -> nxlmi
+warning: main.tex:65: Requested font "nxlmi7" at 7.3pt
+warning: main.tex:65:  -> nxlmi7
+warning: main.tex:65: Requested font "ntxsy" at 9.0pt
+warning: main.tex:65:  -> ntxsy
+warning: main.tex:65: Requested font "ntxsy7" at 7.3pt
+warning: main.tex:65:  -> ntxsy7
+warning: main.tex:65: Requested font "ntxexx" at 9.0pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "ntxexx" at 7.3pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "msam10" at 9.0pt
+warning: main.tex:65:  -> msam10
+warning: main.tex:65: 
+Requested font "msam7" at 7.3pt
+warning: main.tex:65:  -> msam7
+warning: main.tex:65: Requested font "msbm10" at 9.0pt
+warning: main.tex:65:  -> msbm10
+warning: main.tex:65: 
+Requested font "msbm7" at 7.3pt
+warning: main.tex:65:  -> msbm7
+warning: main.tex:65: Requested font "nxlmia" at 9.0pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "nxlmia" at 7.3pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "ntxsym" at 9.0pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsym" at 7.3pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsyc" at 9.0pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxsyc" at 7.3pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxexa" at 9.0pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "ntxexa" at 7.3pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:74: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:77: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: main.tex:84: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:97: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:98: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: main.tex:98: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:103: Requested font "MinLibReg-ot1" at 10.0pt
+warning: main.tex:103:  -> MinLibReg-ot1
+warning: main.tex:103: Requested font "nxlmi" at 10.0pt
+warning: main.tex:103:  -> nxlmi
+warning: main.tex:103: Requested font "ntxsy" at 10.0pt
+warning: main.tex:103:  -> ntxsy
+warning: main.tex:103: Requested font "ntxexx" at 10.0pt
+warning: main.tex:103:  -> ntxexx
+warning: main.tex:103: Requested font "msam10" at 10.0pt
+warning: main.tex:103:  -> msam10
+warning: main.tex:103: Requested font "msbm10" at 10.0pt
+warning: main.tex:103:  -> msbm10
+warning: main.tex:103: Requested font "nxlmia" at 10.0pt
+warning: main.tex:103:  -> nxlmia
+warning: main.tex:103: Requested font "ntxsym" at 10.0pt
+warning: main.tex:103:  -> ntxsym
+warning: main.tex:103: Requested font "ntxsyc" at 10.0pt
+warning: main.tex:103:  -> ntxsyc
+warning: main.tex:103: Requested font "ntxexa" at 10.0pt
+warning: main.tex:103:  -> ntxexa
+warning: main.tex:133: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;+ss03;" at 10.0pt
+warning: figs/architecture.tex:11: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: figs/architecture.tex:12: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: figs/architecture.tex:14: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: main.tex:140: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:209: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+smcp;mapping=tex-text;" at 10.0pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:220: 
+Requested font "MinLibBol-ot1" at 10.0pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 7.3pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 5.5pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: 
+Requested font "MinLibBol-ot1" at 9.0pt
+warning: tables/tests.tex:28:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 1789) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 3919) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: main.tex:390: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: tables/ledger.tex:13: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: tables/ledger.tex:18: Requested font "MinLibBol-ot1" at 8.0pt
+warning: tables/ledger.tex:18:  -> MinLibBol-ot1
+warning: tables/ledger.tex:18: Requested font "MinLibBol-ot1" at 6.2pt
+warning: tables/ledger.tex:18:  -> MinLibBol-ot1
+warning: tables/ledger.tex:18: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+note: Running BibTeX on main.aux ...
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: main.tex:64: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:64: 
+Requested font "MinLibReg-ot1" at 8.0pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 6.2pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 5.5pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "nxlmi7" at 8.0pt
+warning: main.tex:64:  -> nxlmi7
+warning: main.tex:64: Requested font "nxlmi5" at 6.2pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "nxlmi5" at 5.5pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "ntxsy7" at 8.0pt
+warning: main.tex:64:  -> ntxsy7
+warning: main.tex:64: Requested font "ntxsy5" at 6.2pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxsy5" at 5.5pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxexx" at 8.0pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 6.2pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 5.5pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: 
+Requested font "msam10" at 8.0pt
+warning: main.tex:64:  -> msam10
+warning: main.tex:64: Requested font "msam7" at 6.2pt
+warning: main.tex:64:  -> msam7
+warning: main.tex:64: Requested font "msam5" at 5.5pt
+warning: main.tex:64:  -> msam5
+warning: main.tex:64: 
+Requested font "msbm10" at 8.0pt
+warning: main.tex:64:  -> msbm10
+warning: main.tex:64: Requested font "msbm7" at 6.2pt
+warning: main.tex:64:  -> msbm7
+warning: main.tex:64: Requested font "msbm5" at 5.5pt
+warning: main.tex:64:  -> msbm5
+warning: main.tex:64: 
+Requested font "nxlmia" at 8.0pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 6.2pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 5.5pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: 
+Requested font "ntxsym" at 8.0pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 6.2pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 5.5pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: 
+Requested font "ntxsyc" at 8.0pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 6.2pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 5.5pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxexa" at 8.0pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 6.2pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 5.5pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 9.0pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 7.3pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "nxlmi" at 9.0pt
+warning: main.tex:65:  -> nxlmi
+warning: main.tex:65: Requested font "nxlmi7" at 7.3pt
+warning: main.tex:65:  -> nxlmi7
+warning: main.tex:65: Requested font "ntxsy" at 9.0pt
+warning: main.tex:65:  -> ntxsy
+warning: main.tex:65: Requested font "ntxsy7" at 7.3pt
+warning: main.tex:65:  -> ntxsy7
+warning: main.tex:65: Requested font "ntxexx" at 9.0pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "ntxexx" at 7.3pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "msam10" at 9.0pt
+warning: main.tex:65:  -> msam10
+warning: main.tex:65: 
+Requested font "msam7" at 7.3pt
+warning: main.tex:65:  -> msam7
+warning: main.tex:65: Requested font "msbm10" at 9.0pt
+warning: main.tex:65:  -> msbm10
+warning: main.tex:65: 
+Requested font "msbm7" at 7.3pt
+warning: main.tex:65:  -> msbm7
+warning: main.tex:65: Requested font "nxlmia" at 9.0pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "nxlmia" at 7.3pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "ntxsym" at 9.0pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsym" at 7.3pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsyc" at 9.0pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxsyc" at 7.3pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxexa" at 9.0pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "ntxexa" at 7.3pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:74: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:77: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: main.tex:84: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:97: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:98: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: main.tex:98: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:103: Requested font "MinLibReg-ot1" at 10.0pt
+warning: main.tex:103:  -> MinLibReg-ot1
+warning: main.tex:103: Requested font "nxlmi" at 10.0pt
+warning: main.tex:103:  -> nxlmi
+warning: main.tex:103: Requested font "ntxsy" at 10.0pt
+warning: main.tex:103:  -> ntxsy
+warning: main.tex:103: Requested font "ntxexx" at 10.0pt
+warning: main.tex:103:  -> ntxexx
+warning: main.tex:103: Requested font "msam10" at 10.0pt
+warning: main.tex:103:  -> msam10
+warning: main.tex:103: Requested font "msbm10" at 10.0pt
+warning: main.tex:103:  -> msbm10
+warning: main.tex:103: Requested font "nxlmia" at 10.0pt
+warning: main.tex:103:  -> nxlmia
+warning: main.tex:103: Requested font "ntxsym" at 10.0pt
+warning: main.tex:103:  -> ntxsym
+warning: main.tex:103: Requested font "ntxsyc" at 10.0pt
+warning: main.tex:103:  -> ntxsyc
+warning: main.tex:103: Requested font "ntxexa" at 10.0pt
+warning: main.tex:103:  -> ntxexa
+warning: main.tex:133: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;+ss03;" at 10.0pt
+warning: figs/architecture.tex:11: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: figs/architecture.tex:12: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: figs/architecture.tex:14: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: main.tex:140: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:209: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+smcp;mapping=tex-text;" at 10.0pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:220: 
+Requested font "MinLibBol-ot1" at 10.0pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 7.3pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 5.5pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: 
+Requested font "MinLibBol-ot1" at 9.0pt
+warning: tables/tests.tex:28:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 1789) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 3919) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: main.tex:278: Underfull \vbox (badness 1226) has occurred while \output is active
+warning: main.tex:390: Underfull \vbox (badness 1694) has occurred while \output is active
+warning: main.bbl:46: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 8.0pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 6.2pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:162: Underfull \hbox (badness 1546) in paragraph at lines 154--162
+warning: tables/ledger.tex:18: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: tables/ledger.tex:47: Underfull \vbox (badness 10000) has occurred while \output is active
+note: Rerunning TeX because "main.out" changed ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: main.tex:64: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:64: 
+Requested font "MinLibReg-ot1" at 8.0pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 6.2pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 5.5pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "nxlmi7" at 8.0pt
+warning: main.tex:64:  -> nxlmi7
+warning: main.tex:64: Requested font "nxlmi5" at 6.2pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "nxlmi5" at 5.5pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "ntxsy7" at 8.0pt
+warning: main.tex:64:  -> ntxsy7
+warning: main.tex:64: Requested font "ntxsy5" at 6.2pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxsy5" at 5.5pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxexx" at 8.0pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 6.2pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 5.5pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: 
+Requested font "msam10" at 8.0pt
+warning: main.tex:64:  -> msam10
+warning: main.tex:64: Requested font "msam7" at 6.2pt
+warning: main.tex:64:  -> msam7
+warning: main.tex:64: Requested font "msam5" at 5.5pt
+warning: main.tex:64:  -> msam5
+warning: main.tex:64: 
+Requested font "msbm10" at 8.0pt
+warning: main.tex:64:  -> msbm10
+warning: main.tex:64: Requested font "msbm7" at 6.2pt
+warning: main.tex:64:  -> msbm7
+warning: main.tex:64: Requested font "msbm5" at 5.5pt
+warning: main.tex:64:  -> msbm5
+warning: main.tex:64: 
+Requested font "nxlmia" at 8.0pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 6.2pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 5.5pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: 
+Requested font "ntxsym" at 8.0pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 6.2pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 5.5pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: 
+Requested font "ntxsyc" at 8.0pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 6.2pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 5.5pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxexa" at 8.0pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 6.2pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 5.5pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 9.0pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 7.3pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "nxlmi" at 9.0pt
+warning: main.tex:65:  -> nxlmi
+warning: main.tex:65: Requested font "nxlmi7" at 7.3pt
+warning: main.tex:65:  -> nxlmi7
+warning: main.tex:65: Requested font "ntxsy" at 9.0pt
+warning: main.tex:65:  -> ntxsy
+warning: main.tex:65: Requested font "ntxsy7" at 7.3pt
+warning: main.tex:65:  -> ntxsy7
+warning: main.tex:65: Requested font "ntxexx" at 9.0pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "ntxexx" at 7.3pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "msam10" at 9.0pt
+warning: main.tex:65:  -> msam10
+warning: main.tex:65: 
+Requested font "msam7" at 7.3pt
+warning: main.tex:65:  -> msam7
+warning: main.tex:65: Requested font "msbm10" at 9.0pt
+warning: main.tex:65:  -> msbm10
+warning: main.tex:65: 
+Requested font "msbm7" at 7.3pt
+warning: main.tex:65:  -> msbm7
+warning: main.tex:65: Requested font "nxlmia" at 9.0pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "nxlmia" at 7.3pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "ntxsym" at 9.0pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsym" at 7.3pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsyc" at 9.0pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxsyc" at 7.3pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxexa" at 9.0pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "ntxexa" at 7.3pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:77: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: main.tex:84: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:90: Underfull \vbox (badness 3019) has occurred while \output is active
+warning: main.tex:90: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:103: 
+Requested font "MinLibReg-ot1" at 10.0pt
+warning: main.tex:103:  -> MinLibReg-ot1
+warning: main.tex:103: Requested font "nxlmi" at 10.0pt
+warning: main.tex:103:  -> nxlmi
+warning: main.tex:103: Requested font "ntxsy" at 10.0pt
+warning: main.tex:103:  -> ntxsy
+warning: main.tex:103: Requested font "ntxexx" at 10.0pt
+warning: main.tex:103:  -> ntxexx
+warning: main.tex:103: Requested font "msam10" at 10.0pt
+warning: main.tex:103:  -> msam10
+warning: main.tex:103: Requested font "msbm10" at 10.0pt
+warning: main.tex:103:  -> msbm10
+warning: main.tex:103: Requested font "nxlmia" at 10.0pt
+warning: main.tex:103:  -> nxlmia
+warning: main.tex:103: Requested font "ntxsym" at 10.0pt
+warning: main.tex:103:  -> ntxsym
+warning: main.tex:103: Requested font "ntxsyc" at 10.0pt
+warning: main.tex:103:  -> ntxsyc
+warning: main.tex:103: Requested font "ntxexa" at 10.0pt
+warning: main.tex:103:  -> ntxexa
+warning: main.tex:113: Underfull \vbox (badness 1038) has occurred while \output is active
+warning: main.tex:133: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;+ss03;" at 10.0pt
+warning: figs/architecture.tex:11: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: figs/architecture.tex:12: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: figs/architecture.tex:14: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: main.tex:140: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:209: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+smcp;mapping=tex-text;" at 10.0pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:220: 
+Requested font "MinLibBol-ot1" at 10.0pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 7.3pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 5.5pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: 
+Requested font "MinLibBol-ot1" at 9.0pt
+warning: tables/tests.tex:28:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 1789) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 3919) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: main.bbl:46: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 8.0pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 6.2pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:162: Underfull \hbox (badness 1546) in paragraph at lines 154--162
+warning: main.bbl:566: Underfull \vbox (badness 6396) has occurred while \output is active
+warning: tables/ledger.tex:18: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+note: Rerunning TeX because "main.aux" changed ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 10.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 10.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 10.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 10.00003pt
+warning: main.tex:64: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:64: 
+Requested font "MinLibReg-ot1" at 8.0pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 6.2pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "MinLibReg-ot1" at 5.5pt
+warning: main.tex:64:  -> MinLibReg-ot1
+warning: main.tex:64: Requested font "nxlmi7" at 8.0pt
+warning: main.tex:64:  -> nxlmi7
+warning: main.tex:64: Requested font "nxlmi5" at 6.2pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "nxlmi5" at 5.5pt
+warning: main.tex:64:  -> nxlmi5
+warning: main.tex:64: Requested font "ntxsy7" at 8.0pt
+warning: main.tex:64:  -> ntxsy7
+warning: main.tex:64: Requested font "ntxsy5" at 6.2pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxsy5" at 5.5pt
+warning: main.tex:64:  -> ntxsy5
+warning: main.tex:64: Requested font "ntxexx" at 8.0pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 6.2pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: Requested font "ntxexx" at 5.5pt
+warning: main.tex:64:  -> ntxexx
+warning: main.tex:64: 
+Requested font "msam10" at 8.0pt
+warning: main.tex:64:  -> msam10
+warning: main.tex:64: Requested font "msam7" at 6.2pt
+warning: main.tex:64:  -> msam7
+warning: main.tex:64: Requested font "msam5" at 5.5pt
+warning: main.tex:64:  -> msam5
+warning: main.tex:64: 
+Requested font "msbm10" at 8.0pt
+warning: main.tex:64:  -> msbm10
+warning: main.tex:64: Requested font "msbm7" at 6.2pt
+warning: main.tex:64:  -> msbm7
+warning: main.tex:64: Requested font "msbm5" at 5.5pt
+warning: main.tex:64:  -> msbm5
+warning: main.tex:64: 
+Requested font "nxlmia" at 8.0pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 6.2pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: Requested font "nxlmia" at 5.5pt
+warning: main.tex:64:  -> nxlmia
+warning: main.tex:64: 
+Requested font "ntxsym" at 8.0pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 6.2pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: Requested font "ntxsym" at 5.5pt
+warning: main.tex:64:  -> ntxsym
+warning: main.tex:64: 
+Requested font "ntxsyc" at 8.0pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 6.2pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxsyc" at 5.5pt
+warning: main.tex:64:  -> ntxsyc
+warning: main.tex:64: Requested font "ntxexa" at 8.0pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 6.2pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:64: Requested font "ntxexa" at 5.5pt
+warning: main.tex:64:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 14.4pt
+warning: main.tex:65: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: main.tex:65: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 9.0pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "MinLibReg-ot1" at 7.3pt
+warning: main.tex:65:  -> MinLibReg-ot1
+warning: main.tex:65: Requested font "nxlmi" at 9.0pt
+warning: main.tex:65:  -> nxlmi
+warning: main.tex:65: Requested font "nxlmi7" at 7.3pt
+warning: main.tex:65:  -> nxlmi7
+warning: main.tex:65: Requested font "ntxsy" at 9.0pt
+warning: main.tex:65:  -> ntxsy
+warning: main.tex:65: Requested font "ntxsy7" at 7.3pt
+warning: main.tex:65:  -> ntxsy7
+warning: main.tex:65: Requested font "ntxexx" at 9.0pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "ntxexx" at 7.3pt
+warning: main.tex:65:  -> ntxexx
+warning: main.tex:65: Requested font "msam10" at 9.0pt
+warning: main.tex:65:  -> msam10
+warning: main.tex:65: 
+Requested font "msam7" at 7.3pt
+warning: main.tex:65:  -> msam7
+warning: main.tex:65: Requested font "msbm10" at 9.0pt
+warning: main.tex:65:  -> msbm10
+warning: main.tex:65: 
+Requested font "msbm7" at 7.3pt
+warning: main.tex:65:  -> msbm7
+warning: main.tex:65: Requested font "nxlmia" at 9.0pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "nxlmia" at 7.3pt
+warning: main.tex:65:  -> nxlmia
+warning: main.tex:65: Requested font "ntxsym" at 9.0pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsym" at 7.3pt
+warning: main.tex:65:  -> ntxsym
+warning: main.tex:65: Requested font "ntxsyc" at 9.0pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxsyc" at 7.3pt
+warning: main.tex:65:  -> ntxsyc
+warning: main.tex:65: Requested font "ntxexa" at 9.0pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "ntxexa" at 7.3pt
+warning: main.tex:65:  -> ntxexa
+warning: main.tex:65: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:77: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: main.tex:84: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: main.tex:90: Underfull \vbox (badness 3019) has occurred while \output is active
+warning: main.tex:90: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.tex:103: 
+Requested font "MinLibReg-ot1" at 10.0pt
+warning: main.tex:103:  -> MinLibReg-ot1
+warning: main.tex:103: Requested font "nxlmi" at 10.0pt
+warning: main.tex:103:  -> nxlmi
+warning: main.tex:103: Requested font "ntxsy" at 10.0pt
+warning: main.tex:103:  -> ntxsy
+warning: main.tex:103: Requested font "ntxexx" at 10.0pt
+warning: main.tex:103:  -> ntxexx
+warning: main.tex:103: Requested font "msam10" at 10.0pt
+warning: main.tex:103:  -> msam10
+warning: main.tex:103: Requested font "msbm10" at 10.0pt
+warning: main.tex:103:  -> msbm10
+warning: main.tex:103: Requested font "nxlmia" at 10.0pt
+warning: main.tex:103:  -> nxlmia
+warning: main.tex:103: Requested font "ntxsym" at 10.0pt
+warning: main.tex:103:  -> ntxsym
+warning: main.tex:103: Requested font "ntxsyc" at 10.0pt
+warning: main.tex:103:  -> ntxsyc
+warning: main.tex:103: Requested font "ntxexa" at 10.0pt
+warning: main.tex:103:  -> ntxexa
+warning: main.tex:113: Underfull \vbox (badness 1038) has occurred while \output is active
+warning: main.tex:133: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;+ss03;" at 10.0pt
+warning: figs/architecture.tex:11: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: figs/architecture.tex:12: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: figs/architecture.tex:14: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: main.tex:140: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:182: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:209: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+smcp;mapping=tex-text;" at 10.0pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.3pt
+warning: main.tex:211: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 5.5pt
+warning: main.tex:220: 
+Requested font "MinLibBol-ot1" at 10.0pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 7.3pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: main.tex:220: Requested font "MinLibBol-ot1" at 5.5pt
+warning: main.tex:220:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: 
+Requested font "MinLibBol-ot1" at 9.0pt
+warning: tables/tests.tex:28:  -> MinLibBol-ot1
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 1789) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 3919) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 7667) in paragraph at lines 28--28
+warning: tables/tests.tex:28: Underfull \hbox (badness 10000) in paragraph at lines 28--28
+warning: main.bbl:46: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 8.0pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:51: Requested font "MinLibBol-ot1" at 6.2pt
+warning: main.bbl:51:  -> MinLibBol-ot1
+warning: main.bbl:162: Underfull \hbox (badness 1546) in paragraph at lines 154--162
+warning: main.bbl:566: Underfull \vbox (badness 6396) has occurred while \output is active
+warning: tables/ledger.tex:18: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 8.0pt
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `main.pdf` (289.5263671875 KiB)
+note: Skipped writing 5 intermediate files (use --keep-intermediates to keep them)

@@ -1,0 +1,1898 @@
+{
+"tag": "cdT",
+"app": "conduit",
+"pages": 50,
+"limit": 1,
+"weights": [
+198807,
+74322,
+52576,
+52363,
+43057,
+39090,
+32504,
+26200,
+21907,
+21873,
+17065,
+15942,
+15848,
+14831,
+13183,
+13015,
+12359,
+12214,
+12175,
+10487,
+10357,
+9939,
+9544,
+9540,
+9330,
+9206,
+8814,
+8747,
+8515,
+8460,
+8380,
+8313,
+8251,
+8224,
+8196,
+8192,
+7397,
+7343,
+6932,
+6872,
+6721,
+6684,
+6322,
+6228,
+6204,
+5792,
+5782,
+5677,
+5438,
+5409
+],
+"pilot": false,
+"calibration": false,
+"runs": [
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdpush-tau20-apop",
+"wseed": 92314
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdpush-tau1-apop",
+"wseed": 92113
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s914-r150-csr-feoff-rdttl-tau60-apop",
+"wseed": 92316
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdpush-tau5-apop",
+"wseed": 92317
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdpush-tau1-apop",
+"wseed": 92015
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdpush-tau20-apop",
+"wseed": 92117
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdpush-tau1-apop",
+"wseed": 92320
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdpush-tau20-apop",
+"wseed": 92018
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdttl-tau1-apop",
+"wseed": 92120
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdpush-tau20-apop",
+"wseed": 92121
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdoff-apop",
+"runId": "cdT-s911-r150-csr-feoff-rdoff-apop",
+"wseed": 92021
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdttl-tau5-apop",
+"wseed": 92123
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdpush-tau20-apop",
+"wseed": 92225
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s913-r150-csr-feoff-rdttl-tau5-apop",
+"wseed": 92226
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdttl-tau60-apop",
+"wseed": 92126
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdttl-tau1-apop",
+"wseed": 92026
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdttl-tau60-apop",
+"wseed": 92330
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdoff-apop",
+"runId": "cdT-s912-r150-csr-feoff-rdoff-apop",
+"wseed": 92129
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s911-r150-csr-feoff-rdttl-tau5-apop",
+"wseed": 92029
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdpush-tau5-apop",
+"wseed": 92131
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "push",
+"rp": "push",
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fepush-rdpush-apop",
+"runId": "cdT-s912-r150-ssr-fepush-rdpush-apop",
+"wseed": 92132
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdpush-tau1-apop",
+"wseed": 92133
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s912-r150-ssr-feoff-rdttl-tau20-apop",
+"wseed": 92134
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s913-r150-ssr-feoff-rdttl-tau60-apop",
+"wseed": 92236
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdpush-tau20-apop",
+"wseed": 92338
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s912-r150-csr-feoff-rdttl-tau1-apop",
+"wseed": 92137
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdpush-tau60-apop",
+"wseed": 92340
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdpush-tau5-apop",
+"wseed": 92240
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "push",
+"rp": "push",
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fepush-rdpush-apop",
+"runId": "cdT-s913-r150-ssr-fepush-rdpush-apop",
+"wseed": 92241
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdttl-tau20-apop",
+"wseed": 92343
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdpush-tau1-apop",
+"wseed": 92243
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdttl-tau5-apop",
+"wseed": 92143
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdttl-tau5-apop",
+"wseed": 92043
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s911-r150-csr-feoff-rdttl-tau1-apop",
+"wseed": 92044
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdpush-tau60-apop",
+"wseed": 92348
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdpush-tau5-apop",
+"wseed": 92349
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdttl-tau20-apop",
+"wseed": 92047
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdttl-tau1-apop",
+"wseed": 92250
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdpush-tau5-apop",
+"wseed": 92150
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s912-r150-csr-feoff-rdttl-tau5-apop",
+"wseed": 92151
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s913-r150-csr-feoff-rdttl-tau60-apop",
+"wseed": 92253
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdttl-tau20-apop",
+"wseed": 92153
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s914-r150-ssr-feoff-rdttl-tau20-apop",
+"wseed": 92356
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s912-r150-ssr-feoff-rdttl-tau60-apop",
+"wseed": 92155
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdttl-tau60-apop",
+"wseed": 92257
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdpush-tau5-apop",
+"wseed": 92056
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdpush-tau5-apop",
+"wseed": 92057
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s914-r150-ssr-feoff-rdttl-tau5-apop",
+"wseed": 92361
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s914-r150-csr-feoff-rdttl-tau20-apop",
+"wseed": 92362
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s913-r150-ssr-feoff-rdttl-tau5-apop",
+"wseed": 92262
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s913-r150-csr-feoff-rdttl-tau20-apop",
+"wseed": 92263
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdoff-apop",
+"runId": "cdT-s914-r150-csr-feoff-rdoff-apop",
+"wseed": 92365
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s911-r150-ssr-feoff-rdttl-tau5-apop",
+"wseed": 92063
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdttl-tau1-apop",
+"wseed": 92165
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s911-r150-ssr-feoff-rdttl-tau1-apop",
+"wseed": 92065
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "push",
+"rp": "push",
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fepush-rdpush-apop",
+"runId": "cdT-s914-r150-ssr-fepush-rdpush-apop",
+"wseed": 92369
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdttl-tau1-apop",
+"wseed": 92370
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s913-r150-csr-feoff-rdttl-tau1-apop",
+"wseed": 92270
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdttl-tau5-apop",
+"wseed": 92271
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdttl-tau60-apop",
+"wseed": 92171
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdoff-apop",
+"runId": "cdT-s914-r150-ssr-feoff-rdoff-apop",
+"wseed": 92374
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s914-r150-ssr-feoff-rdttl-tau60-apop",
+"wseed": 92375
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdpush-tau60-apop",
+"wseed": 92275
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdpush-tau1-apop",
+"wseed": 92074
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdttl-tau20-apop",
+"wseed": 92277
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s913-r150-ssr-feoff-rdttl-tau20-apop",
+"wseed": 92278
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdpush-tau60-apop",
+"wseed": 92077
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdttl-tau60-apop",
+"wseed": 92078
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdpush-tau60-apop",
+"wseed": 92281
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s912-r150-csr-feoff-rdttl-tau20-apop",
+"wseed": 92181
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s911-r150-csr-feoff-rdttl-tau20-apop",
+"wseed": 92081
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s911-r150-csr-feoff-rdttl-tau60-apop",
+"wseed": 92082
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdpush-tau1-apop",
+"wseed": 92386
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdttl-tau5-apop",
+"wseed": 92084
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdpush-tau60-apop",
+"wseed": 92085
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdttl-tau1-apop",
+"wseed": 92086
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s914-r150-csr-feoff-rdttl-tau5-apop",
+"wseed": 92390
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s912-r150-csr-feoff-rdttl-tau60-apop",
+"wseed": 92189
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s911-r150-ssr-fettl-rdpush-tau20-apop",
+"wseed": 92089
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s914-r150-csr-feoff-rdttl-tau1-apop",
+"wseed": 92393
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s914-r150-ssr-feoff-rdttl-tau1-apop",
+"wseed": 92394
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdttl-tau20-apop",
+"wseed": 92193
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdttl-tau5-apop",
+"wseed": 92295
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau5-apop",
+"runId": "cdT-s912-r150-ssr-feoff-rdttl-tau5-apop",
+"wseed": 92195
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdttl-tau60-apop",
+"wseed": 92398
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s913-r150-ssr-feoff-rdttl-tau1-apop",
+"wseed": 92298
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-feoff-rdoff-apop",
+"runId": "cdT-s913-r150-csr-feoff-rdoff-apop",
+"wseed": 92299
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s912-r150-ssr-fettl-rdpush-tau60-apop",
+"wseed": 92199
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdttl-tau1-apop",
+"wseed": 92301
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdttl-tau60-apop",
+"wseed": 92100
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdttl-tau20-apop",
+"wseed": 92303
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdoff-apop",
+"runId": "cdT-s911-r150-ssr-feoff-rdoff-apop",
+"wseed": 92102
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau60-apop",
+"runId": "cdT-s911-r150-ssr-feoff-rdttl-tau60-apop",
+"wseed": 92103
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdttl-tau20-apop",
+"wseed": 92407
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau20-apop",
+"runId": "cdT-s911-r150-ssr-feoff-rdttl-tau20-apop",
+"wseed": 92105
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau20-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdpush-tau20-apop",
+"wseed": 92308
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau1-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdttl-tau1-apop",
+"wseed": 92410
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdoff-apop",
+"runId": "cdT-s912-r150-ssr-feoff-rdoff-apop",
+"wseed": 92209
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": false,
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdoff-apop",
+"runId": "cdT-s913-r150-ssr-feoff-rdoff-apop",
+"wseed": 92311
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau60-apop",
+"runId": "cdT-s912-r150-csr-fettl-rdpush-tau60-apop",
+"wseed": 92211
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 60,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau60-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdttl-tau60-apop",
+"wseed": 92313
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s914-r150-ssr-fettl-rdttl-tau5-apop",
+"wseed": 92415
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "push",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdpush-tau1-apop",
+"runId": "cdT-s913-r150-csr-fettl-rdpush-tau1-apop",
+"wseed": 92315
+},
+{
+"seed": 912,
+"rtt": 150,
+"mode": "ssr",
+"fe": false,
+"rp": "ttl",
+"tau": 1,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-feoff-rdttl-tau1-apop",
+"runId": "cdT-s912-r150-ssr-feoff-rdttl-tau1-apop",
+"wseed": 92215
+},
+{
+"seed": 913,
+"rtt": 150,
+"mode": "ssr",
+"fe": "ttl",
+"rp": "push",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fettl-rdpush-tau5-apop",
+"runId": "cdT-s913-r150-ssr-fettl-rdpush-tau5-apop",
+"wseed": 92317
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 20,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau20-apop",
+"runId": "cdT-s911-r150-csr-fettl-rdttl-tau20-apop",
+"wseed": 92116
+},
+{
+"seed": 911,
+"rtt": 150,
+"mode": "ssr",
+"fe": "push",
+"rp": "push",
+"tau": 3600,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "ssr-fepush-rdpush-apop",
+"runId": "cdT-s911-r150-ssr-fepush-rdpush-apop",
+"wseed": 92117
+},
+{
+"seed": 914,
+"rtt": 150,
+"mode": "csr",
+"fe": "ttl",
+"rp": "ttl",
+"tau": 5,
+"alpha": "pop",
+"d": 0,
+"proc": {
+"kind": "poisson",
+"lam": 2.5
+},
+"cellName": "csr-fettl-rdttl-tau5-apop",
+"runId": "cdT-s914-r150-csr-fettl-rdttl-tau5-apop",
+"wseed": 92421
+}
+]
+}

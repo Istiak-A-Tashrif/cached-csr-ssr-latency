@@ -10,6 +10,7 @@ export default async function CsrPage() {
         apiUrl={process.env.PUBLIC_API_URL!}
         feCache={(process.env.FE_CACHE || "off") !== "off"}
         staleMs={process.env.FE_CACHE === "ttl" || process.env.FE_CACHE === "push" ? Number(process.env.TANSTACK_S || 2) * 1000 : Infinity}
+        app={(process.env.APP as "catalogue" | "conduit") || "catalogue"}
       />
     </Suspense>
   );

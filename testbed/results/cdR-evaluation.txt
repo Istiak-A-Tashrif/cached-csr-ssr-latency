@@ -1,0 +1,65 @@
+cdR: 108 runs, 20736 views, 0 errors, 0 views with unclassified outcome
+  csr-feoff-rdoff-apop                     stale obs 0.008 pred 0.005
+  csr-feoff-rdttl-tau1-apop                stale obs 0.026 pred 0.024
+  csr-feoff-rdttl-tau20-apop               stale obs 0.312 pred 0.319
+  csr-feoff-rdttl-tau5-apop                stale obs 0.150 pred 0.128
+  csr-feoff-rdttl-tau60-apop               stale obs 0.439 pred 0.409
+  csr-fettl-rdpush-tau1-apop               stale obs 0.012 pred 0.019
+  csr-fettl-rdpush-tau20-apop              stale obs 0.026 pred 0.020
+  csr-fettl-rdpush-tau5-apop               stale obs 0.016 pred 0.020
+  csr-fettl-rdpush-tau60-apop              stale obs 0.020 pred 0.019
+  csr-fettl-rdttl-tau1-apop                stale obs 0.022 pred 0.022
+  csr-fettl-rdttl-tau20-apop               stale obs 0.315 pred 0.319
+  csr-fettl-rdttl-tau5-apop                stale obs 0.132 pred 0.131
+  csr-fettl-rdttl-tau60-apop               stale obs 0.372 pred 0.384
+  ssr-feoff-rdoff-apop                     stale obs 0.008 pred 0.005
+  ssr-feoff-rdttl-tau1-apop                stale obs 0.030 pred 0.026
+  ssr-feoff-rdttl-tau20-apop               stale obs 0.358 pred 0.318
+  ssr-feoff-rdttl-tau5-apop                stale obs 0.165 pred 0.135
+  ssr-feoff-rdttl-tau60-apop               stale obs 0.368 pred 0.391
+  ssr-fepush-rdpush-apop                   stale obs 0.005 pred 0.006
+  ssr-fettl-rdpush-tau1-apop               stale obs 0.145 pred 0.136
+  ssr-fettl-rdpush-tau20-apop              stale obs 0.341 pred 0.351
+  ssr-fettl-rdpush-tau5-apop               stale obs 0.204 pred 0.219
+  ssr-fettl-rdpush-tau60-apop              stale obs 0.329 pred 0.389
+  ssr-fettl-rdttl-tau1-apop                stale obs 0.124 pred 0.134
+  ssr-fettl-rdttl-tau20-apop               stale obs 0.350 pred 0.350
+  ssr-fettl-rdttl-tau5-apop                stale obs 0.208 pred 0.220
+  ssr-fettl-rdttl-tau60-apop               stale obs 0.367 pred 0.391
+  apop|0.05: oracle ssr-fepush-rdpush-apop
+     selector  ssr-feoff-rdttl-tau1-apop          regret +0.3%
+     tuning    ssr-fepush-rdpush-apop             regret +0.0%
+     fixed     ssr-fepush-rdpush-apop             regret +0.0%
+     default   ssr-fettl-rdttl-tau60-apop         VIOLATES +0.317 (confirmed)
+     nocache   ssr-feoff-rdoff-apop               regret +0.4%
+  apop|0.1: oracle ssr-fepush-rdpush-apop
+     selector  ssr-feoff-rdttl-tau1-apop          regret +0.3%
+     tuning    ssr-fepush-rdpush-apop             regret +0.0%
+     fixed     ssr-fepush-rdpush-apop             regret +0.0%
+     default   ssr-fettl-rdttl-tau60-apop         VIOLATES +0.267 (confirmed)
+     nocache   ssr-feoff-rdoff-apop               regret +0.4%
+  apop|0.25: oracle ssr-fettl-rdttl-tau1-apop
+     selector  ssr-fettl-rdttl-tau1-apop          regret +0.0%
+     tuning    ssr-fettl-rdttl-tau1-apop          regret +0.0%
+     fixed     ssr-fepush-rdpush-apop             regret +0.5%
+     default   ssr-fettl-rdttl-tau60-apop         VIOLATES +0.117 (confirmed)
+     nocache   ssr-feoff-rdoff-apop               regret +0.9%
+  apop|0.5: oracle ssr-fettl-rdttl-tau1-apop
+     selector  ssr-fettl-rdttl-tau20-apop         regret +0.2%
+     tuning    ssr-fettl-rdttl-tau60-apop         regret +0.4%
+     fixed     ssr-fepush-rdpush-apop             regret +0.5%
+     default   ssr-fettl-rdttl-tau60-apop         regret +0.4%
+     nocache   ssr-feoff-rdoff-apop               regret +0.9%
+PASS  W1 pooled MAE <= 0.03: 0.0125
+FAIL  W2 every cell within 0.05: max 0.0597
+FAIL  W3 orderings: 266/267 wrong: [('ssr-feoff-rdttl-tau20-apop', 'ssr-fettl-rdpush-tau60-apop')]
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 4 ms
+PASS  W5 predictions before runs: 108/108
+PASS  L1 mean latency error <= 3%: 1.39% over 54 (cell, action)
+PASS  L2 every (cell, action) within max(5%, 10 ms): max 3.04%
+FAIL  O1 outcome calibration (deciles, n >= 100) within 0.05: 0: n=676 pred 0.057 obs 0.062; 1: n=875 pred 0.146 obs 0.123; 2: n=326 pred 0.239 obs 0.199; 3: n=207 pred 0.353 obs 0.362; 4: n=174 pred 0.444 obs 0.500; 5: n=42 pred 0.518 obs 0.405; 6: n=12 pred 0.658 obs 0.583
+PASS  O2 Brier skill > 0: Brier 0.0337 ref 0.3907 skill +0.914; top-1 0.978 over 20736 views
+PASS  O3 Brier - expected Brier <= 0.03: +0.0042
+PASS  B4a mean selector regret <= 5%: mean 0.17% over 4 feasible decisions, worst 0.26%
+PASS  B4b no confirmed constraint violation: 0 confirmed
+NOT ACCEPTED

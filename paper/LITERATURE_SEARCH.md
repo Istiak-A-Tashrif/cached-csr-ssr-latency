@@ -89,3 +89,15 @@ The same 8 query strings as OpenAlex Q1–Q5, Q8 and Q10, plus "React Server Com
   - CSR/SSR measurements, single-layer staleness studies, TTL-hierarchy theory, and ML predictors of page performance.
   - Earlier work on emulation fidelity exists in general. We found none reporting the specific Chromium connection-race shift, nor the Playwright certificate-handling cost.
 - **Wording kept in the paper:** "to our knowledge", not "first", because no search can be exhaustive (Semantic Scholar was rate-limited; Google Scholar was searched through third-party services).
+
+## Revision searches (21 Oct 2026, TWEB revision)
+Targeted web searches for what-if web performance prediction, probabilistic staleness prediction, freshness under Poisson updates, and TTL selection under staleness constraints. They found four works the earlier searches had missed. All are verified via Crossref (WebProphet via its USENIX page) and added:
+
+| Work | Why |
+|---|---|
+| Li et al., WebProphet, NSDI '10 | What-if prediction of page-load time from extracted dependencies (errors mostly < 16%) |
+| Jiang et al., WebPerf, SIGCOMM '16, doi:10.1145/2934872.2934882 | What-if prediction of cloud-side latency under resource-tier changes, Redis tiers included (median error < 7%) |
+| Bailis et al., PBS, PVLDB 5(8) 2012, doi:10.14778/2212351.2212359 | Staleness and latency prediction for partial quorums, validated against measurements |
+| Cho & Garcia-Molina, SIGMOD '00, doi:10.1145/342009.335391 | Classical freshness under Poisson changes |
+
+Quaestor (already cited) uses the same sum-of-rates thinning as our staleness probability. The closest-work comparison with quoted passages is in `CLOSEST_WORK.md`; it narrowed the contribution claims.

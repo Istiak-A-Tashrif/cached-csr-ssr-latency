@@ -23,9 +23,11 @@ def boot(xs, it=4000, seed=1):
 # A rerun keeps its runId; log entries from the discarded attempt (before the
 # logged discard time) are ignored so they cannot be mistaken for the run start.
 import datetime as _dt
-discarded = {d["runId"]: _dt.datetime.fromisoformat(d["at"].replace("Z", "+00:00")).timestamp() for d in jl("discarded-runs.jsonl")}
-first_ts = defaultdict(lambda: float("inf"))
 import os as _os
+# The discard log sits next to the server logs (an archived subdirectory has its own).
+discarded = {d["runId"]: _dt.datetime.fromisoformat(d["at"].replace("Z", "+00:00")).timestamp()
+             for d in jl(_os.path.join(_os.environ.get("SERVER_LOGS", ""), "discarded-runs.jsonl"))}
+first_ts = defaultdict(lambda: float("inf"))
 for x in jl(_os.path.join(_os.environ.get("SERVER_LOGS", ""), "api.jsonl")):
     r = x.get("runId")
     if r in runs and x["ts"] / 1000 > discarded.get(r, 0):

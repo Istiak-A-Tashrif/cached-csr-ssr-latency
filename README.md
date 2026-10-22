@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/1427513690.svg)](https://doi.org/10.5281/zenodo.23512120)
 
-Artifact for the paper *Predicting Data-Visible Latency and Staleness of Cached Client- and Server-Rendered Web Applications: A Prospectively Validated Path Model* (Istiak Ahmed Tashrif, submitted to ACM Transactions on the Web).
+Artifact for the paper *Predicting Latency and Freshness of Cached Client- and Server-Rendered Web Applications* (Istiak Ahmed Tashrif, submitted to ACM Transactions on the Web). Version 1.1.0 adds the revision's experiments: predicted serving layers, other write processes, policy selection, a second application (Conduit) and the retrospective analyses.
 
 It contains everything needed to rerun the experiments, re-score every test from its logs, and regenerate the paper's figures and tables.
 
@@ -20,6 +20,13 @@ It contains everything needed to rerun the experiments, re-score every test from
 | `paper/` | LaTeX sources; `make_figs.py` rebuilds every figure and table from the evaluation reports |
 | `docs/DECISION_LOG.md` | Dated log of design decisions, pre-registered criteria, results and diagnoses |
 | `docs/EXPERIMENT_REPORT.md` | Detailed experiment report |
+| `testbed/protocol/` | Revision protocols frozen before their runs (`PROTOCOL.md`, `PROTOCOL_CONDUIT.md`), hashes (`FROZEN*.json`), run manifests (`rev*.json`, `cd*.json`) |
+| `testbed/modelR.py`, `modelRC.py`, `writeproc.py` | Revision models: serving layer per view, latency and staleness under any declared write process (Poisson, periodic, on/off, trace) |
+| `testbed/evaluateR.py`, `evaluateRC.py` | Score revision blocks: staleness (W), latency (L), serving layer (O) and policy selection (B4) |
+| `testbed/conduit/` | Second application: the RealWorld "Conduit" reference backend (fetched at a pinned commit, unmodified) and the bench entry point that adds logging, a Redis layer, a writer and admin endpoints |
+| `testbed/traces/` | Public inputs: German Wikipedia edit timestamps (write timing) and top-article pageviews (popularity), with the fetch scripts in `tools/` |
+| `testbed/ablation.py`, `baselines_eq.py`, `calib_efficiency.py`, `uncertainty.py`, `staleness_checks.py`, `b1_offline.py`, `b4_offline.py` | Retrospective analyses of the frozen predictions (ablation, equal-information baselines, calibration cost, bootstrap intervals, oracle checks, serving-layer and selection scoring); outputs in `testbed/results/revision/` |
+| `tools/reproduce_evaluations.sh` | Re-scores every prospective test from the raw logs and checks them against the published evaluations and `tools/raw-data.sha256` |
 
 Server names and addresses in configs, logs and docs are replaced by placeholders. The documentation ranges `203.0.113.0/24` and `198.51.100.0/24` stand in for the servers and the home network. Set your own hosts in the `docker-compose.*.yml` overrides.
 
@@ -47,6 +54,15 @@ cd testbed && python3 evaluate_n.py rep5 predictions5.jsonl   # any test
 cd ../paper && python3 -m venv .venv && .venv/bin/pip install matplotlib==3.9.2 numpy==2.0.2
 .venv/bin/python make_figs.py         # figures and tables
 ```
+
+Revision blocks (the catalogue first, then Conduit with `APP=conduit` and `COMPOSE_FILE=docker-compose.yml:docker-compose.conduit.yml`):
+
+```sh
+python3 freezeR.py && sh protocol/run_catalogue.sh      # revPilotT, revT, revPilotR, revR, revB2T, revB2R
+python3 evaluateR.py revT --pilot revPilotT
+```
+
+To check every published evaluation from the raw logs: `tar xzf data/raw-results.tar.gz && bash tools/reproduce_evaluations.sh`.
 
 ## Prospective protocol
 

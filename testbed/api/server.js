@@ -131,10 +131,36 @@ async function purge(page) {
   if (config.inv === "push") await redis.del(`products:${config.query}:p${page}:l25`);
   if (config.invNext) await fetch(`${process.env.WEB_URL || "http://web:3000"}/api/revalidate?tag=p${page}-l25`).catch(() => {});
 }
-function startWriter({ lam, pages, seed }) {
+// Write processes (TWEB revision, B2). "poisson" (default) is unchanged from item 8 / experiment X:
+// the same random stream, so earlier runs replay identically. Others: "periodic" (every 1/lam s,
+// random phase), "onoff" (Poisson at onRate during exponential ON periods of mean onMean s, none
+// during OFF periods of mean offMean s; starts in the stationary state), "trace" (commit offsets
+// in ms from writer start, supplied by the harness). The written product is uniform over the
+// workload's pages in every process.
+function* schedule({ kind = "poisson", lam, onRate, onMean, offMean, times }, rand) {
+  const exp = (rate) => -Math.log(1 - rand()) / rate * 1000;
+  if (kind === "poisson") { let t = 0; for (;;) { t += exp(lam); yield t; } }
+  if (kind === "periodic") { const d = 1000 / lam; let t = rand() * d; for (;;) { yield t; t += d; } }
+  if (kind === "onoff") {
+    let on = rand() < onMean / (onMean + offMean), t = 0, end = exp(1 / (on ? onMean : offMean));
+    for (;;) {
+      if (on) { const a = t + exp(onRate); if (a < end) { t = a; yield t; continue; } }
+      t = end; on = !on; end = t + exp(1 / (on ? onMean : offMean));
+    }
+  }
+  if (kind === "trace") { for (const t of times) yield t; return; }
+  throw new Error(`unknown write process ${kind}`);
+}
+function startWriter(spec) {
+  const { pages, seed } = spec;
   const rand = rng(seed); let seq = 0;
+  // Poisson keeps its original draw order (wait, then product) so earlier runs replay identically.
+  const draws = spec.kind && spec.kind !== "poisson" ? schedule(spec, rand) : null;
+  const t0 = Date.now();
   const next = () => {
-    const wait = -Math.log(1 - rand()) / lam * 1000;           // exponential inter-arrival (ms)
+    let wait;
+    if (draws) { const it = draws.next(); if (it.done) { writer = null; return; } wait = Math.max(0, it.value - (Date.now() - t0)); }
+    else wait = -Math.log(1 - rand()) / spec.lam * 1000;     // exponential inter-arrival (ms)
     const productId = 1 + Math.floor(rand() * pages * 25);     // uniform over the workload's pages
     writer = setTimeout(async () => {
       const r = await pool.query("UPDATE inventory SET stock = stock + 1, last_updated = now() WHERE product_id = $1 RETURNING stock", [productId]);
@@ -154,8 +180,8 @@ app.get("/__admin/stock", async (req, res) => {
 });
 app.post("/__admin/writes", (req, res) => {
   if (writer) { clearTimeout(writer); writer = null; }
-  if (req.body?.lam) startWriter(req.body);
-  config.writes = req.body?.lam ? req.body : null;
+  if (req.body?.lam || req.body?.kind === "trace") startWriter(req.body);
+  config.writes = req.body?.lam || req.body?.kind === "trace" ? { ...req.body, times: req.body.times ? req.body.times.length : undefined } : null;
   res.json({ writes: config.writes });
 });
 

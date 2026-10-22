@@ -1,0 +1,47 @@
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.25cm} >{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.6cm}}
+\caption{Model versions and their fresh tests (mean / max relative error, \%, and failed criteria).}\label{tab:ledger}\\
+\toprule
+Version & Change and motivation & Fresh tests (mean / max \%) & Outcome \\
+\midrule
+\endfirsthead
+\toprule
+Version & Change and motivation & Fresh tests (mean / max \%) & Outcome \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\multicolumn{4}{l}{\emph{Latency, emulated paths (macOS host)}}\\
+v1 & Pilot path model & 1 test (max 39.4) & Superseded before criteria existed \\
+v2 & Analytic cache outcomes; slow-start transfers & 1 test (3.3 / 11.8) & Superseded before criteria existed \\
+v3 & TCP-connect RTT probes; warm-up page & stopped part-way & Stopped (author decision) \\
+v4 & Connection-aware bundle dispatch; serialization & 3.68 / 11.88 (C1, C2) & Not accepted; criteria fixed before scoring \\
+v5 & Residual $\rho$ over client RTT & 1.10 / 3.78; rep 0.77 / 3.64 & \textbf{Accepted} \\
+\multicolumn{4}{l}{\emph{Latency, real relayed path (Linux host)}}\\
+v6 & v5 recalibrated under emulation on the server host & 2.28 / 7.74 (C2, C3); rep 2.34 / 7.01 (C2) & Not accepted: connection race \\
+v7 & Race probability measured before each run & 0.61 / 1.15; rep 1.08 / 2.27 & \textbf{Accepted} \\
+v8 & Bandwidth as a measured input & 0.64 / 2.04; rep 0.88 / 2.51 (C3) & Not accepted: SSR navigation offset \\
+v8b & v8 plus an SSR-navigation transfer offset from used real-path runs & 0.62 / 2.23; rep 0.70 / 2.38 & \textbf{Accepted} \\
+v9 & HTTPS + HTTP/2 (TLS handshake, one connection) & 0.26 / 0.44; rep 0.23 / 0.61 & \textbf{Accepted} (residual absorbed a certificate artifact) \\
+v9b & v9 with the certificate trusted & real path invalid (RTT 490--1{,}700\,ms); emulated 1.20 / 6.01 (C2); rep 0.18 / 0.53 & Not accepted (miss below the grid) \\
+\multicolumn{4}{l}{\emph{Latency, transfer and limits}}\\
+S & v7 equations recalibrated for SvelteKit & 0.69 / 2.78; rep 0.33 / 0.90 & \textbf{Accepted} \\
+LQ & v7 equations for a heavier page & 1.23 / 2.91; rep 0.61 / 2.27 & \textbf{Accepted} \\
+R & CPU throttling, two calibrated levels (macOS) & 3.26 / 5.05; rep 6.18 / 12.44 & Invalid: load-dependent core speed \\
+LR2 & R repeated on pinned Linux cores & 2.28 / 7.05 (C2, C4); rep 2.08 / 7.22 (C2) & Not accepted; iteration stopped \\
+C & Concurrency, MVA (macOS) & 10.79 / 13.61; rep 15.92 / 18.68 & Invalid: load-dependent core speed \\
+P & MVA on pinned cores & 11.98 / 38.17; rep 26.56 / 83.78 & Not accepted: launch bursts, total demand \\
+P2 & Launch barrier; on-path vs total demand & 2.70 / 8.84 (C2); rep 8.86 / 15.95 & Not accepted: load-dependent demand \\
+P3 & Load-dependent demand & 3.16 / 3.71 (C1); rep 2.00 / 3.41 & Not accepted (replication passed) \\
+P4 & P3 refitted on all barrier-era runs & 2.26 / 6.35 (C2); rep 4.74 / 9.37 & Not accepted; iteration stopped \\
+H & Home broadband path & 6.76 / 7.90; rep 3.69 / 8.63 & Not accepted \\
+H2 & Bandwidth levels; request-level RTT & 5.31 / 11.54; rep 6.36 / 22.58 & Not accepted: short probe read low \\
+H3 & Pinned server cores; bundle-equivalent bandwidth & 8.26 / 26.21; rep 5.28 / 11.39 & Not accepted; iteration stopped \\
+\multicolumn{4}{l}{\emph{Staleness (pooled absolute error)}}\\
+W & Timeline staleness model & 0.063 (application bug); rep discarded unscored & Bug fixed; model unchanged \\
+W (re-test) & Same frozen model, 8 seeds per cell & 0.011; rep 0.009 & \textbf{Accepted} \\
+X & Joint latency and staleness with server work $d$ & 0.013, L1 1.87; rep 0.006, L1 0.95 & \textbf{Accepted} \\
+\multicolumn{4}{l}{\emph{Revision: serving layer, staleness and selection (protocol frozen before the runs)}}\\
+R & Experiment X's frozen calibration; declared write process; serving-layer distribution per view & catalogue \revTLone / \revRLone{} (latency); write processes \revBTwoTLone / \revBTwoRLone & Selection accepted; staleness and serving-layer gates not accepted (\revTFails; \revRFails; \revBTwoTFails; \revBTwoRFails) \\
+RC & R with per-page write probability; recalibrated on Conduit (36 runs) & Conduit \cdTLone / \cdRLone; second host \cdHTLone / \cdHRLone & Selection accepted; other gates not accepted (\cdTFails; \cdRFails; \cdHTFails; \cdHRFails) \\
+R2 & R with the push-exposure timing correction found post hoc on the catalogue blocks; predictions from the session distribution only & near-threshold \revHTLone / \revHRLone{} (latency) & All prediction criteria passed in both; margin selector 0 violations; regret bound missed in the replication \\
+\end{longtable}
