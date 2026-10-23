@@ -1,0 +1,134 @@
+{
+ "tag": "cdDev",
+ "stale": {
+  "ssr-fepush-rdpush-apop": [
+   0.010416666666666666,
+   0.008964132455563803
+  ],
+  "ssr-feoff-rdoff-apop": [
+   0.0,
+   0.008777450620887896
+  ],
+  "csr-fettl-rdttl-tau3-apop": [
+   0.09895833333333333,
+   0.1189433928595209
+  ],
+  "ssr-fettl-rdpush-tau3-apop": [
+   0.328125,
+   0.26487770784105014
+  ]
+ },
+ "latency": {
+  "ssr-fepush-rdpush-apop|initial": [
+   257.60625000298023,
+   258.91067673570166
+  ],
+  "ssr-fepush-rdpush-apop|nav": [
+   124.24772727015343,
+   122.41629181562804
+  ],
+  "ssr-feoff-rdoff-apop|initial": [
+   263.7187499962747,
+   262.87893916339584
+  ],
+  "ssr-feoff-rdoff-apop|nav": [
+   125.87102272937244,
+   126.73347476457957
+  ],
+  "csr-fettl-rdttl-tau3-apop|initial": [
+   901.8124999962747,
+   899.5704035163767
+  ],
+  "csr-fettl-rdttl-tau3-apop|nav": [
+   97.677272727205,
+   95.02257828886677
+  ],
+  "ssr-fettl-rdpush-tau3-apop|initial": [
+   260.2062499858439,
+   259.70882293482083
+  ],
+  "ssr-fettl-rdpush-tau3-apop|nav": [
+   123.37272727116942,
+   122.81794291996616
+  ]
+ },
+ "outcome_calibration": {
+  "0": [
+   29,
+   0.052157094659795684,
+   0.06896551724137931
+  ],
+  "1": [
+   42,
+   0.15389099026343225,
+   0.09523809523809523
+  ],
+  "2": [
+   35,
+   0.2507328287486472,
+   0.2857142857142857
+  ],
+  "3": [
+   19,
+   0.3428878925220968,
+   0.21052631578947367
+  ],
+  "4": [
+   13,
+   0.4469482816340072,
+   0.3076923076923077
+  ],
+  "5": [
+   6,
+   0.5442904460547228,
+   0.8333333333333334
+  ],
+  "6": [
+   7,
+   0.6446476949195439,
+   0.2857142857142857
+  ]
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0234"
+  ],
+  "W2 every cell within 0.05": [
+   false,
+   "max 0.0632"
+  ],
+  "W3 orderings": [
+   true,
+   "5/5"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 9 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "4/4"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "0.82% over 8 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 2.72%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   true,
+   "0: n=29 pred 0.052 obs 0.069; 1: n=42 pred 0.154 obs 0.095; 2: n=35 pred 0.251 obs 0.286; 3: n=19 pred 0.343 obs 0.211; 4: n=13 pred 0.447 obs 0.308; 5: n=6 pred 0.544 obs 0.833; 6: n=7 pred 0.645 obs 0.286"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0595 ref 0.2639 skill +0.774; top-1 0.961 over 768 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "-0.0029"
+  ]
+ }
+}

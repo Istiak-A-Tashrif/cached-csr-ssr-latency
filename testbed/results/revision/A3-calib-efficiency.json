@@ -1,0 +1,2225 @@
+[
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 36,
+  "wall_min": 45.07143333333333,
+  "real7:model": 0.6064080378208251,
+  "real7:ridge": 1.4665841182501622,
+  "rep7:model": 1.0845305745143334,
+  "rep7:ridge": 1.8029988336964813
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 20,
+  "wall_min": 22.973083333333335,
+  "real7:model": 0.5937397393210857,
+  "real7:ridge": 1.9186968636899966,
+  "rep7:model": 1.0615791517604087,
+  "rep7:ridge": 2.194556028598252
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 20,
+  "wall_min": 22.9044,
+  "real7:model": 0.6236090470823064,
+  "real7:ridge": 1.5441822419999685,
+  "rep7:model": 1.1063555359734296,
+  "rep7:ridge": 1.8277184645787494
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 28,
+  "wall_min": 27.508183333333335,
+  "real7:model": 3.0764739031869883,
+  "real7:ridge": 2.090313655727282,
+  "rep7:model": 3.3969389139280333,
+  "rep7:ridge": 2.3226738886172873
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 16,
+  "wall_min": 14.192583333333333,
+  "real7:model": 3.1299153898561167,
+  "real7:ridge": 2.355189282502707,
+  "rep7:model": 3.390059307789898,
+  "rep7:ridge": 2.5644078940934554
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   400
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 16,
+  "wall_min": 14.12165,
+  "real7:model": 3.0276305125099072,
+  "real7:ridge": 2.3450885077750194,
+  "rep7:model": 3.396539504222848,
+  "rep7:ridge": 2.5842978529801677
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 28,
+  "wall_min": 31.948983333333334,
+  "real7:model": 0.6340572155278071,
+  "real7:ridge": 1.5241664952699574,
+  "rep7:model": 1.0761072483717025,
+  "rep7:ridge": 1.7943303760892704
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 16,
+  "wall_min": 16.408316666666668,
+  "real7:model": 0.6246065931564713,
+  "real7:ridge": 1.9988335369835428,
+  "rep7:model": 1.0435682398983601,
+  "rep7:ridge": 2.2208618312148127
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 16,
+  "wall_min": 16.346716666666666,
+  "real7:model": 0.6455913517009513,
+  "real7:ridge": 1.5660887132475094,
+  "rep7:model": 1.107356997299496,
+  "rep7:ridge": 1.7912503943602265
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 28,
+  "wall_min": 36.36423333333333,
+  "real7:model": 0.6064077096510081,
+  "real7:ridge": 1.3693123235681657,
+  "rep7:model": 1.0845312830181784,
+  "rep7:ridge": 1.754189522028833
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 16,
+  "wall_min": 18.617333333333335,
+  "real7:model": 0.5937390277995294,
+  "real7:ridge": 1.863039786017467,
+  "rep7:model": 1.0615806914130783,
+  "rep7:ridge": 2.198508495094397
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 16,
+  "wall_min": 18.55295,
+  "real7:model": 0.6236089890294123,
+  "real7:ridge": 1.481069714786456,
+  "rep7:model": 1.1063556614065613,
+  "rep7:ridge": 1.838235486827705
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 28,
+  "wall_min": 40.19895,
+  "real7:model": 0.6064080378208251,
+  "real7:ridge": 1.445729123267057,
+  "rep7:model": 1.0845305745143334,
+  "rep7:ridge": 1.7311281684912325
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 16,
+  "wall_min": 20.507066666666667,
+  "real7:model": 0.5937397393210857,
+  "real7:ridge": 1.9017105752328924,
+  "rep7:model": 1.0615791517604087,
+  "rep7:ridge": 2.181977809503383
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 16,
+  "wall_min": 20.497933333333332,
+  "real7:model": 0.6236090470823064,
+  "real7:ridge": 1.5540073941659949,
+  "rep7:model": 1.1063555359734296,
+  "rep7:ridge": 1.7821081633704419
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 14.385733333333333,
+  "real7:model": 6.481581814146249,
+  "real7:ridge": 3.3494149127484585,
+  "rep7:model": 6.773658673938292,
+  "rep7:ridge": 3.3409995770802796
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 7.627816666666667,
+  "real7:model": 6.526237747378216,
+  "real7:ridge": 3.750249004572643,
+  "rep7:model": 6.771115021038796,
+  "rep7:ridge": 3.7050422853471807
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   250
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 7.5639666666666665,
+  "real7:model": 6.43798051129337,
+  "real7:ridge": 4.021936222123832,
+  "rep7:model": 6.77594807717624,
+  "rep7:ridge": 3.927675336255961
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 18.800983333333335,
+  "real7:model": 3.07647742648051,
+  "real7:ridge": 2.1622592013047304,
+  "rep7:model": 3.3969427051396974,
+  "rep7:ridge": 2.517420105229965
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 9.836833333333333,
+  "real7:model": 3.1299218628546073,
+  "real7:ridge": 2.255160769336242,
+  "rep7:model": 3.3900663121573165,
+  "rep7:ridge": 2.502444171768036
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   400
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 9.7702,
+  "real7:model": 3.0276310389804,
+  "real7:ridge": 2.458902413710829,
+  "rep7:model": 3.396540073911341,
+  "rep7:ridge": 2.7476754551549765
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 23.241783333333334,
+  "real7:model": 0.6251735893310513,
+  "real7:ridge": 1.3927046781128651,
+  "rep7:model": 1.0719724238699724,
+  "rep7:ridge": 1.7355692120803143
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 12.052566666666667,
+  "real7:model": 0.6096704892736271,
+  "real7:ridge": 1.8986653451012765,
+  "rep7:model": 1.0361874384646081,
+  "rep7:ridge": 2.2245155131201604
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 11.995266666666666,
+  "real7:model": 0.646555683872639,
+  "real7:ridge": 1.457950234612222,
+  "rep7:model": 1.1065249900710377,
+  "rep7:ridge": 1.7844956992592345
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 22.6357,
+  "real7:model": 3.0764739031869883,
+  "real7:ridge": 2.1832437170434758,
+  "rep7:model": 3.3969389139280333,
+  "rep7:ridge": 2.3655481349299867
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 11.726566666666667,
+  "real7:model": 3.1299153898561167,
+  "real7:ridge": 2.375023318486567,
+  "rep7:model": 3.390059307789898,
+  "rep7:ridge": 2.5741616421171565
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 11.715183333333334,
+  "real7:model": 3.0276305125099072,
+  "real7:ridge": 2.4155476668127775,
+  "rep7:model": 3.396539504222848,
+  "rep7:ridge": 2.5941145850609666
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 27.0765,
+  "real7:model": 0.634058092212961,
+  "real7:ridge": 1.4968422286538463,
+  "rep7:model": 1.076105296912993,
+  "rep7:ridge": 1.7486305370432442
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 13.9423,
+  "real7:model": 0.6246073108978755,
+  "real7:ridge": 1.9637133403311735,
+  "rep7:model": 1.0435666631359157,
+  "rep7:ridge": 2.217924522291998
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 13.94025,
+  "real7:model": 0.6455911686002219,
+  "real7:ridge": 1.5670574158817392,
+  "rep7:model": 1.107357392955443,
+  "rep7:ridge": 1.7592530725208444
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400,
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 20,
+  "wall_min": 31.49175,
+  "real7:model": 0.6064060806644065,
+  "real7:ridge": 1.2887920457139754,
+  "rep7:model": 1.0845348000929727,
+  "rep7:ridge": 1.6833290152916551
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400,
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 12,
+  "wall_min": 16.151316666666666,
+  "real7:model": 0.5937359528650031,
+  "real7:ridge": 1.8099730159275658,
+  "rep7:model": 1.0615873452257871,
+  "rep7:ridge": 2.1825117660767464
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400,
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 12,
+  "wall_min": 16.146483333333332,
+  "real7:model": 0.6236086589918516,
+  "real7:ridge": 1.4361121834572328,
+  "rep7:model": 1.1063563745086842,
+  "rep7:ridge": 1.8172314929926523
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 12,
+  "wall_min": 5.678533333333333,
+  "real7:model": 9.252912094967197,
+  "real7:ridge": 8.215343521720824,
+  "rep7:model": 9.654479261782273,
+  "rep7:ridge": 8.12102240805098
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 8,
+  "wall_min": 3.2720666666666665,
+  "real7:model": 9.2952577078563,
+  "real7:ridge": 7.542664994187305,
+  "rep7:model": 9.712894231204865,
+  "rep7:ridge": 7.222193455572127
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   120
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 8,
+  "wall_min": 3.2125166666666667,
+  "real7:model": 9.267021841467209,
+  "real7:ridge": 9.283475194095107,
+  "rep7:model": 9.723114546741455,
+  "rep7:ridge": 8.95359792949291
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 12,
+  "wall_min": 9.51325,
+  "real7:model": 6.4816214819589755,
+  "real7:ridge": 3.4289125796699773,
+  "rep7:model": 6.773699413469471,
+  "rep7:ridge": 3.421984619310603
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 8,
+  "wall_min": 5.1618,
+  "real7:model": 6.526251793677303,
+  "real7:ridge": 3.603815022177033,
+  "rep7:model": 6.771129157439104,
+  "rep7:ridge": 3.594016223005762
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 8,
+  "wall_min": 5.1575,
+  "real7:model": 6.437983800957944,
+  "real7:ridge": 3.5599239850709585,
+  "rep7:model": 6.775951638114916,
+  "rep7:ridge": 3.5921391286812794
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 12,
+  "wall_min": 13.9285,
+  "real7:model": 3.0764948329128297,
+  "real7:ridge": 2.1926694825693143,
+  "rep7:model": 3.396961437938737,
+  "rep7:ridge": 2.4601497740871388
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 8,
+  "wall_min": 7.370816666666666,
+  "real7:model": 3.1299498367739624,
+  "real7:ridge": 2.2123465276479735,
+  "rep7:model": 3.390096582457816,
+  "rep7:ridge": 2.496873380181637
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 8,
+  "wall_min": 7.363733333333333,
+  "real7:model": 3.027634032027176,
+  "real7:ridge": 2.4302657893049417,
+  "rep7:model": 3.396543312657557,
+  "rep7:ridge": 2.7247554017114832
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   550
+  ],
+  "seeds": [
+   111,
+   112
+  ],
+  "runs": 12,
+  "wall_min": 18.3693,
+  "real7:model": 0.6353667693185658,
+  "real7:ridge": 1.2578127836019057,
+  "rep7:model": 1.0803855016460422,
+  "rep7:ridge": 1.6945348635347968
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   550
+  ],
+  "seeds": [
+   111
+  ],
+  "runs": 8,
+  "wall_min": 9.58655,
+  "real7:model": 0.6209300139483197,
+  "real7:ridge": 1.819604148090714,
+  "rep7:model": 1.0510203280424266,
+  "rep7:ridge": 2.2501829096119597
+ },
+ {
+  "family": "v7 (real path)",
+  "rtts": [
+   550
+  ],
+  "seeds": [
+   112
+  ],
+  "runs": 8,
+  "wall_min": 9.5888,
+  "real7:model": 0.6520685319525037,
+  "real7:ridge": 1.3741738439165687,
+  "rep7:model": 1.1082275435351558,
+  "rep7:ridge": 1.8114413019521398
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 36,
+  "wall_min": 28.4794,
+  "testS:model": 0.6921741210217466,
+  "testS:ridge": 0.6729042266423216,
+  "repS:model": 0.327946561355958,
+  "repS:ridge": 0.45246982018358334
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 20,
+  "wall_min": 14.369966666666667,
+  "testS:model": 0.7259938507181213,
+  "testS:ridge": 0.752864774766852,
+  "repS:model": 0.3348877440094327,
+  "repS:ridge": 0.4907933902814897
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 20,
+  "wall_min": 14.444533333333334,
+  "testS:model": 0.7116018701692602,
+  "testS:ridge": 0.7755205132725035,
+  "repS:model": 0.3424454709206791,
+  "repS:ridge": 0.3785003163464656
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 28,
+  "wall_min": 16.10835,
+  "testS:model": 1.5180399681233956,
+  "testS:ridge": 0.8404822512412248,
+  "repS:model": 1.7432313605135346,
+  "repS:ridge": 0.6296215331091283
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 16,
+  "wall_min": 8.200766666666667,
+  "testS:model": 1.5985732034223457,
+  "testS:ridge": 0.8928060225796887,
+  "repS:model": 1.7796819416616685,
+  "repS:ridge": 0.6226591132617706
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 16,
+  "wall_min": 8.242683333333334,
+  "testS:model": 1.5213767403432907,
+  "testS:ridge": 1.0440240642438956,
+  "repS:model": 1.7500999993701538,
+  "repS:ridge": 0.7782902196404891
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 28,
+  "wall_min": 20.388033333333333,
+  "testS:model": 0.7010027553686803,
+  "testS:ridge": 0.7051687094608086,
+  "repS:model": 1.4888772858344879,
+  "repS:ridge": 0.46444715444652585
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 16,
+  "wall_min": 10.336283333333334,
+  "testS:model": 0.6899704445623391,
+  "testS:ridge": 0.8156770176892911,
+  "repS:model": 1.4739079894693183,
+  "repS:ridge": 0.5347155572601228
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 16,
+  "wall_min": 10.38685,
+  "testS:model": 0.7580365384125457,
+  "testS:ridge": 0.8099645864640896,
+  "repS:model": 1.5471940420035144,
+  "repS:ridge": 0.4814590829720402
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 28,
+  "wall_min": 23.24945,
+  "testS:model": 1.0910628249518146,
+  "testS:ridge": 0.7671279405559084,
+  "repS:model": 0.3533040309085656,
+  "repS:ridge": 0.508741032946249
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 16,
+  "wall_min": 11.761516666666667,
+  "testS:model": 1.2345169461799457,
+  "testS:ridge": 0.7398851626446084,
+  "repS:model": 0.41887178782309537,
+  "repS:ridge": 0.5105837960484487
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 16,
+  "wall_min": 11.823033333333333,
+  "testS:model": 0.9729987715959112,
+  "testS:ridge": 0.7672468708060997,
+  "repS:model": 0.32371985986374346,
+  "repS:ridge": 0.38673978503663764
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 28,
+  "wall_min": 26.027466666666665,
+  "testS:model": 1.136172357909249,
+  "testS:ridge": 0.9585830854641488,
+  "repS:model": 0.3279592617492907,
+  "repS:ridge": 0.2916845862737991
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 16,
+  "wall_min": 13.146433333333333,
+  "testS:model": 1.312170691618209,
+  "testS:ridge": 0.9451007298714574,
+  "repS:model": 0.33491148444800944,
+  "repS:ridge": 0.3189437858948719
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 16,
+  "wall_min": 13.216133333333334,
+  "testS:model": 1.0306421509267403,
+  "testS:ridge": 0.9841749679513042,
+  "repS:model": 0.34241566579339544,
+  "repS:ridge": 0.30133885511046454
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 8.016983333333334,
+  "testS:model": 3.09903236197759,
+  "testS:ridge": 1.2861006431795958,
+  "repS:model": 4.281069276329219,
+  "repS:ridge": 1.182644639770038
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 4.167083333333333,
+  "testS:model": 3.1375322626190703,
+  "testS:ridge": 1.1763357671757142,
+  "repS:model": 4.265159843502103,
+  "repS:ridge": 0.9748684013524263
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 4.185,
+  "testS:model": 3.133164306588168,
+  "testS:ridge": 1.3195769613242132,
+  "repS:model": 4.3707160861498515,
+  "repS:ridge": 1.1404793372210371
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 10.8784,
+  "testS:model": 1.915432157005266,
+  "testS:ridge": 0.8565955104217876,
+  "repS:model": 1.7677629920013926,
+  "repS:ridge": 0.6867837490950148
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 5.592316666666667,
+  "testS:model": 2.1054315265232626,
+  "testS:ridge": 0.8790825692701583,
+  "repS:model": 1.8617852770348098,
+  "repS:ridge": 0.7533976530444078
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 5.621183333333334,
+  "testS:model": 1.7827516605620215,
+  "testS:ridge": 1.324512243117116,
+  "repS:model": 1.731387287999532,
+  "repS:ridge": 1.4212185786668488
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 15.158083333333334,
+  "testS:model": 2.818323817260048,
+  "testS:ridge": 0.8809358991844523,
+  "repS:model": 4.170849035680179,
+  "repS:ridge": 0.5015436561661932
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 7.727833333333334,
+  "testS:model": 2.88815269745846,
+  "testS:ridge": 0.8410549128826069,
+  "repS:model": 4.230328210195037,
+  "repS:ridge": 0.5592744143339902
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 7.76535,
+  "testS:model": 2.767968453327722,
+  "testS:ridge": 0.7844280375743393,
+  "repS:model": 4.153071918117797,
+  "repS:ridge": 0.4510110897088261
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 13.656416666666667,
+  "testS:model": 1.9620382050108982,
+  "testS:ridge": 1.1462120683695551,
+  "repS:model": 1.7432440609068671,
+  "repS:ridge": 0.5650811567512248
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 6.977233333333333,
+  "testS:model": 2.1847500443224326,
+  "testS:ridge": 1.1367492190928319,
+  "repS:model": 1.779705682100246,
+  "repS:ridge": 0.5747407269546028
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 7.014283333333333,
+  "testS:model": 1.8404170211007715,
+  "testS:ridge": 1.1749852394269265,
+  "repS:model": 1.7500701942428705,
+  "repS:ridge": 0.7050391188774102
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 17.9361,
+  "testS:model": 1.1642307488201178,
+  "testS:ridge": 0.9934672576646948,
+  "repS:model": 1.4889320023676345,
+  "repS:ridge": 0.30375064535008056
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 9.11275,
+  "testS:model": 1.2858249563115294,
+  "testS:ridge": 0.9618947340990884,
+  "repS:model": 1.4739458728570134,
+  "repS:ridge": 0.3983054577310569
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 9.15845,
+  "testS:model": 1.066966449004802,
+  "testS:ridge": 0.9977605633638874,
+  "repS:model": 1.5472438517489238,
+  "repS:ridge": 0.387309753448432
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 20,
+  "wall_min": 20.797516666666667,
+  "testS:model": 1.157917269979495,
+  "testS:ridge": 0.8962645370635085,
+  "repS:model": 0.36496017908587425,
+  "repS:ridge": 0.2936271242455382
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 12,
+  "wall_min": 10.537983333333333,
+  "testS:model": 1.2254787412740271,
+  "testS:ridge": 0.9517338832237996,
+  "repS:model": 0.4435313708243389,
+  "repS:ridge": 0.26819076918214857
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 12,
+  "wall_min": 10.594633333333332,
+  "testS:model": 1.2046428255369903,
+  "testS:ridge": 0.9461250665968505,
+  "repS:model": 0.3596147796631056,
+  "repS:ridge": 0.37529525913110745
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 12,
+  "wall_min": 2.7870333333333335,
+  "testS:model": 7.677811325301616,
+  "testS:ridge": 5.293208955615682,
+  "repS:model": 9.475890653271613,
+  "repS:ridge": 6.160692610175608
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 8,
+  "wall_min": 1.5586333333333333,
+  "testS:model": 7.778368870420017,
+  "testS:ridge": 5.565264378118159,
+  "repS:model": 9.53520541454493,
+  "repS:ridge": 6.475655492512261
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 8,
+  "wall_min": 1.5635,
+  "testS:model": 7.584728768213471,
+  "testS:ridge": 5.013792570440222,
+  "repS:model": 9.420976846328136,
+  "repS:ridge": 5.903363866811846
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 12,
+  "wall_min": 5.56505,
+  "testS:model": 3.5623375161300483,
+  "testS:ridge": 1.3620489375374953,
+  "repS:model": 4.281197288036146,
+  "repS:ridge": 0.855319922273564
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 8,
+  "wall_min": 2.94355,
+  "testS:model": 3.733440326481277,
+  "testS:ridge": 1.414024539784344,
+  "repS:model": 4.265248743014051,
+  "repS:ridge": 0.8421091119488309
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 8,
+  "wall_min": 2.9566,
+  "testS:model": 3.4421596684953286,
+  "testS:ridge": 1.3202375625036884,
+  "repS:model": 4.370829687199977,
+  "repS:ridge": 1.0103514827556603
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 12,
+  "wall_min": 8.426466666666666,
+  "testS:model": 1.9767983401779008,
+  "testS:ridge": 1.0475574873069144,
+  "repS:model": 1.778534442198866,
+  "repS:ridge": 0.4685386873268752
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 8,
+  "wall_min": 4.368783333333333,
+  "testS:model": 2.0891217494366248,
+  "testS:ridge": 1.1419074582924946,
+  "repS:model": 1.885118700775667,
+  "repS:ridge": 0.4982870262333924
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 8,
+  "wall_min": 4.392783333333333,
+  "testS:model": 2.014550200608693,
+  "testS:ridge": 1.0257691465479202,
+  "repS:model": 1.7673063729898724,
+  "repS:ridge": 0.4365157480777919
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   231,
+   232
+  ],
+  "runs": 12,
+  "wall_min": 12.70615,
+  "testS:model": 1.4548570175429856,
+  "testS:ridge": 1.017484790156697,
+  "repS:model": 0.5448838116481604,
+  "repS:ridge": 0.38316772413101846
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   231
+  ],
+  "runs": 8,
+  "wall_min": 6.5043,
+  "testS:model": 1.356300777683619,
+  "testS:ridge": 1.0020277077143713,
+  "repS:model": 0.5103906219889379,
+  "repS:ridge": 0.38667192655842825
+ },
+ {
+  "family": "S (SvelteKit)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   232
+  ],
+  "runs": 8,
+  "wall_min": 6.53695,
+  "testS:model": 1.5720183563630536,
+  "testS:ridge": 1.0322606736207285,
+  "repS:model": 0.5946952255273064,
+  "repS:ridge": 0.4012792929572966
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 36,
+  "wall_min": 36.47428333333333,
+  "testQ:model": 1.225932726883939,
+  "testQ:ridge": 2.3469154290622636,
+  "repQ:model": 0.6104127814611182,
+  "repQ:ridge": 1.2572256630424656
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 20,
+  "wall_min": 18.601283333333335,
+  "testQ:model": 1.2434702232291066,
+  "testQ:ridge": 2.5127804014104282,
+  "repQ:model": 0.5232825755884322,
+  "repQ:ridge": 1.219382785025918
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 20,
+  "wall_min": 18.66186666666667,
+  "testQ:model": 1.2206781761782954,
+  "testQ:ridge": 2.9807067274640047,
+  "repQ:model": 0.7906672345878777,
+  "repQ:ridge": 1.5910383821136556
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 28,
+  "wall_min": 21.00795,
+  "testQ:model": 2.32300581676705,
+  "testQ:ridge": 2.5083199533954588,
+  "repQ:model": 2.7658050848662663,
+  "repQ:ridge": 1.3899499824898722
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 16,
+  "wall_min": 10.891066666666667,
+  "testQ:model": 2.340326634987738,
+  "testQ:ridge": 2.8341200395845147,
+  "repQ:model": 2.66803466479145,
+  "repQ:ridge": 1.4032783143402163
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   250
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 16,
+  "wall_min": 10.90575,
+  "testQ:model": 2.3310038912360387,
+  "testQ:ridge": 3.024942612592566,
+  "repQ:model": 2.9673355689100003,
+  "repQ:ridge": 1.5966178862054172
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 28,
+  "wall_min": 26.29745,
+  "testQ:model": 1.2385159896871807,
+  "testQ:ridge": 2.400322977529428,
+  "repQ:model": 0.7347077943268576,
+  "repQ:ridge": 1.4259355953810162
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 16,
+  "wall_min": 13.517983333333333,
+  "testQ:model": 1.2439763460235858,
+  "testQ:ridge": 2.5246838182333318,
+  "repQ:model": 0.6375676576326847,
+  "repQ:ridge": 1.2944764392880224
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 16,
+  "wall_min": 13.568333333333333,
+  "testQ:model": 1.2569789650700207,
+  "testQ:ridge": 3.033750480886602,
+  "repQ:model": 0.8902354573303283,
+  "repQ:ridge": 1.7158357609744082
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 28,
+  "wall_min": 29.790516666666665,
+  "testQ:model": 1.4181460649494289,
+  "testQ:ridge": 2.904509451396461,
+  "repQ:model": 0.9437470049300964,
+  "repQ:ridge": 1.5584229164834607
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 16,
+  "wall_min": 15.264883333333334,
+  "testQ:model": 1.4766215026413947,
+  "testQ:ridge": 2.957278461598354,
+  "repQ:model": 0.8055114750514755,
+  "repQ:ridge": 1.378656405983155
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 16,
+  "wall_min": 15.3145,
+  "testQ:model": 1.3975140644177384,
+  "testQ:ridge": 3.7992800634677173,
+  "repQ:model": 1.0868712834080054,
+  "repQ:ridge": 1.9997892017227004
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 28,
+  "wall_min": 33.1158,
+  "testQ:model": 3.398790162123708,
+  "testQ:ridge": 2.9558755964805155,
+  "repQ:model": 0.6089388836358873,
+  "repQ:ridge": 1.0600700951027373
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 16,
+  "wall_min": 16.918783333333334,
+  "testQ:model": 3.302606460271148,
+  "testQ:ridge": 3.4605736186167446,
+  "repQ:model": 0.521486960316519,
+  "repQ:ridge": 1.2298942759808364
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 16,
+  "wall_min": 16.985883333333334,
+  "testQ:model": 3.5072036372422186,
+  "testQ:ridge": 3.355771009723121,
+  "repQ:model": 0.789458999304387,
+  "repQ:ridge": 1.2806354076671251
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 10.831116666666667,
+  "testQ:model": 5.030053570226297,
+  "testQ:ridge": 3.2799614256737253,
+  "repQ:model": 6.6360715891519995,
+  "repQ:ridge": 2.5637018741222115
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 5.807766666666667,
+  "testQ:model": 5.106888432282578,
+  "testQ:ridge": 3.4204525449527248,
+  "repQ:model": 6.698933881603031,
+  "repQ:ridge": 3.035299532300001
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   150
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 5.812216666666667,
+  "testQ:model": 4.981230692399151,
+  "testQ:ridge": 3.66708015803498,
+  "repQ:model": 6.648124263315597,
+  "repQ:ridge": 2.896062151294383
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 14.324183333333334,
+  "testQ:model": 2.516397064610101,
+  "testQ:ridge": 2.8744255557045153,
+  "repQ:model": 3.1000025873181554,
+  "repQ:ridge": 1.6102185449474442
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 7.554666666666667,
+  "testQ:model": 2.5738314496628685,
+  "testQ:ridge": 2.9606153894334994,
+  "repQ:model": 2.950504537964213,
+  "repQ:ridge": 1.4770324386190805
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   250
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 7.5583833333333335,
+  "testQ:model": 2.5097485897045027,
+  "testQ:ridge": 3.628566031274877,
+  "repQ:model": 3.264925116101998,
+  "repQ:ridge": 2.1005375810414115
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 19.613683333333334,
+  "testQ:model": 1.8167548017853554,
+  "testQ:ridge": 3.1673649519505207,
+  "repQ:model": 1.659489913539912,
+  "repQ:ridge": 1.8826762001447963
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 10.181583333333334,
+  "testQ:model": 1.9156258880045,
+  "testQ:ridge": 3.21669384120815,
+  "repQ:model": 1.6028349079404762,
+  "repQ:ridge": 1.6272071448040801
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 10.220966666666667,
+  "testQ:model": 1.8078126501146394,
+  "testQ:ridge": 3.993812037599583,
+  "repQ:model": 1.7490427202932373,
+  "repQ:ridge": 2.2206186604318865
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 17.649466666666665,
+  "testQ:model": 4.495863252006819,
+  "testQ:ridge": 3.3683108995884337,
+  "repQ:model": 2.764331187041037,
+  "repQ:ridge": 1.2654465308509872
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 9.208566666666666,
+  "testQ:model": 4.399462872029779,
+  "testQ:ridge": 3.6486916176423687,
+  "repQ:model": 2.666239049519532,
+  "repQ:ridge": 1.3910262345211355
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   250
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 9.229766666666666,
+  "testQ:model": 4.617529352299963,
+  "testQ:ridge": 3.7652543865821966,
+  "repQ:model": 2.966127333626508,
+  "repQ:ridge": 1.4238525552009547
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 22.938966666666666,
+  "testQ:model": 3.410421894829716,
+  "testQ:ridge": 3.0213504676688174,
+  "repQ:model": 0.7321428768527859,
+  "repQ:ridge": 1.1956050508875629
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 11.835483333333332,
+  "testQ:model": 3.3038302618700865,
+  "testQ:ridge": 3.4287470293663516,
+  "repQ:model": 0.6349753988900949,
+  "repQ:ridge": 1.3922878350922476
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 11.89235,
+  "testQ:model": 3.5425600880974915,
+  "testQ:ridge": 3.5301313368284992,
+  "repQ:model": 0.8879900962888756,
+  "repQ:ridge": 1.4132927330615817
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 20,
+  "wall_min": 26.432033333333333,
+  "testQ:model": 4.614573649755982,
+  "testQ:ridge": 4.140641751685989,
+  "repQ:model": 0.9421789163681624,
+  "repQ:ridge": 1.5443657685440921
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 12,
+  "wall_min": 13.582383333333333,
+  "testQ:model": 4.764672563797016,
+  "testQ:ridge": 4.265711857501168,
+  "repQ:model": 0.9011721786939095,
+  "repQ:ridge": 1.4856616980520152
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250,
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 12,
+  "wall_min": 13.638516666666666,
+  "testQ:model": 4.476229892496633,
+  "testQ:ridge": 4.38925284855936,
+  "repQ:model": 1.0917048114353771,
+  "repQ:ridge": 1.70823940831457
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 12,
+  "wall_min": 4.14735,
+  "testQ:model": 9.99396550619802,
+  "testQ:ridge": 10.550383520448515,
+  "repQ:model": 13.785750891451448,
+  "repQ:ridge": 14.525610285416915
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 8,
+  "wall_min": 2.4713666666666665,
+  "testQ:model": 9.912724244498373,
+  "testQ:ridge": 10.139259214822353,
+  "repQ:model": 13.689854911178138,
+  "repQ:ridge": 14.06252319331675
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   60
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 8,
+  "wall_min": 2.46485,
+  "testQ:model": 10.124647313224521,
+  "testQ:ridge": 11.074773299558606,
+  "repQ:model": 13.880107807546882,
+  "repQ:ridge": 15.048767024417867
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 12,
+  "wall_min": 7.4726333333333335,
+  "testQ:model": 7.222857748941247,
+  "testQ:ridge": 4.205870150707087,
+  "repQ:model": 6.6407693822808085,
+  "repQ:ridge": 2.348681556394089
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 8,
+  "wall_min": 4.125266666666667,
+  "testQ:model": 7.188861794564713,
+  "testQ:ridge": 4.176935237921435,
+  "repQ:model": 6.704626221265099,
+  "repQ:ridge": 2.4694827954796708
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   150
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 8,
+  "wall_min": 4.136233333333333,
+  "testQ:model": 7.2857544417028,
+  "testQ:ridge": 4.423422571648901,
+  "repQ:model": 6.652018292686493,
+  "repQ:ridge": 2.4383694764834063
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 12,
+  "wall_min": 10.9657,
+  "testQ:model": 5.718839983757987,
+  "testQ:ridge": 3.9619185047817904,
+  "repQ:model": 3.0995552391687964,
+  "repQ:ridge": 1.4556843917196314
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 8,
+  "wall_min": 5.872166666666667,
+  "testQ:model": 5.863499336217237,
+  "testQ:ridge": 3.993284539307092,
+  "repQ:model": 3.0464760983058436,
+  "repQ:ridge": 1.40364618858566
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   250
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 8,
+  "wall_min": 5.8824,
+  "testQ:model": 5.598624043103093,
+  "testQ:ridge": 4.206589047351061,
+  "repQ:model": 3.2716641663020547,
+  "repQ:ridge": 1.6603361156704428
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   631,
+   632
+  ],
+  "runs": 12,
+  "wall_min": 16.2552,
+  "testQ:model": 5.698918340936705,
+  "testQ:ridge": 4.6555700177962045,
+  "repQ:model": 1.7535929607967329,
+  "repQ:ridge": 1.9724745424078574
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   631
+  ],
+  "runs": 8,
+  "wall_min": 8.499083333333333,
+  "testQ:model": 5.543581550981577,
+  "testQ:ridge": 4.629922845640477,
+  "repQ:model": 1.5971763322642458,
+  "repQ:ridge": 1.949236552359827
+ },
+ {
+  "family": "LQ (heavy page)",
+  "rtts": [
+   400
+  ],
+  "seeds": [
+   632
+  ],
+  "runs": 8,
+  "wall_min": 8.544983333333333,
+  "testQ:model": 5.848758901744423,
+  "testQ:ridge": 4.9810581446130815,
+  "repQ:model": 1.9464225919089184,
+  "repQ:ridge": 2.060411664759838
+ }
+]

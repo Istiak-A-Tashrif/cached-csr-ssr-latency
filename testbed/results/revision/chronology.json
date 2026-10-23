@@ -1,0 +1,192 @@
+[
+ {
+  "block": "revDev",
+  "host": "this machine",
+  "runs": 12,
+  "predictions": 12,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 15:49:20",
+  "first_run": "2026-10-21 15:49:21",
+  "last_run": "2026-10-21 15:57:59"
+ },
+ {
+  "block": "revPilotT",
+  "host": "this machine",
+  "runs": 54,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-21 15:59:49",
+  "last_run": "2026-10-21 16:58:14"
+ },
+ {
+  "block": "cdCalH",
+  "host": "second host",
+  "runs": 36,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-21 16:33:02",
+  "last_run": "2026-10-21 17:21:05"
+ },
+ {
+  "block": "revT",
+  "host": "this machine",
+  "runs": 216,
+  "predictions": 216,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 16:59:19",
+  "first_run": "2026-10-21 16:59:19",
+  "last_run": "2026-10-21 20:54:26"
+ },
+ {
+  "block": "cdDev",
+  "host": "second host",
+  "runs": 4,
+  "predictions": 4,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 17:22:27",
+  "first_run": "2026-10-21 17:22:29",
+  "last_run": "2026-10-21 17:25:46"
+ },
+ {
+  "block": "cdHT",
+  "host": "second host",
+  "runs": 108,
+  "predictions": 108,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 17:27:09",
+  "first_run": "2026-10-21 17:27:11",
+  "last_run": "2026-10-21 19:36:54"
+ },
+ {
+  "block": "cdHR",
+  "host": "second host",
+  "runs": 108,
+  "predictions": 108,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 19:38:02",
+  "first_run": "2026-10-21 19:38:04",
+  "last_run": "2026-10-21 21:12:40"
+ },
+ {
+  "block": "revPilotR",
+  "host": "this machine",
+  "runs": 54,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-21 20:55:19",
+  "last_run": "2026-10-21 21:30:36"
+ },
+ {
+  "block": "revR",
+  "host": "this machine",
+  "runs": 216,
+  "predictions": 216,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 21:31:15",
+  "first_run": "2026-10-21 21:31:16",
+  "last_run": "2026-10-21 23:54:15"
+ },
+ {
+  "block": "revB2T",
+  "host": "this machine",
+  "runs": 48,
+  "predictions": 48,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-21 23:55:01",
+  "first_run": "2026-10-21 23:55:02",
+  "last_run": "2026-10-22 00:46:52"
+ },
+ {
+  "block": "revB2R",
+  "host": "this machine",
+  "runs": 48,
+  "predictions": 48,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 00:47:52",
+  "first_run": "2026-10-22 00:47:52",
+  "last_run": "2026-10-22 01:19:24"
+ },
+ {
+  "block": "cdCal",
+  "host": "this machine",
+  "runs": 36,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-22 01:21:30",
+  "last_run": "2026-10-22 01:59:32"
+ },
+ {
+  "block": "cdDev",
+  "host": "this machine",
+  "runs": 4,
+  "predictions": 4,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 02:00:02",
+  "first_run": "2026-10-22 02:00:03",
+  "last_run": "2026-10-22 02:02:23"
+ },
+ {
+  "block": "cdPilotT",
+  "host": "this machine",
+  "runs": 27,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-22 02:03:10",
+  "last_run": "2026-10-22 02:31:11"
+ },
+ {
+  "block": "cdT",
+  "host": "this machine",
+  "runs": 108,
+  "predictions": 108,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 02:32:20",
+  "first_run": "2026-10-22 02:32:21",
+  "last_run": "2026-10-22 04:27:52"
+ },
+ {
+  "block": "cdPilotR",
+  "host": "this machine",
+  "runs": 27,
+  "predictions": 0,
+  "late_predictions": 0,
+  "first_prediction": null,
+  "first_run": "2026-10-22 04:28:55",
+  "last_run": "2026-10-22 04:46:16"
+ },
+ {
+  "block": "cdR",
+  "host": "this machine",
+  "runs": 108,
+  "predictions": 108,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 04:46:59",
+  "first_run": "2026-10-22 04:47:00",
+  "last_run": "2026-10-22 05:59:26"
+ },
+ {
+  "block": "revHT",
+  "host": "this machine",
+  "runs": 96,
+  "predictions": 96,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 06:34:11",
+  "first_run": "2026-10-22 06:34:12",
+  "last_run": "2026-10-22 08:03:30"
+ },
+ {
+  "block": "revHR",
+  "host": "this machine",
+  "runs": 96,
+  "predictions": 96,
+  "late_predictions": 0,
+  "first_prediction": "2026-10-22 08:04:21",
+  "first_run": "2026-10-22 08:04:21",
+  "last_run": "2026-10-22 10:19:07"
+ }
+]

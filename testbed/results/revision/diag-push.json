@@ -1,0 +1,38 @@
+{
+ "revT": {
+  "transitions": {
+   "False|cache": 929,
+   "False|fetched": 22,
+   "True|fetched": 521
+  },
+  "tag": "revT",
+  "views": 1472,
+  "pred": 0.4058926269073202,
+  "observed_fetched": 0.3688858695652174,
+  "last_access": {
+   "views": 1472,
+   "pred_R": 0.4058926269073202,
+   "pred_R2": 0.3882715777772293,
+   "formula_observed_gap": 0.37031669077070456,
+   "observed_fetched": 0.3688858695652174
+  }
+ },
+ "revR": {
+  "transitions": {
+   "False|cache": 1248,
+   "True|fetched": 215,
+   "False|fetched": 9
+  },
+  "tag": "revR",
+  "views": 1472,
+  "pred": 0.18000616534518965,
+  "observed_fetched": 0.15217391304347827,
+  "last_access": {
+   "views": 1472,
+   "pred_R": 0.18000616534518965,
+   "pred_R2": 0.17154174607602818,
+   "formula_observed_gap": 0.16160778595242986,
+   "observed_fetched": 0.15217391304347827
+  }
+ }
+}

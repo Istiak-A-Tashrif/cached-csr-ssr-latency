@@ -137,3 +137,18 @@ These checks were carried out by the author with an AI assistant, not by an inde
 - **Pipeline check.** revCCdev was scored only from a scratch copy, to check that the evaluator runs end to end. Its numbers were not used, and no evaluation of it is archived.
 - **Scoring.** Each block was scored once with the frozen `evaluateCC.py`. revCCT passes B4cc-a and B4cc-b. revCCR fails B4cc-a (mean regret 7.06%), so v4 is not accepted. W2 failed in both blocks; it is reported and is not part of v4's acceptance.
 - **Shared logs.** The v4 runs appended to `api.jsonl`, `web.jsonl`, `writes.jsonl` and `predictionsR2.jsonl`. For each file, the leading lines whose SHA-256 equals the checksum in artifact v1.2.0 are intact. Of the appended lines, all are v4 runs except the harness's warm-up requests (run id `warmup`). `tools/raw-data.sha256` was updated for these files and for the new v4 files (553 entries). The reproduction script re-scores revCCT and revCCR as well: 46 checks, all passing.
+
+## Correction: published archives v1.1.0–v1.3.0 were incomplete (24 Oct 2026)
+
+The reproduction checks reported above as run "from the extracted public artifact" (39/39, then 44/44 and 46/46) were run on the locally built artifact folder. The GitHub release archive that Zenodo stores holds only files tracked by git. The artifact's `testbed/.gitignore`, copied from the research repository, left these files untracked:
+- `results/revision/` (the analysis outputs)
+- `results/server-cd/` (the second-host frozen models and evaluations)
+- two `discarded-runs.jsonl` files
+
+Run from the downloaded Zenodo v1.3.0 archive (md5 1808d080f05226cb1a12d2b4e32cefa8), the script passes 39 of 46 checks. The seven failures are:
+- the four second-host evaluations
+- the decision comparison
+- testR2, which needs `server-R2/discarded-runs.jsonl`
+- the checksums of the missing files
+
+The raw logs were complete in every version, inside `data/raw-results.tar.gz`. `tools/make_artifact.py` now re-includes these paths and fails the build if git would ignore any file the artifact ships. Version 1.3.1 is checked from `git archive` of the tagged commit, which is what the release archive contains. The Zenodo records of v1.1.0–v1.3.0 cannot be changed; their descriptions should point to v1.3.1.

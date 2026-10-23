@@ -1,0 +1,116 @@
+revT: 54 cells, seeds/cell [4], scenarios 2; L1 with predicted layer 1.47%, with true layer 1.48%
+   model                  dec  8 abst  0 viol   0.0 (max +0.000) regret mean 0.60 worst 2.00
+   ridge/model            dec  8 abst  0 viol   0.0 (max +0.000) regret mean 0.80 worst 2.00  d-regret CI [+0.00, +0.63] d-viol CI [-1.0, +0.0]
+   calfreq/model          dec  8 abst  0 viol   0.0 (max +0.000) regret mean 2.84 worst 13.67  d-regret CI [+0.00, +3.74] d-viol CI [-2.0, +0.0]
+   blind/model            dec  8 abst  0 viol   0.0 (max +0.000) regret mean 14.23 worst 23.36  d-regret CI [+6.11, +18.98] d-viol CI [-2.0, +0.0]
+   model/single           dec  8 abst  0 viol   3.0 (max +0.152) regret mean 0.40 worst 2.00  d-regret CI [-0.37, +0.82] d-viol CI [+1.0, +4.0]
+   calfreq/single         dec  8 abst  0 viol   2.0 (max +0.108) regret mean 1.09 worst 2.51  d-regret CI [-0.13, +2.72] d-viol CI [+0.0, +3.0]
+   tuning                 dec  8 abst  0 viol     0 (max +0.000) regret mean 0.57 worst 2.51
+   fixed                  dec  8 abst  0 viol     0 (max +0.000) regret mean 4.36 worst 13.67
+   default                dec  8 abst  0 viol     8 (max +0.850) regret mean - worst -
+   nocache                dec  8 abst  0 viol     0 (max +0.000) regret mean 21.27 worst 32.10
+revR: 54 cells, seeds/cell [4], scenarios 2; L1 with predicted layer 1.50%, with true layer 1.50%
+   model                  dec  8 abst  0 viol   0.0 (max +0.000) regret mean 0.46 worst 1.09
+   ridge/model            dec  8 abst  0 viol   0.0 (max +0.000) regret mean 0.46 worst 1.09  d-regret CI [-0.02, +0.15] d-viol CI [+0.0, +0.0]
+   calfreq/model          dec  8 abst  0 viol   0.0 (max +0.000) regret mean 1.15 worst 3.87  d-regret CI [+0.60, +1.56] d-viol CI [+0.0, +0.0]
+   blind/model            dec  8 abst  0 viol   0.0 (max +0.000) regret mean 5.11 worst 15.36  d-regret CI [+0.95, +12.85] d-viol CI [+0.0, +1.0]
+   model/single           dec  8 abst  0 viol   2.0 (max +0.103) regret mean 0.61 worst 1.09  d-regret CI [+0.04, +0.21] d-viol CI [+2.0, +2.0]
+   calfreq/single         dec  8 abst  0 viol   1.0 (max +0.103) regret mean 1.32 worst 3.87  d-regret CI [+0.76, +1.54] d-viol CI [+0.0, +1.0]
+   tuning                 dec  8 abst  0 viol     0 (max +0.000) regret mean 0.52 worst 4.16
+   fixed                  dec  8 abst  0 viol     0 (max +0.000) regret mean 2.01 worst 4.16
+   default                dec  8 abst  0 viol     8 (max +0.744) regret mean - worst -
+   nocache                dec  8 abst  0 viol     0 (max +0.000) regret mean 17.89 worst 20.27
+cdT: 27 cells, seeds/cell [4], scenarios 1; L1 with predicted layer 1.39%, with true layer 1.32%
+   model                  dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.00 worst 0.00
+   ridge/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.25 worst 0.26  d-regret CI [-0.05, +0.28] d-viol CI [+0.0, +0.0]
+   calfreq/model          dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.00 worst 0.00  d-regret CI [+0.00, +0.00] d-viol CI [+0.0, +0.0]
+   blind/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.19 worst 0.26  d-regret CI [+0.00, +0.28] d-viol CI [+0.0, +0.0]
+   model/single           dec  4 abst  0 viol   2.0 (max +0.183) regret mean 0.00 worst 0.00  d-regret CI [-0.08, +0.08] d-viol CI [+1.0, +2.0]
+   calfreq/single         dec  4 abst  0 viol   2.0 (max +0.183) regret mean 0.00 worst 0.00  d-regret CI [-0.08, +0.08] d-viol CI [+1.0, +2.0]
+   tuning                 dec  4 abst  0 viol     0 (max +0.000) regret mean 0.02 worst 0.06
+   fixed                  dec  4 abst  0 viol     0 (max +0.000) regret mean 0.07 worst 0.28
+   default                dec  4 abst  0 viol     3 (max +0.449) regret mean 0.09 worst 0.09
+   nocache                dec  4 abst  0 viol     0 (max +0.000) regret mean 0.41 worst 0.62
+cdR: 27 cells, seeds/cell [4], scenarios 1; L1 with predicted layer 1.39%, with true layer 1.39%
+   model                  dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.17 worst 0.26
+   ridge/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.23 worst 0.26  d-regret CI [-0.08, +0.30] d-viol CI [+0.0, +0.0]
+   calfreq/model          dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.17 worst 0.26  d-regret CI [+0.00, +0.00] d-viol CI [+0.0, +0.0]
+   blind/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.17 worst 0.26  d-regret CI [+0.00, +0.26] d-viol CI [+0.0, +0.0]
+   model/single           dec  4 abst  0 viol   2.0 (max +0.074) regret mean 0.08 worst 0.16  d-regret CI [-0.21, +0.21] d-viol CI [+0.0, +3.0]
+   calfreq/single         dec  4 abst  0 viol   2.0 (max +0.074) regret mean 0.08 worst 0.16  d-regret CI [-0.21, +0.21] d-viol CI [+0.0, +3.0]
+   tuning                 dec  4 abst  0 viol     0 (max +0.000) regret mean 0.09 worst 0.35
+   fixed                  dec  4 abst  0 viol     0 (max +0.000) regret mean 0.25 worst 0.50
+   default                dec  4 abst  0 viol     3 (max +0.317) regret mean 0.35 worst 0.35
+   nocache                dec  4 abst  0 viol     0 (max +0.000) regret mean 0.66 worst 0.91
+cdHT: 27 cells, seeds/cell [4], scenarios 1; L1 with predicted layer 0.80%, with true layer 0.77%
+   model                  dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.05 worst 0.20
+   ridge/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.05 worst 0.20  d-regret CI [-0.36, +0.16] d-viol CI [-1.0, +0.0]
+   calfreq/model          dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.05 worst 0.20  d-regret CI [-0.24, +0.20] d-viol CI [+0.0, +0.0]
+   blind/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.67 worst 1.23  d-regret CI [+0.25, +1.41] d-viol CI [-1.0, +0.0]
+   model/single           dec  4 abst  0 viol   3.0 (max +0.190) regret mean 0.20 worst 0.20  d-regret CI [-0.03, +0.44] d-viol CI [+2.0, +3.0]
+   calfreq/single         dec  4 abst  0 viol   3.0 (max +0.190) regret mean 0.20 worst 0.20  d-regret CI [-0.20, +0.52] d-viol CI [+2.0, +3.0]
+   fixed                  dec  4 abst  0 viol     0 (max +0.000) regret mean 0.50 worst 1.50
+   default                dec  4 abst  0 viol     4 (max +0.463) regret mean - worst -
+   nocache                dec  4 abst  0 viol     0 (max +0.000) regret mean 1.33 worst 2.34
+cdHR: 27 cells, seeds/cell [4], scenarios 1; L1 with predicted layer 1.34%, with true layer 1.33%
+   model                  dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.55 worst 1.43
+   ridge/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.28 worst 0.95  d-regret CI [-0.82, +0.38] d-viol CI [+0.0, +0.0]
+   calfreq/model          dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.55 worst 1.43  d-regret CI [-0.63, +0.59] d-viol CI [+0.0, +0.0]
+   blind/model            dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.55 worst 1.43  d-regret CI [-0.35, +1.17] d-viol CI [+0.0, +0.0]
+   model/single           dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.55 worst 1.43  d-regret CI [+0.00, +0.62] d-viol CI [+0.0, +1.0]
+   calfreq/single         dec  4 abst  0 viol   0.0 (max +0.000) regret mean 0.55 worst 1.43  d-regret CI [-0.60, +1.54] d-viol CI [+0.0, +2.0]
+   fixed                  dec  4 abst  0 viol     0 (max +0.000) regret mean 0.55 worst 1.43
+   default                dec  4 abst  0 viol     3 (max +0.283) regret mean 0.19 worst 0.19
+   nocache                dec  4 abst  0 viol     0 (max +0.000) regret mean 2.86 worst 3.76
+revHT: 16 cells, seeds/cell [6], scenarios 2; L1 with predicted layer 1.75%, with true layer 1.74%
+   model point            dec  8 abst  0 viol   1.0 (max +0.015) regret mean 1.23 worst 8.49
+   model margin           dec  8 abst  0 viol   0.0 (max +0.000) regret mean 4.07 worst 11.02
+   ridge/model point      dec  8 abst  0 viol   1.0 (max +0.015) regret mean 1.21 worst 8.49
+   ridge/model margin     dec  8 abst  0 viol   0.0 (max +0.000) regret mean 4.04 worst 11.02  d-regret CI [-0.07, +0.01] d-viol CI [+0.0, +0.0]
+   calfreq/model point    dec  8 abst  0 viol   1.0 (max +0.015) regret mean 3.14 worst 13.21
+   calfreq/model margin   dec  8 abst  0 viol   0.0 (max +0.000) regret mean 5.21 worst 13.21  d-regret CI [-0.01, +1.21] d-viol CI [+0.0, +0.0]
+   blind/model point      dec  8 abst  0 viol   0.0 (max +0.000) regret mean 15.12 worst 25.68
+   blind/model margin     dec  8 abst  0 viol   0.0 (max +0.000) regret mean 15.12 worst 25.68  d-regret CI [+0.00, +11.44] d-viol CI [+0.0, +0.0]
+   model/single point     dec  8 abst  0 viol   4.0 (max +0.083) regret mean 2.76 worst 11.02
+   model/single margin    dec  8 abst  0 viol   4.0 (max +0.083) regret mean 2.76 worst 11.02  d-regret CI [-4.56, +7.98] d-viol CI [+2.0, +6.0]
+   calfreq/single point   dec  8 abst  0 viol   4.0 (max +0.083) regret mean 2.76 worst 11.02
+   calfreq/single margin  dec  8 abst  0 viol   4.0 (max +0.083) regret mean 2.76 worst 11.02  d-regret CI [-4.86, +7.98] d-viol CI [+2.0, +6.0]
+revHR: 16 cells, seeds/cell [6], scenarios 2; L1 with predicted layer 0.96%, with true layer 0.94%
+   model point            dec  8 abst  0 viol   2.0 (max +0.021) regret mean 4.85 worst 10.54
+   model margin           dec  8 abst  0 viol   0.0 (max +0.000) regret mean 5.81 worst 10.54
+   ridge/model point      dec  8 abst  0 viol   2.0 (max +0.021) regret mean 4.85 worst 10.54
+   ridge/model margin     dec  8 abst  0 viol   0.0 (max +0.000) regret mean 5.81 worst 10.54  d-regret CI [-0.18, +0.22] d-viol CI [+0.0, +0.0]
+   calfreq/model point    dec  8 abst  0 viol   0.0 (max +0.000) regret mean 5.90 worst 15.58
+   calfreq/model margin   dec  8 abst  0 viol   0.0 (max +0.000) regret mean 7.07 worst 15.58  d-regret CI [+0.00, +2.01] d-viol CI [+0.0, +0.0]
+   blind/model point      dec  8 abst  0 viol   0.0 (max +0.000) regret mean 7.79 worst 15.58
+   blind/model margin     dec  8 abst  0 viol   0.0 (max +0.000) regret mean 8.95 worst 15.58  d-regret CI [+1.02, +10.98] d-viol CI [+0.0, +0.0]
+   model/single point     dec  8 abst  0 viol   4.0 (max +0.138) regret mean 2.33 worst 9.32
+   model/single margin    dec  8 abst  0 viol   2.0 (max +0.054) regret mean 1.55 worst 9.32  d-regret CI [-4.97, -1.31] d-viol CI [+0.0, +3.0]
+   calfreq/single point   dec  8 abst  0 viol   4.0 (max +0.138) regret mean 2.33 worst 9.32
+   calfreq/single margin  dec  8 abst  0 viol   2.0 (max +0.054) regret mean 1.55 worst 9.32  d-regret CI [-4.99, -0.99] d-viol CI [+0.0, +3.0]
+revCCT: 16 cells, seeds/cell [6], scenarios 2; L1 with predicted layer 1.01%, with true layer 1.03%
+   model point            dec 10 abst  0 viol   3.0 (max +0.021) regret mean 1.11 worst 6.37
+   model margin           dec 10 abst  0 viol   0.0 (max +0.000) regret mean 3.98 worst 11.60
+   ridge/model point      dec 10 abst  0 viol   3.0 (max +0.021) regret mean 1.11 worst 6.37
+   ridge/model margin     dec 10 abst  0 viol   0.0 (max +0.000) regret mean 3.98 worst 11.60  d-regret CI [+0.00, +0.00] d-viol CI [+0.0, +0.0]
+   calfreq/model point    dec 10 abst  0 viol   1.0 (max +0.000) regret mean 1.08 worst 6.99
+   calfreq/model margin   dec 10 abst  0 viol   0.0 (max +0.000) regret mean 4.90 worst 11.60  d-regret CI [-0.09, +1.18] d-viol CI [-1.0, +0.0]
+   blind/model point      dec 10 abst  0 viol   1.0 (max +0.000) regret mean 4.47 worst 10.36
+   blind/model margin     dec 10 abst  0 viol   0.0 (max +0.000) regret mean 6.21 worst 11.60  d-regret CI [+0.00, +12.03] d-viol CI [-1.0, +0.0]
+   model/single point     dec 10 abst  0 viol   6.0 (max +0.081) regret mean 2.90 worst 11.60
+   model/single margin    dec 10 abst  0 viol   6.0 (max +0.081) regret mean 2.90 worst 11.60  d-regret CI [-3.04, +1.16] d-viol CI [+3.0, +6.0]
+   calfreq/single point   dec 10 abst  0 viol   6.0 (max +0.081) regret mean 2.90 worst 11.60
+   calfreq/single margin  dec 10 abst  0 viol   6.0 (max +0.081) regret mean 2.90 worst 11.60  d-regret CI [-3.01, +1.07] d-viol CI [+2.0, +6.0]
+revCCR: 16 cells, seeds/cell [6], scenarios 2; L1 with predicted layer 1.12%, with true layer 1.10%
+   model point            dec  6 abst  0 viol   0.0 (max +0.000) regret mean 4.57 worst 6.85
+   model margin           dec  6 abst  0 viol   0.0 (max +0.000) regret mean 7.06 worst 14.91
+   ridge/model point      dec  6 abst  0 viol   0.0 (max +0.000) regret mean 4.57 worst 6.85
+   ridge/model margin     dec  6 abst  0 viol   0.0 (max +0.000) regret mean 7.06 worst 14.91  d-regret CI [+0.00, +0.31] d-viol CI [+0.0, +0.0]
+   calfreq/model point    dec  6 abst  0 viol   0.0 (max +0.000) regret mean 4.42 worst 6.85
+   calfreq/model margin   dec  6 abst  0 viol   0.0 (max +0.000) regret mean 6.91 worst 14.91  d-regret CI [-0.31, +0.05] d-viol CI [+0.0, +0.0]
+   blind/model point      dec  6 abst  0 viol   0.0 (max +0.000) regret mean 4.57 worst 6.85
+   blind/model margin     dec  6 abst  0 viol   0.0 (max +0.000) regret mean 7.06 worst 14.91  d-regret CI [+0.00, +0.33] d-viol CI [+0.0, +0.0]
+   model/single point     dec  6 abst  0 viol   0.0 (max +0.000) regret mean 0.00 worst 0.00
+   model/single margin    dec  6 abst  0 viol   0.0 (max +0.000) regret mean 2.49 worst 14.91  d-regret CI [-4.86, -3.09] d-viol CI [+0.0, +2.0]
+   calfreq/single point   dec  6 abst  0 viol   0.0 (max +0.000) regret mean 0.00 worst 0.00
+   calfreq/single margin  dec  6 abst  0 viol   0.0 (max +0.000) regret mean 2.49 worst 14.91  d-regret CI [-4.86, -2.14] d-viol CI [+0.0, +1.0]

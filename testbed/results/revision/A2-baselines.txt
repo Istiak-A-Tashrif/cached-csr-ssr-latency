@@ -1,0 +1,53 @@
+A2 equal-information baselines (retrospective): mean / max relative error over cells, % [cells]
+-- all cells
+prosp5     v5   model   1.10/  3.78[32]  ridge   1.10/  3.87[32]  rf  31.18/ 51.42[32]  gbt  16.24/ 29.55[32]
+rep5       v5   model   0.77/  3.64[32]  ridge   0.90/  4.40[32]  rf  13.47/ 53.24[32]  gbt   6.55/ 11.49[32]
+real7      v7   model   0.61/  1.15[8]  ridge   1.47/  4.23[8]  rf   3.65/  5.37[8]  gbt   4.06/  4.95[8]
+rep7       v7   model   1.08/  2.27[8]  ridge   1.81/  4.70[8]  rf   5.85/  9.53[8]  gbt   7.57/  8.93[8]
+real8b     v8b  model   0.62/  2.23[8]  ridge   0.95/  2.97[8]  rf   2.78/  5.05[8]  gbt   1.99/  8.19[8]
+rep8b      v8b  model   0.70/  2.38[8]  ridge   1.15/  3.50[8]  rf   1.39/  4.05[8]  gbt   1.56/  4.95[8]
+real9      v9   model   0.26/  0.44[8]  ridge   0.17/  0.25[8]  rf   3.50/  4.38[8]  gbt   3.88/ 10.30[8]
+rep9       v9   model   0.23/  0.61[8]  ridge   0.20/  0.62[8]  rf   8.05/  9.30[8]  gbt   5.22/  8.61[8]
+test9b     v9b  model   1.20/  6.01[16]  ridge   1.95/  4.61[16]  rf  30.68/ 44.67[16]  gbt  26.29/ 44.21[16]
+reptest9b  v9b  model   0.18/  0.53[16]  ridge   0.56/  1.51[16]  rf  16.55/ 24.21[16]  gbt  15.30/ 22.15[16]
+testS      S    model   0.69/  2.78[16]  ridge   0.66/  2.41[16]  rf  24.66/ 59.47[16]  gbt  22.51/ 32.63[16]
+repS       S    model   0.33/  0.90[16]  ridge   0.45/  1.08[16]  rf  16.70/ 24.14[16]  gbt  14.28/ 25.98[16]
+testQ      LQ   model   1.23/  2.91[16]  ridge   2.36/  8.64[16]  rf  16.89/ 34.31[16]  gbt  13.71/ 28.74[16]
+repQ       LQ   model   0.61/  2.27[16]  ridge   1.26/  4.18[16]  rf   9.95/ 40.81[16]  gbt   7.15/ 37.35[16]
+testR2     LR2  model   2.28/  7.05[16]  ridge   3.08/  8.37[16]  rf  11.87/ 36.24[16]  gbt  17.44/ 32.59[16]
+repR2      LR2  model   2.08/  7.22[16]  ridge   3.61/ 14.07[16]  rf  29.26/ 41.11[16]  gbt  26.41/ 54.02[16]
+-- in cells
+prosp5     v5   model   1.10/  3.78[32]  ridge   1.10/  3.87[32]  rf  31.18/ 51.42[32]  gbt  16.24/ 29.55[32]
+rep5       v5   model   0.77/  3.64[32]  ridge   0.90/  4.40[32]  rf  13.47/ 53.24[32]  gbt   6.55/ 11.49[32]
+real7      v7   model   0.61/  1.15[8]  ridge   1.47/  4.23[8]  rf   3.65/  5.37[8]  gbt   4.06/  4.95[8]
+rep7       v7   model   1.08/  2.27[8]  ridge   1.81/  4.70[8]  rf   5.85/  9.53[8]  gbt   7.57/  8.93[8]
+real8b     v8b  model   0.62/  2.23[8]  ridge   0.95/  2.97[8]  rf   2.78/  5.05[8]  gbt   1.99/  8.19[8]
+rep8b      v8b  model   0.70/  2.38[8]  ridge   1.15/  3.50[8]  rf   1.39/  4.05[8]  gbt   1.56/  4.95[8]
+real9      v9   model   0.26/  0.44[8]  ridge   0.17/  0.25[8]  rf   3.50/  4.38[8]  gbt   3.88/ 10.30[8]
+rep9       v9   model   0.23/  0.61[8]  ridge   0.20/  0.62[8]  rf   8.05/  9.30[8]  gbt   5.22/  8.61[8]
+test9b     v9b  model   1.20/  6.01[16]  ridge   1.95/  4.61[16]  rf  30.68/ 44.67[16]  gbt  26.29/ 44.21[16]
+reptest9b  v9b  model   0.18/  0.53[16]  ridge   0.56/  1.51[16]  rf  16.55/ 24.21[16]  gbt  15.30/ 22.15[16]
+testS      S    model   0.69/  2.78[16]  ridge   0.66/  2.41[16]  rf  24.66/ 59.47[16]  gbt  22.51/ 32.63[16]
+repS       S    model   0.33/  0.90[16]  ridge   0.45/  1.08[16]  rf  16.70/ 24.14[16]  gbt  14.28/ 25.98[16]
+testQ      LQ   model   1.23/  2.91[16]  ridge   2.36/  8.64[16]  rf  16.89/ 34.31[16]  gbt  13.71/ 28.74[16]
+repQ       LQ   model   0.61/  2.27[16]  ridge   1.26/  4.18[16]  rf   9.95/ 40.81[16]  gbt   7.15/ 37.35[16]
+testR2     LR2  model   2.28/  7.05[16]  ridge   3.08/  8.37[16]  rf  11.87/ 36.24[16]  gbt  17.44/ 32.59[16]
+repR2      LR2  model   2.08/  7.22[16]  ridge   3.61/ 14.07[16]  rf  29.26/ 41.11[16]  gbt  26.41/ 54.02[16]
+-- out cells
+prosp5     v5   model              -  ridge              -  rf              -  gbt              -
+rep5       v5   model              -  ridge              -  rf              -  gbt              -
+real7      v7   model              -  ridge              -  rf              -  gbt              -
+rep7       v7   model              -  ridge              -  rf              -  gbt              -
+real8b     v8b  model              -  ridge              -  rf              -  gbt              -
+rep8b      v8b  model              -  ridge              -  rf              -  gbt              -
+real9      v9   model              -  ridge              -  rf              -  gbt              -
+rep9       v9   model              -  ridge              -  rf              -  gbt              -
+test9b     v9b  model              -  ridge              -  rf              -  gbt              -
+reptest9b  v9b  model              -  ridge              -  rf              -  gbt              -
+testS      S    model              -  ridge              -  rf              -  gbt              -
+repS       S    model              -  ridge              -  rf              -  gbt              -
+testQ      LQ   model              -  ridge              -  rf              -  gbt              -
+repQ       LQ   model              -  ridge              -  rf              -  gbt              -
+testR2     LR2  model              -  ridge              -  rf              -  gbt              -
+repR2      LR2  model              -  ridge              -  rf              -  gbt              -
+hyperparameters: {'v5': {'ridge': (1, 0.01), 'rf': (8, 5), 'gbt': (5, 0.05)}, 'v7': {'ridge': (1, 1.0), 'rf': (None, 5), 'gbt': (5, 0.05)}, 'v8b': {'ridge': (2, 1.0), 'rf': (None, 1), 'gbt': (5, 0.05)}, 'v9': {'ridge': (1, 1.0), 'rf': (None, 5), 'gbt': (3, 0.05)}, 'v9b': {'ridge': (1, 1.0), 'rf': (None, 1), 'gbt': (3, 0.05)}, 'S': {'ridge': (1, 1.0), 'rf': (8, 5), 'gbt': (3, 0.1)}, 'LQ': {'ridge': (1, 1.0), 'rf': (None, 1), 'gbt': (5, 0.05)}, 'LR2': {'ridge': (1, 1.0), 'rf': (None, 5), 'gbt': (2, 0.1)}}

@@ -1,0 +1,66 @@
+{
+ "testW2": {
+  "views": 12288,
+  "row_counts": {
+   "25": 12288
+  },
+  "stale@-20ms": 0.3392,
+  "ahead@-20ms": 0,
+  "stale@-5ms": 0.3359,
+  "ahead@-5ms": 0,
+  "stale@+0ms": 0.3346,
+  "ahead@+0ms": 0,
+  "stale@+5ms": 0.334,
+  "ahead@+5ms": 0,
+  "stale@+20ms": 0.3297,
+  "ahead@+20ms": 0
+ },
+ "repW2": {
+  "views": 12288,
+  "row_counts": {
+   "25": 12288
+  },
+  "stale@-20ms": 0.2613,
+  "ahead@-20ms": 0,
+  "stale@-5ms": 0.2592,
+  "ahead@-5ms": 0,
+  "stale@+0ms": 0.2585,
+  "ahead@+0ms": 0,
+  "stale@+5ms": 0.2576,
+  "ahead@+5ms": 0,
+  "stale@+20ms": 0.2555,
+  "ahead@+20ms": 0
+ },
+ "testX": {
+  "views": 13824,
+  "row_counts": {
+   "25": 13824
+  },
+  "stale@-20ms": 0.2572,
+  "ahead@-20ms": 0,
+  "stale@-5ms": 0.2539,
+  "ahead@-5ms": 0,
+  "stale@+0ms": 0.2532,
+  "ahead@+0ms": 0,
+  "stale@+5ms": 0.2525,
+  "ahead@+5ms": 0,
+  "stale@+20ms": 0.249,
+  "ahead@+20ms": 0
+ },
+ "repX": {
+  "views": 13824,
+  "row_counts": {
+   "25": 13824
+  },
+  "stale@-20ms": 0.2504,
+  "ahead@-20ms": 0,
+  "stale@-5ms": 0.2487,
+  "ahead@-5ms": 0,
+  "stale@+0ms": 0.2479,
+  "ahead@+0ms": 0,
+  "stale@+5ms": 0.2473,
+  "ahead@+5ms": 0,
+  "stale@+20ms": 0.2448,
+  "ahead@+20ms": 0
+ }
+}

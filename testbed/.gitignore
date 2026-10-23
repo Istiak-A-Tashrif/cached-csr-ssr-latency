@@ -19,3 +19,9 @@ results/server-final/*
 results/server-R2/*
 !results/server-R2/*.frozen.json
 !results/server-R2/*-evaluation.txt
+
+# artifact: every file the artifact ships is tracked
+!results/revision/
+!results/server-cd/
+!results/server-R2/discarded-runs.jsonl
+!results/server-final/discarded-runs.jsonl

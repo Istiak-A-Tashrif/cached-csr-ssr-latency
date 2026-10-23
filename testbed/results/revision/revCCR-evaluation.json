@@ -1,0 +1,516 @@
+{
+ "tag": "revCCR",
+ "stale": {
+  "csr-feoff-rdttl-tau3-a0.7": [
+   0.2404513888888889,
+   0.2530604571796644
+  ],
+  "csr-feoff-rdttl-tau12-a0.7": [
+   0.6501736111111112,
+   0.6297531776222587
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7": [
+   0.2569444444444444,
+   0.25767423236259157
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7": [
+   0.6501736111111112,
+   0.6314826312927417
+  ],
+  "csr-fettl-rdpush-tau3-a0.7": [
+   0.05381944444444445,
+   0.06061231018610144
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7": [
+   0.6796875,
+   0.7041545812323851
+  ],
+  "ssr-feoff-rdoff-a0.7": [
+   0.012152777777777778,
+   0.017527568192752516
+  ],
+  "csr-fettl-rdpush-tau12-a0.7": [
+   0.06163194444444445,
+   0.0601034576123928
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7": [
+   0.4756944444444444,
+   0.44835895460826364
+  ],
+  "csr-fettl-rdpush-tau6-a0.7": [
+   0.057291666666666664,
+   0.060523472143105335
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7": [
+   0.4097222222222222,
+   0.4416072397579234
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7": [
+   0.5086805555555556,
+   0.5750631949134442
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7": [
+   0.3836805555555556,
+   0.4477444023650155
+  ],
+  "ssr-fepush-rdpush-a0.7": [
+   0.022569444444444444,
+   0.017941506774769432
+  ],
+  "csr-feoff-rdoff-a0.7": [
+   0.025173611111111112,
+   0.017543515978055608
+  ],
+  "csr-feoff-rdttl-tau6-a0.7": [
+   0.4357638888888889,
+   0.43021763317738126
+  ]
+ },
+ "latency": {
+  "csr-feoff-rdttl-tau3-a0.7|initial": [
+   836.1031250002173,
+   847.278020847757
+  ],
+  "csr-feoff-rdttl-tau3-a0.7|nav": [
+   113.30965909109253,
+   113.22444781685637
+  ],
+  "csr-feoff-rdttl-tau12-a0.7|initial": [
+   841.3708333335817,
+   846.8819762745402
+  ],
+  "csr-feoff-rdttl-tau12-a0.7|nav": [
+   107.49592803027762,
+   109.41194700976723
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7|initial": [
+   224.21666666601473,
+   219.28273998093616
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7|nav": [
+   111.82803030299361,
+   111.22407396259135
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7|initial": [
+   216.92604166610786,
+   216.4870720943911
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7|nav": [
+   107.20435606070201,
+   107.67253675368073
+  ],
+  "csr-fettl-rdpush-tau3-a0.7|initial": [
+   829.1364583326504,
+   853.0353675540231
+  ],
+  "csr-fettl-rdpush-tau3-a0.7|nav": [
+   61.91837121189261,
+   62.32648060959812
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7|initial": [
+   216.1437500001242,
+   214.98850267604112
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7|nav": [
+   104.7467803033351,
+   105.50908241631947
+  ],
+  "ssr-feoff-rdoff-a0.7|initial": [
+   243.80416666607684,
+   235.23306549381917
+  ],
+  "ssr-feoff-rdoff-a0.7|nav": [
+   129.76628787896004,
+   125.77752217118943
+  ],
+  "csr-fettl-rdpush-tau12-a0.7|initial": [
+   833.4708333325883,
+   844.1947523417961
+  ],
+  "csr-fettl-rdpush-tau12-a0.7|nav": [
+   61.70246212127985,
+   61.74769308270868
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7|initial": [
+   217.85416666806364,
+   218.22736137981454
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7|nav": [
+   109.09034090881434,
+   109.44930311338527
+  ],
+  "csr-fettl-rdpush-tau6-a0.7|initial": [
+   843.7156249998758,
+   851.4423333594585
+  ],
+  "csr-fettl-rdpush-tau6-a0.7|nav": [
+   61.82689393910043,
+   62.21296929925678
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7|initial": [
+   214.98437500093132,
+   216.9933450018896
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7|nav": [
+   104.50482954515257,
+   106.53315313305414
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7|initial": [
+   215.64166666660458,
+   217.77311832998646
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7|nav": [
+   104.44166666684164,
+   106.93129187989156
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7|initial": [
+   215.55937500003105,
+   215.8532410472751
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7|nav": [
+   104.1337121215536,
+   105.95069010321717
+  ],
+  "ssr-fepush-rdpush-a0.7|initial": [
+   221.39895833283663,
+   220.04530227683304
+  ],
+  "ssr-fepush-rdpush-a0.7|nav": [
+   111.54488636371256,
+   111.67585414837261
+  ],
+  "csr-feoff-rdoff-a0.7|initial": [
+   857.4010416668219,
+   860.1957580474026
+  ],
+  "csr-feoff-rdoff-a0.7|nav": [
+   131.69725378786185,
+   126.74899904250155
+  ],
+  "csr-feoff-rdttl-tau6-a0.7|initial": [
+   832.2166666666357,
+   839.3909348214743
+  ],
+  "csr-feoff-rdttl-tau6-a0.7|nav": [
+   109.80028409081878,
+   109.96845280821688
+  ]
+ },
+ "outcome_calibration": {
+  "0": [
+   223,
+   0.07582147895118949,
+   0.09417040358744394
+  ],
+  "1": [
+   294,
+   0.14091334757718582,
+   0.14965986394557823
+  ],
+  "2": [
+   358,
+   0.2622695433067762,
+   0.2681564245810056
+  ],
+  "3": [
+   774,
+   0.3567306539886961,
+   0.32945736434108525
+  ],
+  "4": [
+   634,
+   0.44176573999217594,
+   0.4526813880126183
+  ],
+  "5": [
+   161,
+   0.5550048907553646,
+   0.5714285714285714
+  ],
+  "6": [
+   169,
+   0.6394864405625162,
+   0.6449704142011834
+  ],
+  "7": [
+   100,
+   0.7529796816689115,
+   0.75
+  ],
+  "8": [
+   41,
+   0.8428828585205552,
+   0.7804878048780488
+  ],
+  "9": [
+   6,
+   0.9206009444717899,
+   0.6666666666666666
+  ]
+ },
+ "selection": {
+  "all|0.42": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   }
+  },
+  "all|0.44": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   }
+  },
+  "ttl_only|0.249": {
+   "oracle": "ssr-feoff-rdoff-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.269": {
+   "oracle": "ssr-feoff-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.14914708427335713,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.14914708427335713,
+    "right": false
+   }
+  },
+  "ttl_only|0.42": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   }
+  },
+  "ttl_only|0.44": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06854718660198546,
+    "right": false
+   }
+  }
+ },
+ "selectors": {
+  "point": {
+   "decisions": 6,
+   "abstentions": 0,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 2,
+   "mean_regret": 4.569812440132364,
+   "worst_regret": 6.854718660198546
+  },
+  "margin": {
+   "decisions": 6,
+   "abstentions": 0,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 1,
+   "mean_regret": 7.055597178021649,
+   "worst_regret": 14.914708427335713
+  },
+  "cc": {
+   "decisions": 6,
+   "abstentions": 0,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 1,
+   "mean_regret": 7.055597178021649,
+   "worst_regret": 14.914708427335713
+  }
+ },
+ "cc_margin": {
+  "csr-feoff-rdttl-tau3-a0.7": 0.0338297971750158,
+  "csr-feoff-rdttl-tau12-a0.7": 0.042235095715975245,
+  "ssr-feoff-rdttl-tau3-a0.7": 0.03138726162482771,
+  "ssr-feoff-rdttl-tau12-a0.7": 0.044572372006856216,
+  "csr-fettl-rdpush-tau3-a0.7": 0.020974382872378156,
+  "ssr-fettl-rdpush-tau12-a0.7": 0.045651792460424875,
+  "ssr-feoff-rdoff-a0.7": 0.015040590583541995,
+  "csr-fettl-rdpush-tau12-a0.7": 0.020974382872378156,
+  "ssr-feoff-rdttl-tau6-a0.7": 0.04420420667131112,
+  "csr-fettl-rdpush-tau6-a0.7": 0.020974382872378156,
+  "ssr-fettl-rdpush-tau3-a0.7": 0.03825916247600687,
+  "ssr-fettl-rdpush-tau6-a0.7": 0.04594051943697525,
+  "ssr-fettl-rdttl-tau3-a0.7": 0.038356441556797856,
+  "ssr-fepush-rdpush-a0.7": 0.015414723764359414,
+  "csr-feoff-rdoff-a0.7": 0.015363412137000008,
+  "csr-feoff-rdttl-tau6-a0.7": 0.03890690493854899
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0188"
+  ],
+  "W2 every cell within 0.05": [
+   false,
+   "max 0.0664"
+  ],
+  "W3 orderings": [
+   true,
+   "97/97"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 5 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "96/96"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "1.12% over 32 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 3.76%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   true,
+   "0: n=223 pred 0.076 obs 0.094; 1: n=294 pred 0.141 obs 0.150; 2: n=358 pred 0.262 obs 0.268; 3: n=774 pred 0.357 obs 0.329; 4: n=634 pred 0.442 obs 0.453; 5: n=161 pred 0.555 obs 0.571; 6: n=169 pred 0.639 obs 0.645; 7: n=100 pred 0.753 obs 0.750; 8: n=41 pred 0.843 obs 0.780; 9: n=6 pred 0.921 obs 0.667"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0745 ref 0.2393 skill +0.689; top-1 0.946 over 18432 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "+0.0142"
+  ],
+  "O1' noise-aware calibration": [
+   true,
+   "0: +0.018 (tol 0.050); 1: +0.009 (tol 0.050); 2: +0.006 (tol 0.050); 3: -0.027 (tol 0.050); 4: +0.011 (tol 0.050); 5: +0.016 (tol 0.079); 6: +0.005 (tol 0.069); 7: -0.003 (tol 0.084)"
+  ],
+  "B4cc-a chance-constrained selector mean regret <= 5%": [
+   false,
+   "mean 7.06% over 6 feasible decisions, worst 14.91%"
+  ],
+  "B4cc-b chance-constrained selector: no confirmed violation": [
+   true,
+   "0 violations, 0 confirmed, 0 abstentions"
+  ]
+ }
+}

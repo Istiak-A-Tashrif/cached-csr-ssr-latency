@@ -1,0 +1,624 @@
+{
+ "tag": "revCCT",
+ "stale": {
+  "csr-fettl-rdpush-tau12-a0.7": [
+   0.059027777777777776,
+   0.06364926994881054
+  ],
+  "ssr-fepush-rdpush-a0.7": [
+   0.024305555555555556,
+   0.01890387575404478
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7": [
+   0.3932291666666667,
+   0.39282561222919726
+  ],
+  "csr-fettl-rdpush-tau3-a0.7": [
+   0.06336805555555555,
+   0.06351930161784312
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7": [
+   0.6328125,
+   0.6364886938045333
+  ],
+  "csr-fettl-rdpush-tau6-a0.7": [
+   0.058159722222222224,
+   0.06366627560403547
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7": [
+   0.5243055555555556,
+   0.4974917156036108
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7": [
+   0.3671875,
+   0.39640565083618345
+  ],
+  "csr-feoff-rdttl-tau3-a0.7": [
+   0.13541666666666666,
+   0.14066643868818252
+  ],
+  "csr-feoff-rdttl-tau6-a0.7": [
+   0.3020833333333333,
+   0.3088820327781061
+  ],
+  "ssr-feoff-rdoff-a0.7": [
+   0.017361111111111112,
+   0.01865790872075055
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7": [
+   0.5807291666666666,
+   0.5285313158068283
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7": [
+   0.3532986111111111,
+   0.31649047209192044
+  ],
+  "csr-feoff-rdttl-tau12-a0.7": [
+   0.5347222222222222,
+   0.52401774940133
+  ],
+  "csr-feoff-rdoff-a0.7": [
+   0.022569444444444444,
+   0.018663142988589666
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7": [
+   0.1519097222222222,
+   0.1590628009825728
+  ]
+ },
+ "latency": {
+  "csr-fettl-rdpush-tau12-a0.7|initial": [
+   1386.8072916671324,
+   1403.0978100525144
+  ],
+  "csr-fettl-rdpush-tau12-a0.7|nav": [
+   99.8584280302607,
+   99.9784574601175
+  ],
+  "ssr-fepush-rdpush-a0.7|initial": [
+   378.50416666533175,
+   371.37137719140196
+  ],
+  "ssr-fepush-rdpush-a0.7|nav": [
+   194.60861742461213,
+   191.73040538931
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7|initial": [
+   363.51979166672874,
+   360.4131693007039
+  ],
+  "ssr-fettl-rdpush-tau3-a0.7|nav": [
+   181.68844696964052,
+   179.82279803605158
+  ],
+  "csr-fettl-rdpush-tau3-a0.7|initial": [
+   1398.6093749998447,
+   1399.7233687263888
+  ],
+  "csr-fettl-rdpush-tau3-a0.7|nav": [
+   100.51060606058066,
+   99.76088953817974
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7|initial": [
+   363.5489583342957,
+   361.5227705840303
+  ],
+  "ssr-fettl-rdpush-tau12-a0.7|nav": [
+   181.4914772728825,
+   180.38959837148028
+  ],
+  "csr-fettl-rdpush-tau6-a0.7|initial": [
+   1394.2614583334264,
+   1403.5689406015197
+  ],
+  "csr-fettl-rdpush-tau6-a0.7|nav": [
+   101.2197916663788,
+   100.01604641990197
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7|initial": [
+   362.2958333340163,
+   363.4627235406724
+  ],
+  "ssr-fettl-rdpush-tau6-a0.7|nav": [
+   181.18238636343315,
+   181.38063612022458
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7|initial": [
+   364.9510416658595,
+   362.07427023719515
+  ],
+  "ssr-fettl-rdttl-tau3-a0.7|nav": [
+   180.88560606059477,
+   180.6712738266347
+  ],
+  "csr-feoff-rdttl-tau3-a0.7|initial": [
+   1392.0468749998447,
+   1406.9783383563517
+  ],
+  "csr-feoff-rdttl-tau3-a0.7|nav": [
+   200.16941287882173,
+   197.0222201031507
+  ],
+  "csr-feoff-rdttl-tau6-a0.7|initial": [
+   1386.8281249998447,
+   1408.5262595112697
+  ],
+  "csr-feoff-rdttl-tau6-a0.7|nav": [
+   191.36590909121105,
+   191.1294340064416
+  ],
+  "ssr-feoff-rdoff-a0.7|initial": [
+   408.07291666682187,
+   400.00205550707
+  ],
+  "ssr-feoff-rdoff-a0.7|nav": [
+   226.5397727272445,
+   219.61266591496553
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7|initial": [
+   367.2010416663252,
+   366.5693947222771
+  ],
+  "ssr-feoff-rdttl-tau12-a0.7|nav": [
+   188.09053030298233,
+   186.7525627355832
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7|initial": [
+   371.66458333438885,
+   368.2303761073675
+  ],
+  "ssr-feoff-rdttl-tau6-a0.7|nav": [
+   193.91950757598335,
+   190.4219690307697
+  ],
+  "csr-feoff-rdttl-tau12-a0.7|initial": [
+   1380.7083333342646,
+   1395.5119760256575
+  ],
+  "csr-feoff-rdttl-tau12-a0.7|nav": [
+   186.01799242414364,
+   185.4649798502225
+  ],
+  "csr-feoff-rdoff-a0.7|initial": [
+   1428.0656249995034,
+   1428.7826545124733
+  ],
+  "csr-feoff-rdoff-a0.7|nav": [
+   225.99431818146542,
+   219.34138119396823
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7|initial": [
+   378.14375000012416,
+   374.4324314178446
+  ],
+  "ssr-feoff-rdttl-tau3-a0.7|nav": [
+   201.85719696979857,
+   197.0263041379892
+  ]
+ },
+ "outcome_calibration": {
+  "0": [
+   181,
+   0.07615009251682303,
+   0.06629834254143646
+  ],
+  "1": [
+   270,
+   0.14340970473913803,
+   0.14444444444444443
+  ],
+  "2": [
+   314,
+   0.2595521431722435,
+   0.22611464968152867
+  ],
+  "3": [
+   741,
+   0.3620776686760796,
+   0.3292847503373819
+  ],
+  "4": [
+   674,
+   0.4457800226979813,
+   0.4169139465875371
+  ],
+  "5": [
+   203,
+   0.5439374516970111,
+   0.5665024630541872
+  ],
+  "6": [
+   207,
+   0.6497189987465579,
+   0.6231884057971014
+  ],
+  "7": [
+   79,
+   0.7641186978992589,
+   0.8481012658227848
+  ],
+  "8": [
+   49,
+   0.8503508780636292,
+   0.8571428571428571
+  ],
+  "9": [
+   18,
+   0.9365622163281999,
+   0.8333333333333334
+  ]
+ },
+ "selection": {
+  "all|0.312": {
+   "oracle": "csr-fettl-rdpush-tau12-a0.7",
+   "point": {
+    "pick": "ssr-fepush-rdpush-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.013660178386908787,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-fepush-rdpush-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.013660178386908787,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-fepush-rdpush-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.013660178386908787,
+    "right": false
+   }
+  },
+  "all|0.332": {
+   "oracle": "csr-fettl-rdpush-tau12-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": true,
+    "confirmed": false,
+    "excess": 0.021298611111111088,
+    "regret": null,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-fepush-rdpush-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.013660178386908787,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-fepush-rdpush-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.013660178386908787,
+    "right": false
+   }
+  },
+  "all|0.373": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   }
+  },
+  "all|0.393": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-fettl-rdpush-tau3-a0.7",
+    "violation": true,
+    "confirmed": false,
+    "excess": 0.00022916666666666918,
+    "regret": null,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   }
+  },
+  "ttl_only|0.145": {
+   "oracle": "ssr-feoff-rdoff-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.165": {
+   "oracle": "ssr-feoff-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.1160011705136717,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdoff-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.1160011705136717,
+    "right": false
+   }
+  },
+  "ttl_only|0.312": {
+   "oracle": "ssr-feoff-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.332": {
+   "oracle": "ssr-feoff-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": true,
+    "confirmed": false,
+    "excess": 0.021298611111111088,
+    "regret": null,
+    "right": false
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.401": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-fettl-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   }
+  },
+  "ttl_only|0.421": {
+   "oracle": "ssr-fettl-rdttl-tau3-a0.7",
+   "point": {
+    "pick": "ssr-fettl-rdttl-tau3-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "margin": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   },
+   "cc": {
+    "pick": "ssr-feoff-rdttl-tau6-a0.7",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.06373929719436539,
+    "right": false
+   }
+  }
+ },
+ "selectors": {
+  "point": {
+   "decisions": 10,
+   "abstentions": 0,
+   "violations": 3,
+   "confirmed": 0,
+   "oracle_choices": 5,
+   "mean_regret": 1.1057067940182024,
+   "worst_regret": 6.373929719436538
+  },
+  "margin": {
+   "decisions": 10,
+   "abstentions": 0,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 3,
+   "mean_regret": 3.9827871606495076,
+   "worst_regret": 11.600117051367171
+  },
+  "cc": {
+   "decisions": 10,
+   "abstentions": 0,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 3,
+   "mean_regret": 3.9827871606495076,
+   "worst_regret": 11.600117051367171
+  }
+ },
+ "cc_margin": {
+  "csr-fettl-rdpush-tau12-a0.7": 0.020716318669368638,
+  "ssr-fepush-rdpush-a0.7": 0.015291749794805286,
+  "ssr-fettl-rdpush-tau3-a0.7": 0.03271306671527464,
+  "csr-fettl-rdpush-tau3-a0.7": 0.020716318669368638,
+  "ssr-fettl-rdpush-tau12-a0.7": 0.04289076346572207,
+  "csr-fettl-rdpush-tau6-a0.7": 0.020716318669368638,
+  "ssr-fettl-rdpush-tau6-a0.7": 0.04067096684130548,
+  "ssr-fettl-rdttl-tau3-a0.7": 0.03596150629279561,
+  "csr-feoff-rdttl-tau3-a0.7": 0.024992186053208895,
+  "csr-feoff-rdttl-tau6-a0.7": 0.03381287325892594,
+  "ssr-feoff-rdoff-a0.7": 0.015249674256286887,
+  "ssr-feoff-rdttl-tau12-a0.7": 0.043691772044611235,
+  "ssr-feoff-rdttl-tau6-a0.7": 0.03531157863145081,
+  "csr-feoff-rdttl-tau12-a0.7": 0.04160201539660056,
+  "csr-feoff-rdoff-a0.7": 0.015251071371604042,
+  "ssr-feoff-rdttl-tau3-a0.7": 0.025719420240659614
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0125"
+  ],
+  "W2 every cell within 0.05": [
+   false,
+   "max 0.0522"
+  ],
+  "W3 orderings": [
+   true,
+   "99/99"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 7 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "96/96"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "1.01% over 32 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 3.06%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   true,
+   "0: n=181 pred 0.076 obs 0.066; 1: n=270 pred 0.143 obs 0.144; 2: n=314 pred 0.260 obs 0.226; 3: n=741 pred 0.362 obs 0.329; 4: n=674 pred 0.446 obs 0.417; 5: n=203 pred 0.544 obs 0.567; 6: n=207 pred 0.650 obs 0.623; 7: n=79 pred 0.764 obs 0.848; 8: n=49 pred 0.850 obs 0.857; 9: n=18 pred 0.937 obs 0.833"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0866 ref 0.2650 skill +0.673; top-1 0.941 over 18432 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "+0.0257"
+  ],
+  "O1' noise-aware calibration": [
+   true,
+   "0: -0.010 (tol 0.050); 1: +0.001 (tol 0.051); 2: -0.033 (tol 0.050); 3: -0.033 (tol 0.050); 4: -0.029 (tol 0.050); 5: +0.023 (tol 0.073); 6: -0.027 (tol 0.068)"
+  ],
+  "B4cc-a chance-constrained selector mean regret <= 5%": [
+   true,
+   "mean 3.98% over 10 feasible decisions, worst 11.60%"
+  ],
+  "B4cc-b chance-constrained selector: no confirmed violation": [
+   true,
+   "0 violations, 0 confirmed, 0 abstentions"
+  ]
+ }
+}

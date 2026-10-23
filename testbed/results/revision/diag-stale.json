@@ -1,0 +1,30 @@
+{
+ "revT": {
+  "inside": 44,
+  "cells": 54,
+  "trace_rate_min": null,
+  "trace_rate_max": null,
+  "declared": 2.5
+ },
+ "revR": {
+  "inside": 45,
+  "cells": 54,
+  "trace_rate_min": null,
+  "trace_rate_max": null,
+  "declared": 1.5
+ },
+ "revB2T": {
+  "inside": 7,
+  "cells": 12,
+  "trace_rate_min": 1.8237079007325083,
+  "trace_rate_max": 2.0997456663611516,
+  "declared": 2.5
+ },
+ "revB2R": {
+  "inside": 10,
+  "cells": 12,
+  "trace_rate_min": 1.1580071551829525,
+  "trace_rate_max": 1.5117405989922073,
+  "declared": 1.5
+ }
+}

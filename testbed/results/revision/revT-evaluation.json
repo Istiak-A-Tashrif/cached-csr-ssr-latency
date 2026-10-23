@@ -1,0 +1,1058 @@
+{
+ "tag": "revT",
+ "stale": {
+  "csr-fettl-rdttl-tau5-a1": [
+   0.34765625,
+   0.3997016732097447
+  ],
+  "ssr-fettl-rdttl-tau20-a0.6": [
+   0.7916666666666666,
+   0.8199174058859722
+  ],
+  "csr-feoff-rdttl-tau20-a1": [
+   0.6940104166666666,
+   0.7344258204440477
+  ],
+  "ssr-fettl-rdpush-tau5-a1": [
+   0.5221354166666666,
+   0.5726679794626675
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6": [
+   0.5364583333333334,
+   0.5833373088730086
+  ],
+  "csr-feoff-rdoff-a0.6": [
+   0.040364583333333336,
+   0.02750906879572275
+  ],
+  "csr-fettl-rdpush-tau5-a1": [
+   0.1015625,
+   0.09647535416620444
+  ],
+  "ssr-fepush-rdpush-a0.6": [
+   0.032552083333333336,
+   0.02785222574088389
+  ],
+  "ssr-fettl-rdttl-tau5-a1": [
+   0.5338541666666666,
+   0.5756588256798593
+  ],
+  "csr-fettl-rdpush-tau1-a0.6": [
+   0.1171875,
+   0.09229943907488565
+  ],
+  "ssr-fettl-rdttl-tau1-a1": [
+   0.3580729166666667,
+   0.38883393789201226
+  ],
+  "csr-fettl-rdttl-tau20-a1": [
+   0.7434895833333334,
+   0.7513555927166665
+  ],
+  "csr-feoff-rdttl-tau60-a1": [
+   0.9140625,
+   0.9001646407863025
+  ],
+  "csr-feoff-rdoff-a1": [
+   0.0234375,
+   0.02758234210267352
+  ],
+  "ssr-fettl-rdpush-tau60-a0.6": [
+   0.921875,
+   0.9001625395144969
+  ],
+  "csr-fettl-rdpush-tau20-a1": [
+   0.11067708333333333,
+   0.09653302012215133
+  ],
+  "csr-feoff-rdttl-tau60-a0.6": [
+   0.9140625,
+   0.9042207757083199
+  ],
+  "csr-feoff-rdttl-tau5-a0.6": [
+   0.3463541666666667,
+   0.37403402224200094
+  ],
+  "csr-fettl-rdpush-tau5-a0.6": [
+   0.09895833333333333,
+   0.09435756428425783
+  ],
+  "csr-fettl-rdpush-tau1-a1": [
+   0.09505208333333333,
+   0.09250205958192419
+  ],
+  "ssr-feoff-rdoff-a1": [
+   0.0234375,
+   0.027442188976115972
+  ],
+  "ssr-feoff-rdoff-a0.6": [
+   0.033854166666666664,
+   0.027594531285495823
+  ],
+  "ssr-feoff-rdttl-tau60-a1": [
+   0.9049479166666666,
+   0.8968693698971383
+  ],
+  "ssr-fettl-rdttl-tau1-a0.6": [
+   0.4010416666666667,
+   0.40468461573527637
+  ],
+  "csr-fettl-rdpush-tau20-a0.6": [
+   0.1015625,
+   0.09422270296651791
+  ],
+  "ssr-fettl-rdpush-tau20-a0.6": [
+   0.7825520833333334,
+   0.8088821947753252
+  ],
+  "ssr-fettl-rdpush-tau60-a1": [
+   0.90234375,
+   0.8963736376009602
+  ],
+  "csr-feoff-rdttl-tau1-a0.6": [
+   0.06510416666666667,
+   0.07356909688047951
+  ],
+  "csr-feoff-rdttl-tau20-a0.6": [
+   0.7356770833333334,
+   0.7297256886739412
+  ],
+  "ssr-fettl-rdttl-tau60-a1": [
+   0.8997395833333334,
+   0.8963911040409501
+  ],
+  "ssr-fepush-rdpush-a1": [
+   0.03515625,
+   0.027965705862533375
+  ],
+  "ssr-fettl-rdpush-tau1-a0.6": [
+   0.40234375,
+   0.405967650604276
+  ],
+  "ssr-fettl-rdttl-tau60-a0.6": [
+   0.8684895833333334,
+   0.9004822439560124
+  ],
+  "csr-fettl-rdttl-tau5-a0.6": [
+   0.3932291666666667,
+   0.398649109004317
+  ],
+  "ssr-fettl-rdpush-tau1-a1": [
+   0.3958333333333333,
+   0.39106046780336207
+  ],
+  "ssr-feoff-rdttl-tau20-a0.6": [
+   0.7265625,
+   0.7369009902347909
+  ],
+  "ssr-feoff-rdttl-tau20-a1": [
+   0.7044270833333334,
+   0.7336435687265155
+  ],
+  "csr-fettl-rdpush-tau60-a0.6": [
+   0.08072916666666667,
+   0.09399110562173807
+  ],
+  "ssr-feoff-rdttl-tau1-a1": [
+   0.08333333333333333,
+   0.08019145411648736
+  ],
+  "ssr-feoff-rdttl-tau5-a1": [
+   0.390625,
+   0.3787198627713413
+  ],
+  "csr-fettl-rdttl-tau60-a1": [
+   0.8880208333333334,
+   0.8705192672546965
+  ],
+  "csr-fettl-rdttl-tau1-a1": [
+   0.12890625,
+   0.09336464330310501
+  ],
+  "csr-feoff-rdttl-tau1-a1": [
+   0.09114583333333333,
+   0.08026974309072873
+  ],
+  "ssr-feoff-rdttl-tau1-a0.6": [
+   0.08072916666666667,
+   0.07586363227931704
+  ],
+  "ssr-fettl-rdttl-tau20-a1": [
+   0.8190104166666666,
+   0.8002012315942818
+  ],
+  "csr-fettl-rdttl-tau1-a0.6": [
+   0.09635416666666667,
+   0.09215789414764504
+  ],
+  "ssr-fettl-rdpush-tau5-a0.6": [
+   0.5559895833333334,
+   0.5772382252861157
+  ],
+  "ssr-fettl-rdpush-tau20-a1": [
+   0.828125,
+   0.8008057575751778
+  ],
+  "ssr-feoff-rdttl-tau60-a0.6": [
+   0.8984375,
+   0.900714533041941
+  ],
+  "ssr-feoff-rdttl-tau5-a0.6": [
+   0.3723958333333333,
+   0.3746533652718836
+  ],
+  "csr-fettl-rdttl-tau20-a0.6": [
+   0.74609375,
+   0.7609136094862663
+  ],
+  "csr-feoff-rdttl-tau5-a1": [
+   0.4361979166666667,
+   0.38464013057994534
+  ],
+  "csr-fettl-rdpush-tau60-a1": [
+   0.10546875,
+   0.09669971389621312
+  ],
+  "csr-fettl-rdttl-tau60-a0.6": [
+   0.875,
+   0.8781550595086499
+  ]
+ },
+ "latency": {
+  "csr-fettl-rdttl-tau5-a1|initial": [
+   1317.431249999936,
+   1333.6524127524901
+  ],
+  "csr-fettl-rdttl-tau5-a1|nav": [
+   94.76448863635332,
+   94.0919934937036
+  ],
+  "ssr-fettl-rdttl-tau20-a0.6|initial": [
+   346.78906249998545,
+   341.3759140496874
+  ],
+  "ssr-fettl-rdttl-tau20-a0.6|nav": [
+   172.7603693181789,
+   170.435062304615
+  ],
+  "csr-feoff-rdttl-tau20-a1|initial": [
+   1309.768749999901,
+   1320.9616165635023
+  ],
+  "csr-feoff-rdttl-tau20-a1|nav": [
+   175.7718750000455,
+   175.71251591102268
+  ],
+  "ssr-fettl-rdpush-tau5-a1|initial": [
+   346.34687500007567,
+   343.0606698210178
+  ],
+  "ssr-fettl-rdpush-tau5-a1|nav": [
+   172.05866477268864,
+   171.29481577519593
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6|initial": [
+   344.1109375000233,
+   342.3816621919656
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6|nav": [
+   172.06292613634088,
+   170.94883137820574
+  ],
+  "csr-feoff-rdoff-a0.6|initial": [
+   1357.4765624999127,
+   1361.871395022271
+  ],
+  "csr-feoff-rdoff-a0.6|nav": [
+   227.0399147727241,
+   219.16401170767506
+  ],
+  "csr-fettl-rdpush-tau5-a1|initial": [
+   1324.4093749999593,
+   1337.1568360260173
+  ],
+  "csr-fettl-rdpush-tau5-a1|nav": [
+   100.28650568180919,
+   96.99210721922863
+  ],
+  "ssr-fepush-rdpush-a0.6|initial": [
+   361.6921875000844,
+   358.18604329509645
+  ],
+  "ssr-fepush-rdpush-a0.6|nav": [
+   196.34786931820088,
+   191.01651884437618
+  ],
+  "ssr-fettl-rdttl-tau5-a1|initial": [
+   345.56718749995343,
+   343.12703898776726
+  ],
+  "ssr-fettl-rdttl-tau5-a1|nav": [
+   172.08721590906762,
+   171.32871940098764
+  ],
+  "csr-fettl-rdpush-tau1-a0.6|initial": [
+   1324.2171874999913,
+   1338.868033629035
+  ],
+  "csr-fettl-rdpush-tau1-a0.6|nav": [
+   106.60198863635411,
+   102.81595158860391
+  ],
+  "ssr-fettl-rdttl-tau1-a1|initial": [
+   342.4343750000844,
+   342.10086956341064
+  ],
+  "ssr-fettl-rdttl-tau1-a1|nav": [
+   169.4803977272518,
+   170.80451718677236
+  ],
+  "csr-fettl-rdttl-tau20-a1|initial": [
+   1306.8421875000058,
+   1318.5284902170297
+  ],
+  "csr-fettl-rdttl-tau20-a1|nav": [
+   86.4971590909448,
+   86.69467752217251
+  ],
+  "csr-feoff-rdttl-tau60-a1|initial": [
+   1299.5156249999563,
+   1314.9574328847373
+  ],
+  "csr-feoff-rdttl-tau60-a1|nav": [
+   171.11647727274314,
+   171.14749236235414
+  ],
+  "csr-feoff-rdoff-a1|initial": [
+   1345.3437499998836,
+   1365.6312412942088
+  ],
+  "csr-feoff-rdoff-a1|nav": [
+   226.7394886363578,
+   219.66153762228177
+  ],
+  "ssr-fettl-rdpush-tau60-a0.6|initial": [
+   346.54999999998836,
+   339.6554210347219
+  ],
+  "ssr-fettl-rdpush-tau60-a0.6|nav": [
+   172.99715909091438,
+   169.5561738240954
+  ],
+  "csr-fettl-rdpush-tau20-a1|initial": [
+   1328.2312500001426,
+   1337.7521193030816
+  ],
+  "csr-fettl-rdpush-tau20-a1|nav": [
+   98.82258522728146,
+   97.0260485726976
+  ],
+  "csr-feoff-rdttl-tau60-a0.6|initial": [
+   1302.0578124999447,
+   1311.879424019629
+  ],
+  "csr-feoff-rdttl-tau60-a0.6|nav": [
+   170.947017045472,
+   170.74019135454498
+  ],
+  "csr-feoff-rdttl-tau5-a0.6|initial": [
+   1320.270312500099,
+   1333.3218260080862
+  ],
+  "csr-feoff-rdttl-tau5-a0.6|nav": [
+   186.23892045454042,
+   183.744820550736
+  ],
+  "csr-fettl-rdpush-tau5-a0.6|initial": [
+   1340.368749999776,
+   1337.8810847896775
+  ],
+  "csr-fettl-rdpush-tau5-a0.6|nav": [
+   105.93252840904461,
+   103.18918948200394
+  ],
+  "csr-fettl-rdpush-tau1-a1|initial": [
+   1314.2968749999854,
+   1335.4348951257398
+  ],
+  "csr-fettl-rdpush-tau1-a1|nav": [
+   100.05255681816992,
+   96.5256444604463
+  ],
+  "ssr-feoff-rdoff-a1|initial": [
+   399.25312499998836,
+   388.92693984124213
+  ],
+  "ssr-feoff-rdoff-a1|nav": [
+   228.70553977273946,
+   218.8639261851363
+  ],
+  "ssr-feoff-rdoff-a0.6|initial": [
+   397.20624999987194,
+   390.9868491803704
+  ],
+  "ssr-feoff-rdoff-a0.6|nav": [
+   226.72542613636918,
+   219.91452204920677
+  ],
+  "ssr-feoff-rdttl-tau60-a1|initial": [
+   346.620312500032,
+   343.6700731126266
+  ],
+  "ssr-feoff-rdttl-tau60-a1|nav": [
+   173.32911931819532,
+   171.67784358912618
+  ],
+  "ssr-fettl-rdttl-tau1-a0.6|initial": [
+   344.3187500000349,
+   343.44356885995643
+  ],
+  "ssr-fettl-rdttl-tau1-a0.6|nav": [
+   170.35880681821436,
+   171.491309152683
+  ],
+  "csr-fettl-rdpush-tau20-a0.6|initial": [
+   1325.3218749998778,
+   1335.4395525969658
+  ],
+  "csr-fettl-rdpush-tau20-a0.6|nav": [
+   105.5980113636324,
+   103.01781412448977
+  ],
+  "ssr-fettl-rdpush-tau20-a0.6|initial": [
+   345.621874999837,
+   342.18766001223656
+  ],
+  "ssr-fettl-rdpush-tau20-a0.6|nav": [
+   172.73522727279422,
+   170.8497379233117
+  ],
+  "ssr-fettl-rdpush-tau60-a1|initial": [
+   347.53906250001455,
+   340.7224330232309
+  ],
+  "ssr-fettl-rdpush-tau60-a1|nav": [
+   172.97258522729152,
+   170.1003649587205
+  ],
+  "csr-feoff-rdttl-tau1-a0.6|initial": [
+   1349.9343750000116,
+   1358.8713104322276
+  ],
+  "csr-feoff-rdttl-tau1-a0.6|nav": [
+   209.19914772727432,
+   203.56815848142278
+  ],
+  "csr-feoff-rdttl-tau20-a0.6|initial": [
+   1300.8406250001135,
+   1315.5713822631967
+  ],
+  "csr-feoff-rdttl-tau20-a0.6|nav": [
+   175.9819602272513,
+   174.83115313708268
+  ],
+  "ssr-fettl-rdttl-tau60-a1|initial": [
+   346.07343749998836,
+   340.8296447541341
+  ],
+  "ssr-fettl-rdttl-tau60-a1|nav": [
+   172.7286931818486,
+   170.15513235423677
+  ],
+  "ssr-fepush-rdpush-a1|initial": [
+   360.80468749998545,
+   357.5117335388749
+  ],
+  "ssr-fepush-rdpush-a1|nav": [
+   192.24502840908562,
+   190.69889111296368
+  ],
+  "ssr-fettl-rdpush-tau1-a0.6|initial": [
+   346.18437499992433,
+   342.54503244857983
+  ],
+  "ssr-fettl-rdpush-tau1-a0.6|nav": [
+   171.73607954546011,
+   171.0322933968333
+  ],
+  "ssr-fettl-rdttl-tau60-a0.6|initial": [
+   345.9921874997963,
+   341.42186193435964
+  ],
+  "ssr-fettl-rdttl-tau60-a0.6|nav": [
+   173.0703125,
+   170.45853424382958
+  ],
+  "csr-fettl-rdttl-tau5-a0.6|initial": [
+   1310.6687499999243,
+   1320.079538145619
+  ],
+  "csr-fettl-rdttl-tau5-a0.6|nav": [
+   101.14687500003492,
+   100.01565347205774
+  ],
+  "ssr-fettl-rdpush-tau1-a1|initial": [
+   348.17499999981374,
+   342.1366068070451
+  ],
+  "ssr-fettl-rdpush-tau1-a1|nav": [
+   172.20312500007142,
+   170.82277298527865
+  ],
+  "ssr-feoff-rdttl-tau20-a0.6|initial": [
+   353.23750000007567,
+   346.6315642898162
+  ],
+  "ssr-feoff-rdttl-tau20-a0.6|nav": [
+   177.83977272725977,
+   174.49072563093105
+  ],
+  "ssr-feoff-rdttl-tau20-a1|initial": [
+   350.34218750009313,
+   347.0883146657019
+  ],
+  "ssr-feoff-rdttl-tau20-a1|nav": [
+   177.6677556817872,
+   174.90906294348113
+  ],
+  "csr-fettl-rdpush-tau60-a0.6|initial": [
+   1323.4796874999302,
+   1331.3437451898144
+  ],
+  "csr-fettl-rdpush-tau60-a0.6|nav": [
+   104.41761363637951,
+   102.73662885079334
+  ],
+  "ssr-feoff-rdttl-tau1-a1|initial": [
+   371.73124999998254,
+   363.3866891142762
+  ],
+  "ssr-feoff-rdttl-tau1-a1|nav": [
+   212.0352272727204,
+   204.1864305710894
+  ],
+  "ssr-feoff-rdttl-tau5-a1|initial": [
+   358.5015624998923,
+   351.8691523939041
+  ],
+  "ssr-feoff-rdttl-tau5-a1|nav": [
+   188.00411931820219,
+   183.03760106672192
+  ],
+  "csr-fettl-rdttl-tau60-a1|initial": [
+   1301.8328125001135,
+   1311.879424019629
+  ],
+  "csr-fettl-rdttl-tau60-a1|nav": [
+   84.05809659091624,
+   84.38830613384339
+  ],
+  "csr-fettl-rdttl-tau1-a1|initial": [
+   1351.6984375001048,
+   1354.7218427849589
+  ],
+  "csr-fettl-rdttl-tau1-a1|nav": [
+   111.02755681815324,
+   104.59769562969909
+  ],
+  "csr-feoff-rdttl-tau1-a1|initial": [
+   1369.9562500001048,
+   1366.0013816007736
+  ],
+  "csr-feoff-rdttl-tau1-a1|nav": [
+   207.34886363637236,
+   202.1679032210345
+  ],
+  "ssr-feoff-rdttl-tau1-a0.6|initial": [
+   382.01562500001455,
+   370.64440056408614
+  ],
+  "ssr-feoff-rdttl-tau1-a0.6|nav": [
+   214.03394886364484,
+   205.03984070790455
+  ],
+  "ssr-fettl-rdttl-tau20-a1|initial": [
+   347.1812500001397,
+   340.2016903302745
+  ],
+  "ssr-fettl-rdttl-tau20-a1|nav": [
+   172.82954545456266,
+   169.83435189479093
+  ],
+  "csr-fettl-rdttl-tau1-a0.6|initial": [
+   1355.2906250002852,
+   1362.436346016501
+  ],
+  "csr-fettl-rdttl-tau1-a0.6|nav": [
+   120.30568181822574,
+   111.83136846704511
+  ],
+  "ssr-fettl-rdpush-tau5-a0.6|initial": [
+   344.1343749999651,
+   339.85452853497003
+  ],
+  "ssr-fettl-rdpush-tau5-a0.6|nav": [
+   172.31306818178166,
+   169.65788946016116
+  ],
+  "ssr-fettl-rdpush-tau20-a1|initial": [
+   347.22031249990687,
+   342.35103026885133
+  ],
+  "ssr-fettl-rdpush-tau20-a1|nav": [
+   172.77556818182347,
+   170.93230777630723
+  ],
+  "ssr-feoff-rdttl-tau60-a0.6|initial": [
+   345.79999999995925,
+   342.96631356284973
+  ],
+  "ssr-feoff-rdttl-tau60-a0.6|nav": [
+   173.40823863636152,
+   171.31891183506758
+  ],
+  "ssr-feoff-rdttl-tau5-a0.6|initial": [
+   365.30156250004075,
+   357.20860614855906
+  ],
+  "ssr-feoff-rdttl-tau5-a0.6|nav": [
+   188.94644886364802,
+   184.26572336480467
+  ],
+  "csr-fettl-rdttl-tau20-a0.6|initial": [
+   1295.7796875000931,
+   1312.5243065382617
+  ],
+  "csr-fettl-rdttl-tau20-a0.6|nav": [
+   92.14928977277172,
+   91.70555450005776
+  ],
+  "csr-feoff-rdttl-tau5-a1|initial": [
+   1325.9625000001397,
+   1327.311620581301
+  ],
+  "csr-feoff-rdttl-tau5-a1|nav": [
+   185.62414772724944,
+   183.11129863055496
+  ],
+  "csr-fettl-rdpush-tau60-a1|initial": [
+   1327.0578124997846,
+   1340.7847523463204
+  ],
+  "csr-fettl-rdpush-tau60-a1|nav": [
+   99.04176136366071,
+   97.23248910241709
+  ],
+  "csr-fettl-rdttl-tau60-a0.6|initial": [
+   1310.3265624999767,
+   1313.04828814562
+  ],
+  "csr-fettl-rdttl-tau60-a0.6|nav": [
+   89.43991477272621,
+   89.58694602253418
+  ]
+ },
+ "outcome_calibration": {
+  "1": [
+   411,
+   0.15657952769618616,
+   0.15815085158150852
+  ],
+  "2": [
+   202,
+   0.24951380686540664,
+   0.18316831683168316
+  ],
+  "3": [
+   362,
+   0.3578134018225078,
+   0.31767955801104975
+  ],
+  "4": [
+   711,
+   0.45637605507081297,
+   0.4191279887482419
+  ],
+  "5": [
+   1311,
+   0.5498726066330479,
+   0.5560640732265446
+  ],
+  "6": [
+   634,
+   0.6387720671275695,
+   0.6466876971608833
+  ],
+  "7": [
+   347,
+   0.7582532176365641,
+   0.7521613832853026
+  ],
+  "8": [
+   218,
+   0.84178730676346,
+   0.8853211009174312
+  ],
+  "9": [
+   152,
+   0.94439453482635,
+   0.9539473684210527
+  ]
+ },
+ "selection": {
+  "a0.6|0.05": {
+   "oracle": "ssr-fepush-rdpush-a0.6",
+   "selector": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "tuning": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a0.6",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.8184895833333332,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.14660497269734596
+   }
+  },
+  "a0.6|0.1": {
+   "oracle": "csr-fettl-rdpush-tau60-a0.6",
+   "selector": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.020001554868932694
+   },
+   "tuning": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.020001554868932694
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.020001554868932694
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a0.6",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.7684895833333333,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.16953885497174298
+   }
+  },
+  "a0.6|0.25": {
+   "oracle": "csr-fettl-rdpush-tau60-a0.6",
+   "selector": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.020001554868932694
+   },
+   "tuning": {
+    "pick": "csr-fettl-rdpush-tau60-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.020001554868932694
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a0.6",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.6184895833333333,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.16953885497174298
+   }
+  },
+  "a0.6|0.5": {
+   "oracle": "ssr-fettl-rdttl-tau1-a0.6",
+   "selector": {
+    "pick": "ssr-fettl-rdpush-tau1-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.00767068867128575
+   },
+   "tuning": {
+    "pick": "ssr-fettl-rdttl-tau1-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.13670730934211173
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a0.6",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.36848958333333326,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a0.6",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.3033542533930856
+   }
+  },
+  "a1|0.05": {
+   "oracle": "ssr-fepush-rdpush-a1",
+   "selector": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "tuning": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a1",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.8497395833333332,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.17754557160178058
+   }
+  },
+  "a1|0.1": {
+   "oracle": "csr-fettl-rdpush-tau1-a1",
+   "selector": {
+    "pick": "csr-fettl-rdpush-tau1-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "tuning": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.025104819090046655
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.025104819090046655
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a1",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.7997395833333333,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.20710764014712885
+   }
+  },
+  "a1|0.25": {
+   "oracle": "csr-fettl-rdpush-tau1-a1",
+   "selector": {
+    "pick": "csr-fettl-rdpush-tau1-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "tuning": {
+    "pick": "csr-fettl-rdpush-tau60-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0006800300223398277
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.025104819090046655
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a1",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.6497395833333333,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.20710764014712885
+   }
+  },
+  "a1|0.5": {
+   "oracle": "ssr-fettl-rdttl-tau1-a1",
+   "selector": {
+    "pick": "ssr-fettl-rdttl-tau1-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "tuning": {
+    "pick": "ssr-fettl-rdttl-tau1-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.0
+   },
+   "fixed": {
+    "pick": "ssr-fepush-rdpush-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.1218013170006782
+   },
+   "default": {
+    "pick": "ssr-fettl-rdttl-tau60-a1",
+    "violation": true,
+    "confirmed_violation": true,
+    "excess": 0.39973958333333326,
+    "regret": null
+   },
+   "nocache": {
+    "pick": "ssr-feoff-rdoff-a1",
+    "violation": false,
+    "confirmed_violation": false,
+    "excess": 0.0,
+    "regret": 0.32097217305119385
+   }
+  }
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0161"
+  ],
+  "W2 every cell within 0.05": [
+   false,
+   "max 0.0520"
+  ],
+  "W3 orderings": [
+   true,
+   "1191/1191"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 5 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "216/216"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "1.47% over 108 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 7.04%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   false,
+   "1: n=411 pred 0.157 obs 0.158; 2: n=202 pred 0.250 obs 0.183; 3: n=362 pred 0.358 obs 0.318; 4: n=711 pred 0.456 obs 0.419; 5: n=1311 pred 0.550 obs 0.556; 6: n=634 pred 0.639 obs 0.647; 7: n=347 pred 0.758 obs 0.752; 8: n=218 pred 0.842 obs 0.885; 9: n=152 pred 0.944 obs 0.954"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0649 ref 0.2835 skill +0.771; top-1 0.955 over 41456 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "+0.0205"
+  ],
+  "B4a mean selector regret <= 5%": [
+   true,
+   "mean 0.60% over 8 feasible decisions, worst 2.00%"
+  ],
+  "B4b no confirmed constraint violation": [
+   true,
+   "0 confirmed"
+  ]
+ }
+}

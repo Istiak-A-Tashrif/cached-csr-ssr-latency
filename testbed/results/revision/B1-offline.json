@@ -1,0 +1,262 @@
+{
+ "testW2": {
+  "views": 12288,
+  "unclassified": 0,
+  "brier": 0.0926663624471768,
+  "brier_ref": 0.3094612451278271,
+  "skill": 0.7005558404933718,
+  "top1": 0.9312337239583334,
+  "db_recall": 0.9164683484055212,
+  "db_precision": 0.8863060989643268,
+  "per_cell": {
+   "csr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.03125,
+    "brier_ref": 0.3273075081251256
+   },
+   "csr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.22296209841451395,
+    "brier_ref": 0.5675777364076303
+   },
+   "csr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.045572916666666664,
+    "brier_ref": 0.2655161119361195
+   },
+   "ssr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.0
+   },
+   "ssr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.08854166666666667,
+    "brier_ref": 0.33677019962369065
+   },
+   "ssr-fepush-rdpush": {
+    "views": 1536,
+    "brier": 0.3530042178295683,
+    "brier_ref": 0.8244570766854071
+   },
+   "ssr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07693991285965639
+   },
+   "ssr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07712141538490973
+   }
+  },
+  "confusion": {
+   "db->db": 3851,
+   "db->next_hit": 169,
+   "db->redis_hit": 325,
+   "next_hit->db": 250,
+   "next_hit->next_hit": 3594,
+   "redis_hit->db": 101,
+   "redis_hit->redis_hit": 2572,
+   "tq_hit->tq_hit": 1426
+  }
+ },
+ "repW2": {
+  "views": 12288,
+  "unclassified": 0,
+  "brier": 0.07627365481552249,
+  "brier_ref": 0.17784421426251726,
+  "skill": 0.5711209659992967,
+  "top1": 0.954345703125,
+  "db_recall": 0.8308550185873605,
+  "db_precision": 0.954720205040581,
+  "per_cell": {
+   "csr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.1171875,
+    "brier_ref": 0.2287478413730403
+   },
+   "csr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.16789242687586944,
+    "brier_ref": 0.2671150245351238
+   },
+   "csr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.026041666666666668,
+    "brier_ref": 0.20630606491046652
+   },
+   "ssr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.0
+   },
+   "ssr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.07942708333333333,
+    "brier_ref": 0.24549187981490606
+   },
+   "ssr-fepush-rdpush": {
+    "views": 1536,
+    "brier": 0.21964056164831122,
+    "brier_ref": 0.3215707142447187
+   },
+   "ssr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07663798855027472
+   },
+   "ssr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07688420067148763
+   }
+  },
+  "confusion": {
+   "db->db": 2235,
+   "db->next_hit": 12,
+   "db->redis_hit": 94,
+   "next_hit->db": 201,
+   "next_hit->next_hit": 4190,
+   "redis_hit->db": 254,
+   "redis_hit->redis_hit": 3824,
+   "tq_hit->tq_hit": 1478
+  }
+ },
+ "testX": {
+  "views": 13824,
+  "unclassified": 0,
+  "brier": 0.07300959632779323,
+  "brier_ref": 0.29780293654349144,
+  "skill": 0.7548392330337856,
+  "top1": 0.9466869212962963,
+  "db_recall": 0.8869179600886918,
+  "db_precision": 0.9615384615384616,
+  "per_cell": {
+   "csr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.75
+   },
+   "csr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.052083333333333336,
+    "brier_ref": 0.27830884740658374
+   },
+   "csr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.22259475618110902,
+    "brier_ref": 0.4277162127907832
+   },
+   "csr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0026041666666666665,
+    "brier_ref": 0.2397105554838126
+   },
+   "ssr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.0
+   },
+   "ssr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.055989583333333336,
+    "brier_ref": 0.3092034043200242
+   },
+   "ssr-fepush-rdpush": {
+    "views": 1536,
+    "brier": 0.32381452743569733,
+    "brier_ref": 0.5215145477023981
+   },
+   "ssr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07676727024028082
+   },
+   "ssr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07700559094735233
+   }
+  },
+  "confusion": {
+   "db->db": 4400,
+   "db->next_hit": 86,
+   "db->redis_hit": 90,
+   "next_hit->db": 282,
+   "next_hit->next_hit": 3940,
+   "redis_hit->db": 279,
+   "redis_hit->redis_hit": 3309,
+   "tq_hit->tq_hit": 1438
+  }
+ },
+ "repX": {
+  "views": 13824,
+  "unclassified": 0,
+  "brier": 0.08193474043602839,
+  "brier_ref": 0.3346172196452808,
+  "skill": 0.7551389001352491,
+  "top1": 0.9393084490740741,
+  "db_recall": 0.9079551717802682,
+  "db_precision": 0.9363395225464191,
+  "per_cell": {
+   "csr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.75
+   },
+   "csr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.0625,
+    "brier_ref": 0.3246791159465174
+   },
+   "csr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.2436085498942415,
+    "brier_ref": 0.5098752319597436
+   },
+   "csr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0390625,
+    "brier_ref": 0.2653458995135985
+   },
+   "ssr-feoff-rdoff": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.0
+   },
+   "ssr-feoff-rdttl": {
+    "views": 1536,
+    "brier": 0.057291666666666664,
+    "brier_ref": 0.362039884202704
+   },
+   "ssr-fepush-rdpush": {
+    "views": 1536,
+    "brier": 0.33494994736334815,
+    "brier_ref": 0.6455947316440848
+   },
+   "ssr-fettl-rdpush": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07690983581075832
+   },
+   "ssr-fettl-rdttl": {
+    "views": 1536,
+    "brier": 0.0,
+    "brier_ref": 0.07711027772995104
+   }
+  },
+  "confusion": {
+   "db->db": 4942,
+   "db->next_hit": 130,
+   "db->redis_hit": 206,
+   "next_hit->db": 252,
+   "next_hit->next_hit": 3788,
+   "redis_hit->db": 247,
+   "redis_hit->redis_hit": 2839,
+   "tq_hit->db": 2,
+   "tq_hit->redis_hit": 2,
+   "tq_hit->tq_hit": 1416
+  }
+ }
+}

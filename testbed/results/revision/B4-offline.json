@@ -1,0 +1,418 @@
+{
+ "testX": {
+  "observed": {
+   "csr-fettl-rdpush": [
+    141.1526041664183,
+    0.06163194444444445
+   ],
+   "ssr-fepush-rdpush": [
+    135.02968750004138,
+    0.019097222222222224
+   ],
+   "ssr-fettl-rdpush": [
+    126.49913194340964,
+    0.40624999999999994
+   ],
+   "csr-feoff-rdoff": [
+    214.64140624925494,
+    0.014756944444444442
+   ],
+   "ssr-feoff-rdttl": [
+    132.6626736127461,
+    0.38888888888888884
+   ],
+   "csr-feoff-rdttl": [
+    190.44331597231533,
+    0.4053819444444444
+   ],
+   "ssr-feoff-rdoff": [
+    158.53229166551804,
+    0.019965277777777776
+   ],
+   "ssr-fettl-rdttl": [
+    126.46232639015135,
+    0.5954861111111112
+   ],
+   "csr-fettl-rdttl": [
+    138.2748263898409,
+    0.3888888888888889
+   ]
+  },
+  "predicted": {
+   "csr-fettl-rdpush": [
+    141.18849780214956,
+    0.0553517464651745
+   ],
+   "ssr-fepush-rdpush": [
+    132.7404925544769,
+    0.01612953716884223
+   ],
+   "ssr-fettl-rdpush": [
+    125.73152156714103,
+    0.3977069315806273
+   ],
+   "csr-feoff-rdoff": [
+    208.2971457372381,
+    0.015832075644183864
+   ],
+   "ssr-feoff-rdttl": [
+    130.89983672118328,
+    0.3886167587797248
+   ],
+   "csr-feoff-rdttl": [
+    189.09112209335825,
+    0.3880549026996257
+   ],
+   "ssr-feoff-rdoff": [
+    150.78698940583428,
+    0.01581193240547517
+   ],
+   "ssr-fettl-rdttl": [
+    126.1947679042787,
+    0.5554381470482299
+   ],
+   "csr-fettl-rdttl": [
+    138.89327325820892,
+    0.4095168797722267
+   ]
+  },
+  "selection": {
+   "0.01": {
+    "oracle": null,
+    "selector": {
+     "pick": null,
+     "abstain": true
+    },
+    "tuning": {
+     "pick": null,
+     "abstain": true
+    },
+    "fixed": {
+     "pick": null,
+     "abstain": true
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.5854861111111112,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": true,
+     "excess_stale": 0.009965277777777776,
+     "regret": null
+    }
+   },
+   "0.05": {
+    "oracle": "ssr-fepush-rdpush",
+    "selector": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.5454861111111111,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.17405508818547377
+    }
+   },
+   "0.10": {
+    "oracle": "ssr-fepush-rdpush",
+    "selector": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "csr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.04534496657540633
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.4954861111111112,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.17405508818547377
+    }
+   },
+   "0.50": {
+    "oracle": "ssr-fettl-rdpush",
+    "selector": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.09548611111111116,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.2532282967478282
+    }
+   }
+  }
+ },
+ "repX": {
+  "observed": {
+   "csr-feoff-rdoff": [
+    449.7654513890545,
+    0.020833333333333332
+   ],
+   "ssr-fepush-rdpush": [
+    279.25121527801576,
+    0.020833333333333332
+   ],
+   "csr-feoff-rdttl": [
+    373.75321180761483,
+    0.34982638888888884
+   ],
+   "csr-fettl-rdpush": [
+    278.82482638893026,
+    0.08159722222222222
+   ],
+   "ssr-feoff-rdttl": [
+    268.63940972255335,
+    0.3776041666666667
+   ],
+   "ssr-fettl-rdttl": [
+    244.05407986122495,
+    0.5737847222222222
+   ],
+   "ssr-feoff-rdoff": [
+    345.7247395847614,
+    0.026041666666666668
+   ],
+   "csr-fettl-rdttl": [
+    267.83107638835077,
+    0.3654513888888889
+   ],
+   "ssr-fettl-rdpush": [
+    243.50060763887856,
+    0.3975694444444444
+   ]
+  },
+  "predicted": {
+   "csr-feoff-rdoff": [
+    441.762745090095,
+    0.021060755143593127
+   ],
+   "ssr-fepush-rdpush": [
+    277.4076637363029,
+    0.02132951291966969
+   ],
+   "csr-feoff-rdttl": [
+    371.4503165736387,
+    0.35132941339326823
+   ],
+   "csr-fettl-rdpush": [
+    277.0591190818352,
+    0.07517555250362727
+   ],
+   "ssr-feoff-rdttl": [
+    266.1612334689132,
+    0.3708413630380159
+   ],
+   "ssr-fettl-rdttl": [
+    241.8070548616324,
+    0.573565027205072
+   ],
+   "ssr-feoff-rdoff": [
+    339.14999325346184,
+    0.021117083274272374
+   ],
+   "csr-fettl-rdttl": [
+    267.98224603046316,
+    0.3823814842878378
+   ],
+   "ssr-fettl-rdpush": [
+    241.40716744888587,
+    0.36681377949569594
+   ]
+  },
+  "selection": {
+   "0.01": {
+    "oracle": null,
+    "selector": {
+     "pick": null,
+     "abstain": true
+    },
+    "tuning": {
+     "pick": null,
+     "abstain": true
+    },
+    "fixed": {
+     "pick": null,
+     "abstain": true
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.5637847222222222,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": true,
+     "excess_stale": 0.01604166666666667,
+     "regret": null
+    }
+   },
+   "0.05": {
+    "oracle": "ssr-fepush-rdpush",
+    "selector": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.5237847222222222,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.23804202334649174
+    }
+   },
+   "0.10": {
+    "oracle": "csr-fettl-rdpush",
+    "selector": {
+     "pick": "csr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "csr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "ssr-fepush-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0015292357377486012
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.47378472222222223,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.23993528145342777
+    }
+   },
+   "0.50": {
+    "oracle": "ssr-fettl-rdpush",
+    "selector": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "tuning": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "fixed": {
+     "pick": "ssr-fettl-rdpush",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.0
+    },
+    "default": {
+     "pick": "ssr-fettl-rdttl",
+     "violation": true,
+     "excess_stale": 0.07378472222222221,
+     "regret": null
+    },
+    "nocache": {
+     "pick": "ssr-feoff-rdoff",
+     "violation": false,
+     "excess_stale": 0.0,
+     "regret": 0.4198105825570892
+    }
+   }
+  }
+ },
+ "cost": {
+  "model_calibration_runs": 32,
+  "tuning_runs_per_condition": 18
+ }
+}

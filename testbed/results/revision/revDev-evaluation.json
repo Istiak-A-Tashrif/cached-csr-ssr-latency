@@ -1,0 +1,240 @@
+{
+ "tag": "revDev",
+ "stale": {
+  "ssr-fepush-rdpush-a0.6": [
+   0.03125,
+   0.016217331176431333
+  ],
+  "csr-fettl-rdttl-tau1-a0.6": [
+   0.052083333333333336,
+   0.05750160644179065
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-periodic": [
+   0.546875,
+   0.5006493720872138
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-trace": [
+   0.0625,
+   0.05838759011628774
+  ],
+  "ssr-fepush-rdpush-a0.6-trace": [
+   0.020833333333333332,
+   0.01645233484490041
+  ],
+  "ssr-fepush-rdpush-a0.6-periodic": [
+   0.015625,
+   0.016161651876403782
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-trace": [
+   0.6145833333333334,
+   0.4878508298744158
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6": [
+   0.5052083333333334,
+   0.4925228126812653
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-onoff": [
+   0.40625,
+   0.3249441014343008
+  ],
+  "ssr-fepush-rdpush-a0.6-onoff": [
+   0.005208333333333333,
+   0.015561705591363611
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-onoff": [
+   0.06770833333333333,
+   0.048594881157866726
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-periodic": [
+   0.052083333333333336,
+   0.05923931968361746
+  ]
+ },
+ "latency": {
+  "ssr-fepush-rdpush-a0.6|initial": [
+   240.05624999999964,
+   240.62881237914888
+  ],
+  "ssr-fepush-rdpush-a0.6|nav": [
+   126.2369318181819,
+   123.42803735530082
+  ],
+  "csr-fettl-rdttl-tau1-a0.6|initial": [
+   931.4250000000011,
+   935.9899619449205
+  ],
+  "csr-fettl-rdttl-tau1-a0.6|nav": [
+   76.57727272727276,
+   72.97426789636687
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-periodic|initial": [
+   236.71249999999873,
+   239.30496898852226
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-periodic|nav": [
+   116.35909090909246,
+   118.09894466866594
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-trace|initial": [
+   931.5750000000007,
+   950.5618013822735
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-trace|nav": [
+   76.228409090909,
+   73.88198604682262
+  ],
+  "ssr-fepush-rdpush-a0.6-trace|initial": [
+   243.5812500000029,
+   243.6073512048953
+  ],
+  "ssr-fepush-rdpush-a0.6-trace|nav": [
+   123.15000000000063,
+   124.93574924316
+  ],
+  "ssr-fepush-rdpush-a0.6-periodic|initial": [
+   244.07500000000073,
+   237.77510199134122
+  ],
+  "ssr-fepush-rdpush-a0.6-periodic|nav": [
+   125.49602272727431,
+   122.14698429930348
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-trace|initial": [
+   237.22500000000582,
+   241.6329951452698
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-trace|nav": [
+   117.40227272726969,
+   119.28820968103442
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6|initial": [
+   239.05624999999418,
+   235.95587872793791
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6|nav": [
+   116.26193181818168,
+   116.3880721947331
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-onoff|initial": [
+   232.6374999999971,
+   232.50468205696976
+  ],
+  "ssr-fettl-rdttl-tau5-a0.6-onoff|nav": [
+   114.29999999999927,
+   114.62503897464322
+  ],
+  "ssr-fepush-rdpush-a0.6-onoff|initial": [
+   239.49375000000146,
+   234.5089747499194
+  ],
+  "ssr-fepush-rdpush-a0.6-onoff|nav": [
+   117.41363636363431,
+   118.81366998444715
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-onoff|initial": [
+   888.4562499999993,
+   896.6382030365598
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-onoff|nav": [
+   72.10170454545732,
+   70.52294347936066
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-periodic|initial": [
+   909.9250000000102,
+   920.5609554818402
+  ],
+  "csr-fettl-rdttl-tau1-a0.6-periodic|nav": [
+   73.73352272727524,
+   72.01315456059045
+  ]
+ },
+ "outcome_calibration": {
+  "0": [
+   110,
+   0.07966751908946634,
+   0.05454545454545454
+  ],
+  "1": [
+   248,
+   0.14236117444693225,
+   0.11290322580645161
+  ],
+  "2": [
+   168,
+   0.24721160755404575,
+   0.17857142857142858
+  ],
+  "3": [
+   103,
+   0.34285500977489203,
+   0.36893203883495146
+  ],
+  "4": [
+   52,
+   0.43794544441022676,
+   0.38461538461538464
+  ],
+  "5": [
+   16,
+   0.5535276715521444,
+   0.5625
+  ],
+  "6": [
+   21,
+   0.642415495033554,
+   0.42857142857142855
+  ],
+  "7": [
+   13,
+   0.7651512483555947,
+   0.9230769230769231
+  ],
+  "8": [
+   5,
+   0.8516200932302336,
+   0.8
+  ]
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0278"
+  ],
+  "W2 every cell within 0.05": [
+   false,
+   "max 0.1267"
+  ],
+  "W3 orderings": [
+   true,
+   "35/35"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 8 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "12/12"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "1.55% over 24 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 4.71%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   false,
+   "0: n=110 pred 0.080 obs 0.055; 1: n=248 pred 0.142 obs 0.113; 2: n=168 pred 0.247 obs 0.179; 3: n=103 pred 0.343 obs 0.369; 4: n=52 pred 0.438 obs 0.385; 5: n=16 pred 0.554 obs 0.562; 6: n=21 pred 0.642 obs 0.429; 7: n=13 pred 0.765 obs 0.923; 8: n=5 pred 0.852 obs 0.800"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0913 ref 0.2928 skill +0.688; top-1 0.938 over 2304 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "-0.0101"
+  ]
+ }
+}

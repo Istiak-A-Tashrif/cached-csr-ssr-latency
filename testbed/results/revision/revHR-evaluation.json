@@ -1,0 +1,477 @@
+{
+ "tag": "revHR",
+ "stale": {
+  "ssr-fettl-rdpush-tau4-a0.8": [
+   0.3532986111111111,
+   0.38224018101911433
+  ],
+  "csr-fettl-rdpush-tau2-a0.8": [
+   0.05642361111111111,
+   0.059476247864974977
+  ],
+  "ssr-fepush-rdpush-a0.8": [
+   0.008680555555555556,
+   0.017117720756490474
+  ],
+  "ssr-fettl-rdttl-tau2-a0.8": [
+   0.2960069444444444,
+   0.31962499512490766
+  ],
+  "ssr-feoff-rdttl-tau8-a0.8": [
+   0.3506944444444444,
+   0.3220808849753946
+  ],
+  "csr-fettl-rdpush-tau4-a0.8": [
+   0.051215277777777776,
+   0.059229477833956934
+  ],
+  "csr-feoff-rdoff-a0.8": [
+   0.026041666666666668,
+   0.016781084829811055
+  ],
+  "csr-feoff-rdttl-tau8-a0.8": [
+   0.3368055555555556,
+   0.3077845430068574
+  ],
+  "csr-fettl-rdpush-tau8-a0.8": [
+   0.04600694444444445,
+   0.05920084128633147
+  ],
+  "ssr-fettl-rdpush-tau2-a0.8": [
+   0.3203125,
+   0.3136279261472306
+  ],
+  "ssr-feoff-rdttl-tau4-a0.8": [
+   0.1987847222222222,
+   0.16757167982870888
+  ],
+  "ssr-feoff-rdoff-a0.8": [
+   0.018229166666666668,
+   0.016949581974104237
+  ],
+  "csr-feoff-rdttl-tau2-a0.8": [
+   0.07899305555555555,
+   0.07560635604858877
+  ],
+  "csr-feoff-rdttl-tau4-a0.8": [
+   0.15625,
+   0.15002545406231974
+  ],
+  "ssr-fettl-rdpush-tau8-a0.8": [
+   0.5008680555555556,
+   0.4926418804799623
+  ],
+  "ssr-feoff-rdttl-tau2-a0.8": [
+   0.0798611111111111,
+   0.07781137225693233
+  ]
+ },
+ "latency": {
+  "ssr-fettl-rdpush-tau4-a0.8|initial": [
+   443.9750000000252,
+   441.0049913311982
+  ],
+  "ssr-fettl-rdpush-tau4-a0.8|nav": [
+   222.15918560605937,
+   221.4073555035107
+  ],
+  "csr-fettl-rdpush-tau2-a0.8|initial": [
+   1746.5312499999127,
+   1721.7780721415627
+  ],
+  "csr-fettl-rdpush-tau2-a0.8|nav": [
+   126.98579545455516,
+   124.78648999269119
+  ],
+  "ssr-fepush-rdpush-a0.8|initial": [
+   459.72083333329647,
+   455.12338964219447
+  ],
+  "ssr-fepush-rdpush-a0.8|nav": [
+   241.66003787878876,
+   238.43855845868487
+  ],
+  "ssr-fettl-rdttl-tau2-a0.8|initial": [
+   441.86041666665307,
+   442.49914846981363
+  ],
+  "ssr-fettl-rdttl-tau2-a0.8|nav": [
+   222.21571969696865,
+   222.17062055609503
+  ],
+  "ssr-feoff-rdttl-tau8-a0.8|initial": [
+   458.1947916666783,
+   461.3693103802059
+  ],
+  "ssr-feoff-rdttl-tau8-a0.8|nav": [
+   238.73475378788,
+   237.97700814239815
+  ],
+  "csr-fettl-rdpush-tau4-a0.8|initial": [
+   1737.682291666754,
+   1713.3935568053091
+  ],
+  "csr-fettl-rdpush-tau4-a0.8|nav": [
+   125.93219696967616,
+   124.20203617272648
+  ],
+  "csr-feoff-rdoff-a0.8|initial": [
+   1772.3697916666279,
+   1739.0635665127277
+  ],
+  "csr-feoff-rdoff-a0.8|nav": [
+   286.0021780303055,
+   277.7531315128087
+  ],
+  "csr-feoff-rdttl-tau8-a0.8|initial": [
+   1724.3104166666355,
+   1707.5914572340487
+  ],
+  "csr-feoff-rdttl-tau8-a0.8|nav": [
+   237.04374999996844,
+   236.11834216865674
+  ],
+  "csr-fettl-rdpush-tau8-a0.8|initial": [
+   1729.820833333312,
+   1712.616699934334
+  ],
+  "csr-fettl-rdpush-tau8-a0.8|nav": [
+   124.16666666667636,
+   124.15350004504994
+  ],
+  "ssr-fettl-rdpush-tau2-a0.8|initial": [
+   448.1875000000291,
+   443.6087047959827
+  ],
+  "ssr-fettl-rdpush-tau2-a0.8|nav": [
+   224.54412878788636,
+   222.73742919491528
+  ],
+  "ssr-feoff-rdttl-tau4-a0.8|initial": [
+   463.01979166670935,
+   465.0200098322147
+  ],
+  "ssr-feoff-rdttl-tau4-a0.8|nav": [
+   247.95217803029774,
+   247.06156455818942
+  ],
+  "ssr-feoff-rdoff-a0.8|initial": [
+   504.50208333329647,
+   501.35049514406666
+  ],
+  "ssr-feoff-rdoff-a0.8|nav": [
+   285.6528409091036,
+   281.1020327564463
+  ],
+  "csr-feoff-rdttl-tau2-a0.8|initial": [
+   1770.6906249999981,
+   1734.4387356928128
+  ],
+  "csr-feoff-rdttl-tau2-a0.8|nav": [
+   258.80776515147636,
+   254.11529251076846
+  ],
+  "csr-feoff-rdttl-tau4-a0.8|initial": [
+   1718.8958333331975,
+   1715.5735960630936
+  ],
+  "csr-feoff-rdttl-tau4-a0.8|nav": [
+   245.8925189393666,
+   246.44034699338636
+  ],
+  "ssr-fettl-rdpush-tau8-a0.8|initial": [
+   442.0395833333508,
+   438.04050188306024
+  ],
+  "ssr-fettl-rdpush-tau8-a0.8|nav": [
+   221.54289772726372,
+   219.89297006634857
+  ],
+  "ssr-feoff-rdttl-tau2-a0.8|initial": [
+   470.07395833342645,
+   466.7768940480849
+  ],
+  "ssr-feoff-rdttl-tau2-a0.8|nav": [
+   260.51827651515043,
+   256.08932740621765
+  ]
+ },
+ "outcome_calibration": {
+  "0": [
+   187,
+   0.0709967187344137,
+   0.06951871657754011
+  ],
+  "1": [
+   294,
+   0.1393075253747152,
+   0.1292517006802721
+  ],
+  "2": [
+   414,
+   0.2587528736595269,
+   0.24154589371980675
+  ],
+  "3": [
+   860,
+   0.3591378841396902,
+   0.36046511627906974
+  ],
+  "4": [
+   515,
+   0.4396172918546815,
+   0.42330097087378643
+  ],
+  "5": [
+   143,
+   0.5564076222849617,
+   0.5104895104895105
+  ],
+  "6": [
+   224,
+   0.6389565651985941,
+   0.6830357142857143
+  ],
+  "7": [
+   67,
+   0.7494356501288139,
+   0.7014925373134329
+  ],
+  "8": [
+   37,
+   0.8504298039722173,
+   0.8378378378378378
+  ],
+  "9": [
+   10,
+   0.9166966803389244,
+   1.0
+  ]
+ },
+ "selection": {
+  "all|0.299": {
+   "oracle": "ssr-fettl-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-fepush-rdpush-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.08029424162980586,
+    "right": false
+   },
+   "aware": {
+    "pick": "ssr-fepush-rdpush-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.08029424162980586,
+    "right": false
+   }
+  },
+  "all|0.319": {
+   "oracle": "ssr-fettl-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-fettl-rdpush-tau2-a0.8",
+    "violation": true,
+    "confirmed": false,
+    "excess": 0.0013124999999999942,
+    "regret": 0.011066181990415935,
+    "right": false
+   },
+   "aware": {
+    "pick": "ssr-fepush-rdpush-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.08029424162980586,
+    "right": false
+   }
+  },
+  "ttl_only|0.069": {
+   "oracle": "ssr-feoff-rdoff-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdoff-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdoff-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.089": {
+   "oracle": "ssr-feoff-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdttl-tau2-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdoff-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.09320422790306512,
+    "right": false
+   }
+  },
+  "ttl_only|0.158": {
+   "oracle": "ssr-feoff-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdttl-tau2-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdttl-tau2-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.178": {
+   "oracle": "ssr-feoff-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdttl-tau4-a0.8",
+    "violation": true,
+    "confirmed": false,
+    "excess": 0.02078472222222222,
+    "regret": -0.043552472813692095,
+    "right": false
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdttl-tau2-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.0,
+    "right": true
+   }
+  },
+  "ttl_only|0.299": {
+   "oracle": "ssr-fettl-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdttl-tau4-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.10541781676233579,
+    "right": false
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdttl-tau4-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.10541781676233579,
+    "right": false
+   }
+  },
+  "ttl_only|0.319": {
+   "oracle": "ssr-fettl-rdttl-tau2-a0.8",
+   "naive": {
+    "pick": "ssr-feoff-rdttl-tau4-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.10541781676233579,
+    "right": false
+   },
+   "aware": {
+    "pick": "ssr-feoff-rdttl-tau4-a0.8",
+    "violation": false,
+    "confirmed": false,
+    "excess": 0.0,
+    "regret": 0.10541781676233579,
+    "right": false
+   }
+  }
+ },
+ "selectors": {
+  "naive": {
+   "decisions": 8,
+   "violations": 2,
+   "confirmed": 0,
+   "oracle_choices": 3,
+   "mean_regret": 4.852164585907958,
+   "worst_regret": 10.54178167623358
+  },
+  "aware": {
+   "decisions": 8,
+   "violations": 0,
+   "confirmed": 0,
+   "oracle_choices": 3,
+   "mean_regret": 5.807854308591856,
+   "worst_regret": 10.54178167623358
+  }
+ },
+ "criteria": {
+  "W1 pooled MAE <= 0.03": [
+   true,
+   "0.0132"
+  ],
+  "W2 every cell within 0.05": [
+   true,
+   "max 0.0312"
+  ],
+  "W3 orderings": [
+   true,
+   "91/91"
+  ],
+  "W4 oracle integrity": [
+   true,
+   "ahead 0, runs without writes 0, errors 0, purge lag p99 7 ms"
+  ],
+  "W5 predictions before runs": [
+   true,
+   "96/96"
+  ],
+  "L1 mean latency error <= 3%": [
+   true,
+   "0.96% over 32 (cell, action)"
+  ],
+  "L2 every (cell, action) within max(5%, 10 ms)": [
+   true,
+   "max 2.88%"
+  ],
+  "O1 outcome calibration (deciles, n >= 100) within 0.05": [
+   true,
+   "0: n=187 pred 0.071 obs 0.070; 1: n=294 pred 0.139 obs 0.129; 2: n=414 pred 0.259 obs 0.242; 3: n=860 pred 0.359 obs 0.360; 4: n=515 pred 0.440 obs 0.423; 5: n=143 pred 0.556 obs 0.510; 6: n=224 pred 0.639 obs 0.683; 7: n=67 pred 0.749 obs 0.701; 8: n=37 pred 0.850 obs 0.838; 9: n=10 pred 0.917 obs 1.000"
+  ],
+  "O2 Brier skill > 0": [
+   true,
+   "Brier 0.0749 ref 0.3022 skill +0.752; top-1 0.946 over 18432 views"
+  ],
+  "O3 Brier - expected Brier <= 0.03": [
+   true,
+   "+0.0147"
+  ],
+  "O1' noise-aware calibration": [
+   true,
+   "0: -0.001 (tol 0.050); 1: -0.010 (tol 0.050); 2: -0.017 (tol 0.050); 3: +0.001 (tol 0.050); 4: -0.016 (tol 0.050); 5: -0.046 (tol 0.093); 6: +0.044 (tol 0.066)"
+  ],
+  "B4h-a uncertainty-aware selector mean regret <= 5%": [
+   false,
+   "mean 5.81% over 8 feasible decisions, worst 10.54%"
+  ],
+  "B4h-b uncertainty-aware selector: no confirmed violation": [
+   true,
+   "0 violations, 0 confirmed, 0 abstentions"
+  ]
+ }
+}

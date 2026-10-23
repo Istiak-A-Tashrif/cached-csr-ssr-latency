@@ -1,0 +1,114 @@
+Latency mean relative error, 95% block-bootstrap intervals (unit: run; seeds as blocks)
+test       seeds cells                   model                   ridge             model - ridge
+prosp5         4    32      1.10 [ 1.08, 1.27]      1.10 [ 1.07, 1.29]       -0.00 [-0.09, 0.08]
+rep5           4    32      0.77 [ 0.76, 0.90]      0.90 [ 0.86, 1.10]       -0.13 [-0.23,-0.05]
+real7          4     8      0.61 [ 0.50, 1.06]      1.47 [ 1.26, 1.69]       -0.87 [-1.02,-0.21]
+rep7           4     8      1.08 [ 0.67, 1.70]      1.81 [ 1.35, 2.53]       -0.73 [-0.91,-0.22]
+real8b         4     8      0.62 [ 0.55, 1.10]      0.95 [ 0.86, 1.20]       -0.34 [-0.36,-0.04]
+rep8b          4     8      0.70 [ 0.58, 1.12]      1.15 [ 1.09, 1.38]       -0.45 [-0.59,-0.23]
+real9          4     8      0.26 [ 0.16, 0.58]      0.17 [ 0.11, 0.49]        0.09 [-0.04, 0.13]
+rep9           4     8      0.23 [ 0.14, 0.52]      0.20 [ 0.14, 0.48]        0.04 [-0.04, 0.08]
+test9b         2    16      1.20 [ 1.20, 1.25]      1.95 [ 1.91, 2.01]       -0.74 [-0.82,-0.66]
+reptest9b      2    16      0.18 [ 0.18, 0.24]      0.56 [ 0.55, 0.59]       -0.39 [-0.39,-0.34]
+testS          2    16      0.69 [ 0.69, 0.94]      0.66 [ 0.66, 0.77]        0.03 [ 0.00, 0.19]
+repS           2    16      0.33 [ 0.30, 0.37]      0.45 [ 0.45, 0.47]       -0.13 [-0.17,-0.08]
+testQ          2    16      1.23 [ 1.16, 1.33]      2.36 [ 2.16, 2.66]       -1.13 [-1.33,-0.99]
+repQ           2    16      0.61 [ 0.59, 0.70]      1.26 [ 1.24, 1.40]       -0.65 [-0.81,-0.54]
+testR2         2    16      2.28 [ 2.28, 2.48]      3.08 [ 3.05, 3.18]       -0.80 [-0.80,-0.58]
+repR2          2    16      2.08 [ 1.97, 2.26]      3.61 [ 3.45, 3.77]       -1.53 [-1.53,-1.47]
+
+Tails: observed latency / predicted mean, per action type (descriptive)
+prosp5   csr|initial  n=  384 mean 1.007 p50 1.028 p90 1.057 p95 1.062 p99 1.075
+prosp5   csr|nav      n= 4224 mean 0.995 p50 0.998 p90 1.104 p95 1.214 p99 1.532
+prosp5   ssr|initial  n=  384 mean 0.995 p50 0.991 p90 1.032 p95 1.046 p99 1.229
+prosp5   ssr|nav      n= 4224 mean 0.992 p50 0.995 p90 1.022 p95 1.030 p99 1.052
+rep5     csr|initial  n=  384 mean 1.005 p50 1.022 p90 1.057 p95 1.063 p99 1.071
+rep5     csr|nav      n= 4224 mean 0.996 p50 1.001 p90 1.097 p95 1.192 p99 1.575
+rep5     ssr|initial  n=  384 mean 1.005 p50 0.998 p90 1.034 p95 1.049 p99 1.212
+rep5     ssr|nav      n= 4224 mean 1.003 p50 1.001 p90 1.027 p95 1.035 p99 1.051
+real7    csr|initial  n=   96 mean 0.997 p50 1.010 p90 1.049 p95 1.060 p99 1.071
+real7    csr|nav      n= 1056 mean 1.044 p50 1.002 p90 1.190 p95 1.382 p99 1.862
+real7    ssr|initial  n=   96 mean 1.005 p50 1.003 p90 1.039 p95 1.053 p99 1.107
+real7    ssr|nav      n= 1056 mean 0.990 p50 0.987 p90 1.010 p95 1.016 p99 1.040
+rep7     csr|initial  n=   96 mean 0.999 p50 1.016 p90 1.048 p95 1.057 p99 1.077
+rep7     csr|nav      n= 1056 mean 1.024 p50 1.001 p90 1.139 p95 1.284 p99 1.829
+rep7     ssr|initial  n=   96 mean 1.008 p50 0.996 p90 1.023 p95 1.036 p99 2.108
+rep7     ssr|nav      n= 1056 mean 0.981 p50 0.979 p90 1.000 p95 1.007 p99 1.022
+real8b   csr|initial  n=   96 mean 0.983 p50 1.009 p90 1.037 p95 1.042 p99 1.055
+real8b   csr|nav      n= 1056 mean 1.016 p50 1.000 p90 1.122 p95 1.279 p99 1.740
+real8b   ssr|initial  n=   96 mean 1.005 p50 1.006 p90 1.035 p95 1.041 p99 1.060
+real8b   ssr|nav      n= 1056 mean 1.000 p50 0.999 p90 1.023 p95 1.030 p99 1.042
+rep8b    csr|initial  n=   96 mean 0.982 p50 1.007 p90 1.032 p95 1.051 p99 1.065
+rep8b    csr|nav      n= 1056 mean 1.021 p50 0.997 p90 1.141 p95 1.273 p99 1.871
+rep8b    ssr|initial  n=   96 mean 0.997 p50 0.994 p90 1.025 p95 1.032 p99 1.051
+rep8b    ssr|nav      n= 1056 mean 1.000 p50 1.000 p90 1.019 p95 1.027 p99 1.041
+real9    csr|initial  n=   96 mean 0.997 p50 0.997 p90 1.013 p95 1.016 p99 1.021
+real9    csr|nav      n= 1056 mean 1.005 p50 0.995 p90 1.115 p95 1.250 p99 1.636
+real9    ssr|initial  n=   96 mean 1.000 p50 1.000 p90 1.019 p95 1.025 p99 1.037
+real9    ssr|nav      n= 1056 mean 0.998 p50 0.998 p90 1.022 p95 1.028 p99 1.047
+rep9     csr|initial  n=   96 mean 0.999 p50 1.000 p90 1.012 p95 1.018 p99 1.027
+rep9     csr|nav      n= 1056 mean 1.010 p50 0.998 p90 1.136 p95 1.253 p99 1.713
+rep9     ssr|initial  n=   96 mean 0.999 p50 1.000 p90 1.016 p95 1.019 p99 1.042
+rep9     ssr|nav      n= 1056 mean 1.002 p50 1.000 p90 1.026 p95 1.034 p99 1.052
+testS    csr|initial  n=   96 mean 1.001 p50 1.001 p90 1.015 p95 1.022 p99 1.036
+testS    csr|nav      n= 1056 mean 1.021 p50 1.002 p90 1.391 p95 1.561 p99 1.881
+testS    ssr|initial  n=   96 mean 1.009 p50 1.002 p90 1.059 p95 1.069 p99 1.087
+testS    ssr|nav      n= 1056 mean 1.005 p50 1.000 p90 1.046 p95 1.064 p99 1.090
+repS     csr|initial  n=   96 mean 0.999 p50 1.000 p90 1.004 p95 1.005 p99 1.007
+repS     csr|nav      n= 1056 mean 1.058 p50 1.000 p90 1.552 p95 1.727 p99 1.916
+repS     ssr|initial  n=   96 mean 0.996 p50 0.995 p90 1.011 p95 1.013 p99 1.025
+repS     ssr|nav      n= 1056 mean 0.998 p50 0.998 p90 1.014 p95 1.019 p99 1.034
+testQ    csr|initial  n=   96 mean 0.983 p50 0.992 p90 1.025 p95 1.031 p99 1.097
+testQ    csr|nav      n= 1056 mean 1.007 p50 1.001 p90 1.091 p95 1.216 p99 1.495
+testQ    ssr|initial  n=   96 mean 1.013 p50 1.009 p90 1.051 p95 1.071 p99 1.099
+testQ    ssr|nav      n= 1056 mean 0.995 p50 0.998 p90 1.023 p95 1.033 p99 1.061
+repQ     csr|initial  n=   96 mean 0.989 p50 1.005 p90 1.025 p95 1.028 p99 1.032
+repQ     csr|nav      n= 1056 mean 1.003 p50 1.000 p90 1.039 p95 1.236 p99 1.600
+repQ     ssr|initial  n=   96 mean 1.005 p50 1.005 p90 1.020 p95 1.028 p99 1.052
+repQ     ssr|nav      n= 1056 mean 1.004 p50 1.004 p90 1.026 p95 1.034 p99 1.051
+realH3   csr|initial  n=   96 mean 1.033 p50 1.010 p90 1.176 p95 1.366 p99 2.177
+realH3   csr|nav      n= 1056 mean 1.040 p50 1.017 p90 1.198 p95 1.301 p99 1.738
+realH3   ssr|initial  n=   96 mean 1.103 p50 1.047 p90 1.206 p95 1.289 p99 4.064
+realH3   ssr|nav      n= 1056 mean 1.215 p50 1.056 p90 1.276 p95 1.584 p99 4.212
+repH3    csr|initial  n=   96 mean 1.022 p50 1.023 p90 1.117 p95 1.135 p99 1.455
+repH3    csr|nav      n= 1056 mean 1.056 p50 1.039 p90 1.192 p95 1.320 p99 3.329
+repH3    ssr|initial  n=   96 mean 1.045 p50 1.025 p90 1.159 p95 1.186 p99 2.336
+repH3    ssr|nav      n= 1056 mean 1.100 p50 1.049 p90 1.192 p95 1.468 p99 2.102
+
+Staleness: observed stale share [95% run-bootstrap interval] vs predicted
+testW2  csr-feoff-redisttl         runs=8 views= 1536 obs 0.398 [0.387,0.411] pred 0.408 in
+testW2  csr-fettl-redispush        runs=8 views= 1536 obs 0.098 [0.081,0.118] pred 0.101 in
+testW2  csr-fettl-redisttl         runs=8 views= 1536 obs 0.458 [0.417,0.497] pred 0.449 in
+testW2  ssr-feoff-redisoff         runs=8 views= 1536 obs 0.030 [0.021,0.039] pred 0.033 in
+testW2  ssr-feoff-redisttl         runs=8 views= 1536 obs 0.437 [0.406,0.466] pred 0.417 in
+testW2  ssr-fepush-redispush       runs=8 views= 1536 obs 0.027 [0.020,0.035] pred 0.034 in
+testW2  ssr-fettl-redispush        runs=8 views= 1536 obs 0.538 [0.517,0.562] pred 0.575 OUT
+testW2  ssr-fettl-redisttl         runs=8 views= 1536 obs 0.691 [0.673,0.715] pred 0.688 in
+repW2   csr-feoff-redisttl         runs=8 views= 1536 obs 0.406 [0.380,0.434] pred 0.423 in
+repW2   csr-fettl-redispush        runs=8 views= 1536 obs 0.035 [0.021,0.050] pred 0.028 in
+repW2   csr-fettl-redisttl         runs=8 views= 1536 obs 0.432 [0.359,0.494] pred 0.436 in
+repW2   ssr-feoff-redisoff         runs=8 views= 1536 obs 0.008 [0.007,0.011] pred 0.008 in
+repW2   ssr-feoff-redisttl         runs=8 views= 1536 obs 0.433 [0.395,0.464] pred 0.411 in
+repW2   ssr-fepush-redispush       runs=8 views= 1536 obs 0.005 [0.001,0.010] pred 0.008 in
+repW2   ssr-fettl-redispush        runs=8 views= 1536 obs 0.254 [0.219,0.294] pred 0.239 in
+repW2   ssr-fettl-redisttl         runs=8 views= 1536 obs 0.494 [0.447,0.542] pred 0.499 in
+testX   csr-feoff-redisoff         runs=8 views= 1536 obs 0.016 [0.011,0.021] pred 0.016 in
+testX   csr-feoff-redisttl         runs=8 views= 1536 obs 0.396 [0.350,0.436] pred 0.388 in
+testX   csr-fettl-redispush        runs=8 views= 1536 obs 0.060 [0.044,0.076] pred 0.055 in
+testX   csr-fettl-redisttl         runs=8 views= 1536 obs 0.381 [0.335,0.436] pred 0.410 in
+testX   ssr-feoff-redisoff         runs=8 views= 1536 obs 0.018 [0.014,0.023] pred 0.016 in
+testX   ssr-feoff-redisttl         runs=8 views= 1536 obs 0.377 [0.341,0.413] pred 0.389 in
+testX   ssr-fepush-redispush       runs=8 views= 1536 obs 0.019 [0.016,0.022] pred 0.016 in
+testX   ssr-fettl-redispush        runs=8 views= 1536 obs 0.418 [0.398,0.438] pred 0.398 OUT
+testX   ssr-fettl-redisttl         runs=8 views= 1536 obs 0.594 [0.538,0.637] pred 0.555 in
+repX    csr-feoff-redisoff         runs=8 views= 1536 obs 0.018 [0.011,0.027] pred 0.021 in
+repX    csr-feoff-redisttl         runs=8 views= 1536 obs 0.352 [0.322,0.383] pred 0.351 in
+repX    csr-fettl-redispush        runs=8 views= 1536 obs 0.085 [0.074,0.095] pred 0.075 in
+repX    csr-fettl-redisttl         runs=8 views= 1536 obs 0.381 [0.345,0.413] pred 0.382 in
+repX    ssr-feoff-redisoff         runs=8 views= 1536 obs 0.028 [0.021,0.035] pred 0.021 OUT
+repX    ssr-feoff-redisttl         runs=8 views= 1536 obs 0.382 [0.368,0.394] pred 0.371 in
+repX    ssr-fepush-redispush       runs=8 views= 1536 obs 0.023 [0.014,0.033] pred 0.021 in
+repX    ssr-fettl-redispush        runs=8 views= 1536 obs 0.385 [0.352,0.415] pred 0.367 in
+repX    ssr-fettl-redisttl         runs=8 views= 1536 obs 0.577 [0.529,0.623] pred 0.574 in
+
+predicted stale share inside the run-bootstrap interval: 31/34 cells
