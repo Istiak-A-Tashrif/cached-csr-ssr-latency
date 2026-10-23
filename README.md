@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/1427513690.svg)](https://doi.org/10.5281/zenodo.23512120)
 
-Artifact for the paper *Predicting Latency and Freshness of Cached Client- and Server-Rendered Web Applications* (Istiak Ahmed Tashrif, submitted to ACM Transactions on the Web). Version 1.1.0 adds the revision's experiments: predicted serving layers, other write processes, policy selection, a second application (Conduit) and the retrospective analyses.
+Artifact for the paper *Predicting Latency and Freshness of Cached Client- and Server-Rendered Web Applications* (Istiak Ahmed Tashrif, submitted to ACM Transactions on the Web). Version 1.1.0 adds the revision's experiments: predicted serving layers, other write processes, policy selection, a second application (Conduit) and the retrospective analyses. Version 1.2.0 adds a retrospective comparison of the model's policy choices with those of simpler predictors (`testbed/decision_baselines.py`) and a reproducibility manifest (paper, Appendix B). Its reproduction script also re-scores the second-host Conduit blocks.
 
 It contains everything needed to rerun the experiments, re-score every test from its logs, and regenerate the paper's figures and tables.
 

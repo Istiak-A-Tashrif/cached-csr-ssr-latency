@@ -95,7 +95,9 @@ The 0.05 staleness margin and the limits ε were fixed in v3 before its runs:
 
 The audit found and fixed one artifact bug: the README said `sh` for a script that needs `bash`.
 
-The second-host Conduit blocks (cdHT, cdHR) are scored from `results/server-cd/`, but the reproduction script doesn't re-score them yet. Their raw logs and evaluations are in the artifact.
+The second-host Conduit blocks (cdHT, cdHR) are scored from `results/server-cd/`. Since the final revision (23 Oct 2026) the reproduction script re-scores them too: it runs the unmodified `evaluateRC.py` from a temporary copy whose `results/` links to the second host's files, with and without `--zero`, and all four outputs are byte-identical to the archived ones. (The JSON summaries the evaluator also writes differ from the archived ones in the last floating-point digits, a summation-order difference between the Linux host and macOS. The script therefore keeps them out of the archive and compares the text outputs only.)
+
+Final revision (23 Oct 2026): the script now runs 44 checks, all passing. These are the 38 evaluations above, the four second-host evaluations, the retrospective decision comparison (`decision_baselines.py`, deterministic; it also asserts that the frozen model's stored regrets are reproduced exactly) and the checksums of 538 files.
 
 ## Known record-keeping issues
 
@@ -116,3 +118,13 @@ The second-host Conduit blocks (cdHT, cdHR) are scored from `results/server-cd/`
 Empirical check of the push purge semantics (`diag_push.py`): in revT and revR, 100% of SSR push views that followed a write to their page since the entry's last fill were fetched again, and 97.7% / 99.3% of the others were served from the cache.
 
 The Conduit blocks (cdT, cdR, cdHT, cdHR) used model RC, which has model R's exposure timing, not R2's.
+
+## Final revision checks (23 Oct 2026)
+
+These checks were carried out by the author with an AI assistant, not by an independent auditor.
+
+- **Prediction inputs.** The per-run predictors read only fields recorded before the run starts. `predict_runR.py`: `tcpPre`, `users`, `proc`, `pages`, `dbDelayMs`. `predict_runR2.py`: those plus `alpha` and `seed` (the distribution-only session sets). `predict_runRC.py`: `tcpPre`, `users`, `proc`, `dbDelayMs`. `predict_runX.py`: `tcpPre`, `users`, `lam`, `pages`, `dbDelayMs`. `predict_runS.py`: `tcpPre`, `users`, `mode`, `fe`, `be` and the pre-run race probe `raceP`. None reads post-run probes, logs or oracle data from the target run. A trace process is estimated from the training window only (`writeproc.py`).
+- **Predictions before runs.** This is criteria C5 and W5, re-checked by every evaluator in the reproduction script.
+- **Seeds.** No change since the seed audit above; the final revision added no runs.
+- **Retrospective analyses.** These are the decision comparison and the true-layer latency analysis. Each alternative predictor uses only the frozen model's pre-run inputs and its calibration block (calibW, cdCal, cdCalH), and is applied with the frozen selection rules, limits and margin. Nothing in these analyses was pre-registered, and the manuscript says so.
+- **Artifact version.** The paper now cites artifact version 1.2.0, which adds `decision_baselines.py`, its outputs and the extended reproduction script. It is built locally and is published by the author.

@@ -47,6 +47,20 @@ for b in revHT revHR; do
   python3 evaluateR2.py "$b" >"$out/$b" 2>&1
   check "results/$b-evaluation.txt" "$out/$b" "$b"
 done
+# Second-host Conduit blocks: the unmodified evaluator, run from a copy whose results/ links to the second host's
+# archive file by file, with its own revision/ so the evaluator's JSON output never overwrites the archived one.
+mkdir -p "$out/h2/results/revision" && cp evaluateRC.py "$out/h2/"
+for f in results/server-cd/*; do [ "$(basename "$f")" = revision ] || ln -s "$PWD/$f" "$out/h2/results/"; done
+for b in cdHT cdHR; do
+  (cd "$out/h2" && python3 evaluateRC.py "$b") >"$out/$b" 2>&1
+  check "results/server-cd/$b-evaluation.txt" "$out/$b" "$b (second host)"
+  (cd "$out/h2" && python3 evaluateRC.py "$b" --zero) >"$out/$b-zero" 2>&1
+  check "results/server-cd/$b-zero-evaluation.txt" "$out/$b-zero" "$b zero recalibration (second host)"
+done
+# Retrospective decision-quality comparison (final revision); it also asserts the frozen model's stored regrets.
+python3 decision_baselines.py >"$out/decision" 2>&1
+if diff -q results/revision/decision-baselines.txt "$out/decision" >/dev/null; then echo "ok    decision baselines"
+else echo "DIFF  decision baselines"; fail=1; fi
 
 if (cd results && shasum -a 256 -c --quiet ../../tools/raw-data.sha256); then echo "ok    raw-data checksums"
 else echo "DIFF  raw-data checksums"; fail=1; fi
