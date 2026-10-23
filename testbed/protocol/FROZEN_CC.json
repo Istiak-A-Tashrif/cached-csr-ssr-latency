@@ -1,0 +1,21 @@
+{
+ "frozenAt": "2026-10-23T23:07:00+06:00",
+ "sha256": {
+  "protocol/revCCdev.json": "f34993afc332698903586a9c817565be2570d33df57e66f68cfa0b30988b22a2",
+  "protocol/revCCT.json": "497fa0aef698312eb75aa896c0c1318ee7928cd4bc1d9ebbfbb1fcc18019ccf1",
+  "protocol/revCCR.json": "280790875cebd21afb1182c6964c64b8ef4a1957a939a6a87227285f0b9123d6",
+  "protocol/PROTOCOL_CC.md": "ab7ae8c3fb7fbc85b0bb1cdf2214f6e9084a59badb61cb93ec412768ab712d0c",
+  "protocol/make_manifests_cc.py": "51e55546beada50f6fc067275d695be2f878495240b21d54b2d2108af7ad3994",
+  "protocol/run_cc.sh": "73313cb09ca871d97beee318ecabcd569b908d6b2e2401f0de3a806a2b317303",
+  "selector_cc.py": "2267e459b6a8276503d5d3577e4ac8036d286680de600b145b0f1e9c9ed962b8",
+  "derive_cc.py": "f272ddcd57870d5062241a768c7e1b7a5f470b7bd999c15d3b6f505527a140ed",
+  "evaluateCC.py": "faca9db64ccab3778be461fd7405313eaf1cf681bea57cc841e45ec783fbc53f",
+  "modelR2.py": "af66897cbcabb05bbc6f50a90844281c3819a820b0cfb6b56fd2ded741daaa27",
+  "writeproc.py": "abf9ab50ed24e95d93893823860b9fcc426fbbf62b778240993a1d9b39fafe1e",
+  "staleness.py": "4fc5442edb21365792cc70d67ded3bb45277fde75b4b5d5c27cb59ff6f0f7689",
+  "predict_runR2.py": "f92cb1fdcdd99faae273ad3981b3544be462de3f78f6465e6b5f33624c106ff7",
+  "harness.mjs": "8aa1ad75c1ce4a376ad182b916457def33bde0fbc3c464ffaf78b5f15c4a9178",
+  "results/modelR2.frozen.json": "e283fe1f47a14c7d3eaa2442c3936331f8e7aa77d9950347f9896a4e04e9258e",
+  "results/revision/cc-derivation.json": "29ee33617dfa33396b26952011ca381b32b2bc3427b9c0204e9770f12193386f"
+ }
+}

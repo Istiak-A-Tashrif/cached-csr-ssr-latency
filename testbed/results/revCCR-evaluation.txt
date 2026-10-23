@@ -1,0 +1,58 @@
+revCCR: 96 runs, 18432 views, 0 errors, 0 views with unclassified outcome
+  csr-feoff-rdoff-a0.7                     stale obs 0.025 pred 0.018
+  csr-feoff-rdttl-tau12-a0.7               stale obs 0.650 pred 0.630
+  csr-feoff-rdttl-tau3-a0.7                stale obs 0.240 pred 0.253
+  csr-feoff-rdttl-tau6-a0.7                stale obs 0.436 pred 0.430
+  csr-fettl-rdpush-tau12-a0.7              stale obs 0.062 pred 0.060
+  csr-fettl-rdpush-tau3-a0.7               stale obs 0.054 pred 0.061
+  csr-fettl-rdpush-tau6-a0.7               stale obs 0.057 pred 0.061
+  ssr-feoff-rdoff-a0.7                     stale obs 0.012 pred 0.018
+  ssr-feoff-rdttl-tau12-a0.7               stale obs 0.650 pred 0.631
+  ssr-feoff-rdttl-tau3-a0.7                stale obs 0.257 pred 0.258
+  ssr-feoff-rdttl-tau6-a0.7                stale obs 0.476 pred 0.448
+  ssr-fepush-rdpush-a0.7                   stale obs 0.023 pred 0.018
+  ssr-fettl-rdpush-tau12-a0.7              stale obs 0.680 pred 0.704
+  ssr-fettl-rdpush-tau3-a0.7               stale obs 0.410 pred 0.442
+  ssr-fettl-rdpush-tau6-a0.7               stale obs 0.509 pred 0.575
+  ssr-fettl-rdttl-tau3-a0.7                stale obs 0.384 pred 0.448
+  all eps 0.42: oracle ssr-fettl-rdttl-tau3-a0.7
+     point  ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     margin ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     cc     ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+  all eps 0.44: oracle ssr-fettl-rdttl-tau3-a0.7
+     point  ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     margin ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     cc     ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+  ttl_only eps 0.249: oracle ssr-feoff-rdoff-a0.7
+     point  ssr-feoff-rdoff-a0.7               regret +0.0%
+     margin ssr-feoff-rdoff-a0.7               regret +0.0%
+     cc     ssr-feoff-rdoff-a0.7               regret +0.0%
+  ttl_only eps 0.269: oracle ssr-feoff-rdttl-tau3-a0.7
+     point  ssr-feoff-rdttl-tau3-a0.7          regret +0.0%
+     margin ssr-feoff-rdoff-a0.7               regret +14.9%
+     cc     ssr-feoff-rdoff-a0.7               regret +14.9%
+  ttl_only eps 0.42: oracle ssr-fettl-rdttl-tau3-a0.7
+     point  ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     margin ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     cc     ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+  ttl_only eps 0.44: oracle ssr-fettl-rdttl-tau3-a0.7
+     point  ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     margin ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+     cc     ssr-feoff-rdttl-tau3-a0.7          regret +6.9%
+  point: 6 decisions, 0 abstentions, 0 violations (0 confirmed), 2 oracle choices, mean regret 4.57%, worst 6.85%
+  margin: 6 decisions, 0 abstentions, 0 violations (0 confirmed), 1 oracle choices, mean regret 7.06%, worst 14.91%
+  cc: 6 decisions, 0 abstentions, 0 violations (0 confirmed), 1 oracle choices, mean regret 7.06%, worst 14.91%
+PASS  W1 pooled MAE <= 0.03: 0.0188
+FAIL  W2 every cell within 0.05: max 0.0664
+PASS  W3 orderings: 97/97
+PASS  W4 oracle integrity: ahead 0, runs without writes 0, errors 0, purge lag p99 5 ms
+PASS  W5 predictions before runs: 96/96
+PASS  L1 mean latency error <= 3%: 1.12% over 32 (cell, action)
+PASS  L2 every (cell, action) within max(5%, 10 ms): max 3.76%
+PASS  O1 outcome calibration (deciles, n >= 100) within 0.05: 0: n=223 pred 0.076 obs 0.094; 1: n=294 pred 0.141 obs 0.150; 2: n=358 pred 0.262 obs 0.268; 3: n=774 pred 0.357 obs 0.329; 4: n=634 pred 0.442 obs 0.453; 5: n=161 pred 0.555 obs 0.571; 6: n=169 pred 0.639 obs 0.645; 7: n=100 pred 0.753 obs 0.750; 8: n=41 pred 0.843 obs 0.780; 9: n=6 pred 0.921 obs 0.667
+PASS  O2 Brier skill > 0: Brier 0.0745 ref 0.2393 skill +0.689; top-1 0.946 over 18432 views
+PASS  O3 Brier - expected Brier <= 0.03: +0.0142
+PASS  O1' noise-aware calibration: 0: +0.018 (tol 0.050); 1: +0.009 (tol 0.050); 2: +0.006 (tol 0.050); 3: -0.027 (tol 0.050); 4: +0.011 (tol 0.050); 5: +0.016 (tol 0.079); 6: +0.005 (tol 0.069); 7: -0.003 (tol 0.084)
+FAIL  B4cc-a chance-constrained selector mean regret <= 5%: mean 7.06% over 6 feasible decisions, worst 14.91%
+PASS  B4cc-b chance-constrained selector: no confirmed violation: 0 violations, 0 confirmed, 0 abstentions
+NOT ACCEPTED

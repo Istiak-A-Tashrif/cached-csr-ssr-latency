@@ -128,3 +128,12 @@ These checks were carried out by the author with an AI assistant, not by an inde
 - **Seeds.** No change since the seed audit above; the final revision added no runs.
 - **Retrospective analyses.** These are the decision comparison and the true-layer latency analysis. Each alternative predictor uses only the frozen model's pre-run inputs and its calibration block (calibW, cdCal, cdCalH), and is applied with the frozen selection rules, limits and margin. Nothing in these analyses was pre-registered, and the manuscript says so.
 - **Artifact version.** The paper now cites artifact version 1.2.0, which adds `decision_baselines.py`, its outputs and the extended reproduction script. It is built locally and is published by the author.
+
+## Protocol v4: derived-margin selector (23–24 Oct 2026)
+
+- **Chronology (UTC).** Freeze commit aa34804 was made at 17:07:09 and pushed in the same command. The first run of the pipeline check revCCdev started at 17:07:50, the first run of revCCT at 17:24:58 and the first run of revCCR at 19:16:43. No file hashed in `protocol/FROZEN_CC.json` has changed since the freeze.
+- **Seeds.** revCCdev used 1020, revCCT 1000–1005 and revCCR 1010–1015. All are new; the highest seed used before was 985.
+- **Development data.** sd_m and the in-sample look come only from revT, revR, revHT and revHR, all scored before v4 (`derive_cc.py`). a = 0.05 was set in the script before it was first run.
+- **Pipeline check.** revCCdev was scored only from a scratch copy, to check that the evaluator runs end to end. Its numbers were not used, and no evaluation of it is archived.
+- **Scoring.** Each block was scored once with the frozen `evaluateCC.py`. revCCT passes B4cc-a and B4cc-b. revCCR fails B4cc-a (mean regret 7.06%), so v4 is not accepted. W2 failed in both blocks; it is reported and is not part of v4's acceptance.
+- **Shared logs.** The v4 runs appended to `api.jsonl`, `web.jsonl`, `writes.jsonl` and `predictionsR2.jsonl`. For each file, the leading lines whose SHA-256 equals the checksum in artifact v1.2.0 are intact. Of the appended lines, all are v4 runs except the harness's warm-up requests (run id `warmup`). `tools/raw-data.sha256` was updated for these files and for the new v4 files (553 entries). The reproduction script re-scores revCCT and revCCR as well: 46 checks, all passing.

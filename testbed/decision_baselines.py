@@ -59,6 +59,8 @@ BLOCKS = {
     "cdHR": ("server-cd", "cd", "modelRC.frozen.json", "cdCalH", "predictionsRC.jsonl", "b4"),
     "revHT": ("", "cat", "modelR2.frozen.json", "calibW", "predictionsR2.jsonl", "hard"),
     "revHR": ("", "cat", "modelR2.frozen.json", "calibW", "predictionsR2.jsonl", "hard"),
+    "revCCT": ("", "cat", "modelR2.frozen.json", "calibW", "predictionsR2.jsonl", "cc"),     # protocol v4
+    "revCCR": ("", "cat", "modelR2.frozen.json", "calibW", "predictionsR2.jsonl", "cc"),
 }
 PREDICTORS = ("model", "ridge/model", "calfreq/model", "blind/model", "model/single", "calfreq/single")
 
@@ -233,7 +235,8 @@ def summarize(rs):
 
 
 def block(tag, rng):
-    root, fam, mfile, ctag, pfile, kind = BLOCKS[tag]
+    root, fam, mfile, ctag, pfile, group = BLOCKS[tag]
+    kind = "hard" if group == "cc" else group    # v4 blocks are scored like v3's, reported as their own group
     M = json.load(open(os.path.join(RES, root, mfile)))
     MAN = json.load(open(os.path.join(HERE, "protocol", f"{tag}.json"))) if kind == "hard" else None
     probs = {int(k): v for k, v in M["page_probs"].items()} if fam == "cd" else None
@@ -271,7 +274,7 @@ def block(tag, rng):
     for c in per: alpha_cells[c.split("-a")[1]].append(c)
     obs = {c: (mean([x["L"] for x in xs]), mean([x["S"] for x in xs])) for c, xs in per.items()}
     dec = list(decisions(kind, MAN, obs, None, alpha_cells))
-    res = {"tag": tag, "kind": kind, "cells": len(per), "seeds_per_cell": sorted({len(x) for x in per.values()}),
+    res = {"tag": tag, "kind": group, "cells": len(per), "seeds_per_cell": sorted({len(x) for x in per.values()}),
            "L1_predicted_layer": l1(1), "L1_true_layer": l1(2), "predictors": {}, "scenarios": len(alpha_cells) if kind == "b4" else len(MAN["eps"])}
     scored = {}
     for name in PREDICTORS:
@@ -297,7 +300,7 @@ def block(tag, rng):
                                     "max_excess": max(r["excess"] for r in sel), "mean_regret": 100 * mean(reg) if reg else None,
                                     "worst_regret": 100 * max(reg) if reg else None}
     else:
-        assert abs(ev["selectors"]["aware"]["mean_regret"] - res["predictors"]["model"]["margin"]["mean_regret"]) < 1e-9, tag
+        assert abs(ev["selectors"]["aware" if group == "hard" else "margin"]["mean_regret"] - res["predictors"]["model"]["margin"]["mean_regret"]) < 1e-9, tag
     # paired run bootstrap of mean regret differences vs the model
     keys = sorted(per); diffs = collections.defaultdict(list)
     for _ in range(2000):

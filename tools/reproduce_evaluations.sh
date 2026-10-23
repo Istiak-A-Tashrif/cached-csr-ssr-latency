@@ -47,6 +47,10 @@ for b in revHT revHR; do
   python3 evaluateR2.py "$b" >"$out/$b" 2>&1
   check "results/$b-evaluation.txt" "$out/$b" "$b"
 done
+for b in revCCT revCCR; do   # protocol v4 (chance-constrained selector)
+  python3 evaluateCC.py "$b" >"$out/$b" 2>&1
+  check "results/$b-evaluation.txt" "$out/$b" "$b"
+done
 # Second-host Conduit blocks: the unmodified evaluator, run from a copy whose results/ links to the second host's
 # archive file by file, with its own revision/ so the evaluator's JSON output never overwrites the archived one.
 mkdir -p "$out/h2/results/revision" && cp evaluateRC.py "$out/h2/"
