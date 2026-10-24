@@ -152,3 +152,5 @@ Run from the downloaded Zenodo v1.3.0 archive (md5 1808d080f05226cb1a12d2b4e32ce
 - the checksums of the missing files
 
 The raw logs were complete in every version, inside `data/raw-results.tar.gz`. `tools/make_artifact.py` now re-includes these paths and fails the build if git would ignore any file the artifact ships. Version 1.3.1 is checked from `git archive` of the tagged commit, which is what the release archive contains. The Zenodo records of v1.1.0–v1.3.0 cannot be changed; their descriptions should point to v1.3.1.
+
+Verified 24 Oct 2026: the Zenodo record of v1.3.1 (doi:10.5281/zenodo.23604822; zip md5 65593d1d07ed12c25f0eea71a2816fe2, matching the record) was downloaded and extracted, its raw-log tarball was unpacked, and `tools/reproduce_evaluations.sh` passed all 46 checks. This check was carried out by the author with an AI assistant; it is not an independent verification.
